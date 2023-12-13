@@ -55,3 +55,6 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 
   }
   
+  // untuk tahun di footer
+const currentYear = new Date().getFullYear();
+document.getElementById("current-year").textContent = currentYear;

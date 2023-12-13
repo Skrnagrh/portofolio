@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="dist/css/final.css" rel="stylesheet" />
+    <link href="dist/output.css" rel="stylesheet" />
     <title>Portofolio - Sukron</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <script>
       if (
         localStorage.theme === "dark" ||
@@ -25,8 +29,10 @@
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
-            <a href="#home" class="font-bold text-lg text-primary block py-6"
-              >Sukron Anugrah</a
+            <a
+              href="#home"
+              class="font-bold text-2xl text-primary block py-6 uppercase"
+              >Sukron</a
             >
           </div>
           <div class="flex items-center px-4">
@@ -55,48 +61,56 @@
                 <li class="group">
                   <a
                     href="#home"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
                     >Beranda</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
                     >Tentang Saya</a
                   >
                 </li>
                 <li class="group">
                   <a
+                    href="#experience"
+                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
+                    >Pengalaman</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#education"
+                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
+                    >Pendidikan</a
+                  >
+                </li>
+                <li class="group">
+                  <a
                     href="#portofolio"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
+                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
                     >Portofolio</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href="#clients"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
-                    >Client</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#blog"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
-                    >Blog</a
+                    href="#skill"
+                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
+                    >Kemampuan</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contact"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
-                    >Contact</a
+                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
+                    >Kontak</a
                   >
                 </li>
                 <li class="flex items-center pl-8 mt-3 lg:mt-0">
                   <div class="flex">
-                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                    <!-- <span class="mr-2 text-sm text-slate-500">Light</span> -->
+                    <i class="bi bi-sun-fill mr-2 text-sm text-slate-500"></i>
                     <input type="checkbox" class="hidden" id="dark-toggle" />
                     <label for="dark-toggle">
                       <div
@@ -107,7 +121,10 @@
                         ></div>
                       </div>
                     </label>
-                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                    <!-- <span class="ml-2 text-sm text-slate-500">Dark</span> -->
+                    <i
+                      class="bi bi-moon-stars-fill ml-2 text-sm text-slate-500"
+                    ></i>
                   </div>
                 </li>
               </ul>
@@ -127,30 +144,30 @@
               Halo Semua ✋, Saya
               <span
                 class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white"
-                >Sukron Anugrah</span
+                >Sukron</span
               >
             </h1>
             <h2 class="font-medium text-secondary textlg mb-5 lg:text-2xl">
-              Staff Administrasi &
-              <span class="text-dark dark:text-white">Web Developer</span>
+              Web Developer &
+              <span class="text-dark dark:text-white">Staff Administrasi</span>
             </h2>
-            <p class="font-medium text-secondary mb-10 leading-relaxed">
+            <!-- <p class="font-medium text-secondary mb-10 leading-relaxed">
               belajar web programming itu mudah dan menyenangkan bukan.
               <span class="text-dark font-semibold dark:text-white"
                 >bukan!</span
               >
-            </p>
+            </p> -->
 
-            <a
+            <!-- <a
               href="#"
               class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
               >Hubungi Saya</a
-            >
+            > -->
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="mt-10 relative lg:mt-10 lg:right-0">
               <img
-                src="dist/img/profile.png"
+                src="dist/img/3.png"
                 alt="skrnagrh"
                 class="max-w-full mx-auto relative z-10"
               />
@@ -180,520 +197,488 @@
     <section id="about" class="pt-36 pb-32 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 lg:w-1/2">
-            <h4 class="font-bold uppercase text-primary text-lg mb-3">
+          <div class="w-full px-4 lg:w-1/2">
+            <!-- <h4 class="font-bold uppercase text-primary text-lg mb-3">
               Tentang Saya
-            </h4>
+            </h4> -->
             <h2
-              class="font-bold text-dark text-3xl mb-5 max-w-xl lg:text-4xl dark:text-white"
+              class="font-bold text-primary text-3xl mb-4 md:text-4xl lg:text-5xl uppercase"
             >
-              Yuk, Belajar web Programming di sini!
+              Tentang Saya
             </h2>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
-              magni culpa perferendis temporibus totam itaque voluptatem quidem
-              neque autem distinctio.
+            <p
+              class="font-medium text-base text-secondary max-w-xl lg:text-lg text-justify"
+            >
+              <span
+                class="font-bold text-dark text-sm lg:text-lg dark:text-white capitalize text-justify"
+              >
+                Saya lulusan Teknik Informatika
+              </span>
+              yang memiliki minat dan antusiasme tinggi dalam bidang
+              pengembangan perangkat lunak, teknologi informasi, dan
+              administrasi. Saya memiliki keahlian dalam pemrograman dan
+              pengembangan web menggunakan berbagai bahasa pemrograman dan
+              framework terkini.
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h3
-              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10"
+            <p
+              class="font-medium text-base text-secondary mb-6 lg:text-lg lg:pt-10 text-justify"
             >
-              Mari Berteman
-            </h3>
-            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              vero, obcaecati non autem aperiam temporibus. Numquam ducimus quam
-              a aliquam repudiandae accusantium magni itaque dolorum!
+              Selain itu, saya juga memiliki kemampuan dalam menganalisis dan
+              merancang sistem informasi yang efektif dan efisien. Dengan
+              komunikasi yang baik, kemampuan kerjasama tim yang kuat, serta
+              minat dalam administrasi, saya siap untuk berkontribusi dalam
+              proyek-proyek yang menantang, termasuk dalam peran Staff
+              Administrasi.
             </p>
-            <div class="flex items-center">
-              <!-- youtube -->
-              <a
-                href="#"
-                target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
-                ><svg
-                  width="20"
-                  class="fill-current"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>YouTube</title>
-                  <path
-                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                  /></svg
-              ></a>
-
-              <!-- Instagram -->
-              <a
-                href="#"
-                target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
-                ><svg
-                  width="20"
-                  class="fill-current"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Instagram</title>
-                  <path
-                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                  /></svg
-              ></a>
-            </div>
           </div>
+        </div>
+        <div class="w-full px-4 flex items-center justify-center">
+          <a
+            href="#"
+            class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+            >Download CV</a
+          >
         </div>
       </div>
     </section>
     <!-- About Section End -->
 
-    <!-- Portofolio Section Start -->
-    <section id="portofolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
+    <!-- Experience Section Start -->
+    <section id="experience" class="pt-24 pb-16 bg-slate-100 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full">
+          <div class="max-w-xl mx-auto text-center mb-4">
+            <!-- <h4 class="font-semibold text-lg text-primary mb-2 uppercase">
+              Pengalaman Kerja
+            </h4> -->
+            <h2
+              class="font-bold text-primary text-3xl mb-4 md:text-4xl lg:text-5xl uppercase"
+            >
+              Pengalaman Kerja
+            </h2>
+          </div>
+        </div>
+
+        <div class="w-full flex flex-wrap justify-center xl:mx-auto xl:w-10/12">
+          <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
+            <a href="experience.html#ipm">
+              <div
+                class="bg-white rounded-xl overflow-hidden shadow-lg dark:bg-dark"
+              >
+                <div
+                  class="rounded-t-md overflow-hidden grayscale opacity-95 transition hover:grayscale-0 hover:opacity-100"
+                >
+                  <img
+                    src="dist/img/index/experience/1.png"
+                    alt="portofolio"
+                    width="w-full"
+                  />
+                </div>
+                <h3
+                  class="font-semibold text-xl text-dark mt-5 dark:text-white uppercase"
+                >
+                  PT. Imam Putra Mandiri
+                </h3>
+                <h4 class="font-medium text-md text-dark dark:text-white">
+                  Staff Administrasi
+                </h4>
+                <p class="font-medium text-sm text-secondary mb-2">
+                  Juni 2020 - April 2022
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
+            <a href="experience.html#sakina">
+              <div
+                class="bg-white rounded-xl overflow-hidden shadow-lg dark:bg-dark"
+              >
+                <div class="rounded-t-md overflow-hidden">
+                  <img
+                    src="dist/img/index/experience/2.png"
+                    alt="portofolio"
+                    width="w-full"
+                  />
+                </div>
+                <h3
+                  class="font-semibold text-xl text-dark mt-5 dark:text-white uppercase"
+                >
+                  Sakina Fried Chicken
+                </h3>
+                <h4 class="font-medium text-md text-dark dark:text-white">
+                  Waiters & Cook
+                </h4>
+                <p class="font-medium text-sm text-secondary mb-2">
+                  Juli 2019 - Oktober 2019
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
+            <a href="#ipm">
+              <div
+                class="bg-white rounded-xl overflow-hidden shadow-lg dark:bg-dark"
+              >
+                <div class="rounded-t-md overflow-hidden">
+                  <img
+                    src="dist/img/index/experience/3.png"
+                    alt="portofolio"
+                    width="w-full"
+                  />
+                </div>
+                <h3
+                  class="font-semibold text-xl text-dark mt-5 dark:text-white uppercase"
+                >
+                  Jhon Chicken & Burger
+                </h3>
+                <h4 class="font-medium text-md text-dark dark:text-white">
+                  Waiters & Cook
+                </h4>
+                <p class="font-medium text-sm text-secondary mb-2">
+                  Juni 2018 - Maret 2019
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
+            <a href="#ipm">
+              <div
+                class="bg-white rounded-xl overflow-hidden shadow-lg dark:bg-dark"
+              >
+                <div class="rounded-t-md overflow-hidden">
+                  <img
+                    src="dist/img/index/experience/4.png"
+                    alt="portofolio"
+                    width="w-full"
+                  />
+                </div>
+                <h3
+                  class="font-bold text-xl text-dark mt-5 dark:text-white uppercase"
+                >
+                  Dinas Kelautan dan Perikanan Prov. Banten
+                </h3>
+                <h4 class="font-medium text-md text-dark dark:text-white">
+                  Praktek Kerja Industri (Prakerin)
+                </h4>
+                <p class="font-medium text-sm text-secondary mb-2">
+                  Desember 2016 - Februari 2017
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Section End -->
+
+    <!-- Education Section Start -->
+    <section
+      id="education"
+      class="pt-36 pb-32"
+      style="background-image: url(&quot;dist/img/index/bg/edu.png&quot;)"
+    >
       <div class="container">
         <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">portofolio</h4>
+          <div class="mx-auto text-center">
             <h2
-              class="font-bold text-dark text-3xl mb-4 md:text-4xl lg:text-5xl dark:text-white"
+              class="font-bold text-white text-3xl mb-4 md:text-4xl lg:text-5xl dark:text-slate-300 uppercase"
             >
-              Project Terbaru
+              Pendidikan
+            </h2>
+          </div>
+        </div>
+
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <div class="mx-auto text-center">
+              <a
+                href="https://unsera.ac.id/"
+                target="_blank"
+                class="py-4 text-white transition hover:text-primary lg:mx-6 xl:mx-auto items-center justify-self-center"
+              >
+                <img
+                  src="dist/img/index/education/1.png"
+                  alt="ipm"
+                  class="max-w-[120px] mx-auto"
+                />
+                <h4 class="font-bold uppercase text-white text-lg">
+                  Universitas Serang Raya
+                </h4>
+                <h4 class="font-medium text-base text-white">
+                  Serang, Kota Serang, Banten
+                </h4>
+                <h4 class="font-medium text-base text-white">
+                  Teknik Informatika ~ IPK Kumulatif 3.73 / 4.00
+                </h4>
+                <p class="font-medium text-base text-white mb-2">2019 ~ 2023</p>
+              </a>
+            </div>
+            <div class="mx-auto text-center">
+              <a
+                href="https://unsera.ac.id/"
+                target="_blank"
+                class="py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-auto items-center justify-center"
+              >
+                <img
+                  src="dist/img/index/education/1.png"
+                  alt="ipm"
+                  class="max-w-[120px] mx-auto"
+                />
+                <h4 class="font-bold uppercase text-white text-lg">
+                  SMK PGRI 3 Kota Serang
+                </h4>
+                <h4 class="font-medium text-base text-white">
+                  Serang, Kota Serang, Banten
+                </h4>
+                <h4 class="font-medium text-base text-white">
+                  Administrasi Perkantoran ~ Rata-rata Nilai UN 87
+                </h4>
+                <p class="font-medium text-base text-white mb-2">2015 ~ 2018</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section End -->
+
+    <!-- Portofolio Section Start -->
+    <section id="portofolio" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
+      <div class="container xl:mx-auto xl:w-10/12">
+        <div class="w-full px-4">
+          <div class="mx-auto text-center mb-16">
+            <!-- <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4> -->
+            <h2
+              class="font-bold text-dark text-3xl mb-4 md:text-4xl lg:text-5xl dark:text-white uppercase"
+            >
+              Portofolio
             </h2>
             <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis a
-              ducimus totam dignissimos alias veniam reprehenderit pariatur
-              officia voluptatem fugiat, quam commodi. Vero quidem architecto
-              harum iure consequatur deserunt quis!
+              Ini beberapa karya saya mulai dari vektor, pemrograman web,
+              tipografi dan lain sebagainya.
             </p>
           </div>
         </div>
 
-        <div
-          class="w-full px-4 flex flex-wrap justify-center xl:mx-auto xl:w-10/12"
-        >
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img
-                src="dist/img/portofolio/1.png"
-                alt="portofolio"
-                width="w-full"
-              />
-            </div>
-            <h3
-              class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white"
-            >
-              Landing Page Sukron Anugrah
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              alias quia voluptas, placeat nisi tempora.
-            </p>
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 md:w-1/2 xl:w-1/3 transition-transform">
+            <a href="#">
+              <div
+                class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-800 relative"
+              >
+                <img
+                  src="dist/img/index/portofolio/2.jpg"
+                  alt="programming"
+                  class="w-full"
+                />
+                <p
+                  class="font-semibold text-xl text-white text-center bg-primary"
+                >
+                  <i class="bi bi-globe"></i>
+                  <span class="text-base">Website</span>
+                </p>
+              </div>
+            </a>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img
-                src="dist/img/portofolio/2.png"
-                alt="portofolio"
-                width="w-full"
-              />
-            </div>
-            <h3
-              class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white"
-            >
-              Landing Page Sukron Anugrah
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              alias quia voluptas, placeat nisi tempora.
-            </p>
+          <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+            <a href="#">
+              <div
+                class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-800 relative"
+              >
+                <img
+                  src="dist/img/index/portofolio/1.jpg"
+                  alt="programming"
+                  class="w-full"
+                />
+                <p
+                  class="font-semibold text-xl text-white text-center bg-primary"
+                >
+                  <i class="bi bi-file-earmark-richtext"></i>
+                  <span class="text-base">Vektor</span>
+                </p>
+              </div>
+            </a>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img
-                src="dist/img/portofolio/3.png"
-                alt="portofolio"
-                width="w-full"
-              />
-            </div>
-            <h3
-              class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white"
-            >
-              Landing Page Sukron Anugrah
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              alias quia voluptas, placeat nisi tempora.
-            </p>
+          <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+            <a href="#">
+              <div
+                class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-800 relative"
+              >
+                <img
+                  src="dist/img/index/portofolio/3.jpg"
+                  alt="programming"
+                  class="w-full"
+                />
+                <p
+                  class="font-semibold text-xl text-white text-center bg-primary"
+                >
+                  <i class="bi bi-file-image"></i>
+                  <span class="text-base">Typographi</span>
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
     <!-- Portofolio Section End -->
 
-    <!-- Client Section Start -->
-    <section id="clients" class="pt-36 pb-32 bg-slate-900 dark:bg-slate-300">
+    <!-- Skill Section Start -->
+    <section
+      id="skill"
+      class="pt-24 pb-32"
+      style="background-image: url(&quot;dist/img/index/bg/edu.png&quot;)"
+    >
       <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
-            <h2
-              class="font-bold text-white text-3xl mb-4 md:text-4xl lg:text-5xl dark:text-dark"
-            >
-              Yang Pernah Bekerja Sama
-            </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis a
-              ducimus totam dignissimos alias veniam reprehenderit pariatur
-              officia voluptatem fugiat, quam commodi. Vero quidem architecto
-              harum iure consequatur deserunt quis!
-            </p>
-          </div>
-        </div>
-
-        <div class="w-full px-4">
-          <div class="flex flex-wrap items-center justify-center">
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
-            >
-              <img src="dist/img/clients/1.png" alt="ipm" />
-            </a>
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
-            >
-              <img src="dist/img/clients/2.png" alt="ipm" />
-            </a>
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
-            >
-              <img src="dist/img/clients/3.png" alt="ipm" />
-            </a>
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
-            >
-              <img src="dist/img/clients/4.png" alt="ipm" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Client Section End -->
-
-    <!-- Blog Section Start -->
-    <section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-            <h2
-              class="font-bold text-dark text-3xl mb-4 md:text-4xl lg:text-5xl dark:text-white"
-            >
-              Tulisan Terkini
-            </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-              suscipit corporis eligendi iste.
-            </p>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-800"
-            >
-              <img
-                src="https://source.unsplash.com/360x200?programming"
-                alt="programming"
-                class="w-full"
-              />
-              <div class="py-8 px-6">
-                <h3>
-                  <a
-                    href="#"
-                    class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white"
-                    >Tips Belajar Programming</a
-                  >
-                </h3>
-                <p class="font-medium text-base text-secondary mb-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Natus, error.
-                </p>
-                <a
-                  href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80"
-                  >Baca Selengkapnya</a
-                >
-              </div>
+        <div
+          class="bg-white shadow-lg dark:bg-dark py-4 rounded-lg xl:mx-auto xl:w-10/12"
+        >
+          <div class="w-full px-4">
+            <div class="mx-auto text-center mb-5">
+              <h2
+                class="font-bold text-primary uppercase text-3xl mb-4 md:text-4xl lg:text-5xl"
+              >
+                Kemampuan
+              </h2>
+              <p
+                class="font-medium text-xs text-secondary md:text-md lg:text-md dark:text-slate-300 mb-2"
+              >
+                Ini Beberapa Kemampuan Saya Seperti Kemampuan Teknis, Kemampuan
+                Pemrograman Serta Kemampuan Sosial
+              </p>
+              <hr />
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-800"
-            >
-              <img
-                src="https://source.unsplash.com/360x200?mechanical"
-                alt="programming"
-                class="w-full"
-              />
-              <div class="py-8 px-6">
-                <h3>
-                  <a
-                    href="#"
-                    class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white"
-                    >Review Keyboard</a
-                  >
-                </h3>
-                <p class="font-medium text-base text-secondary mb-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cupiditate, qui? Sequi nihil porro ullam dolor.
+          <div class="w-full lg:mx-auto px-4">
+            <div class="flex flex-wrap">
+              <div class="w-full p-4 text-slate-300 font-medium md:w-1/3">
+                <h2 class="font-bold text-2xl text-dark dark:text-white mb-3">
+                  Teknis
+                </h2>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-file-earmark-word"></i> Microsoft Word
                 </p>
-                <a
-                  href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80"
-                  >Baca Selengkapnya</a
-                >
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-file-earmark-excel"></i> Microsoft Excel
+                </p>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-file-earmark-ppt"></i> Microsoft PowerPoint
+                </p>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-file-earmark-richtext"></i> Corel Draw
+                </p>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-file-earmark-richtext"></i> Adobe Ilustrator
+                </p>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-file-earmark-richtext"></i> Adobe Photosop
+                </p>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-file-earmark-richtext"></i> Figma
+                </p>
               </div>
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-800"
-            >
-              <img
-                src="https://source.unsplash.com/360x200?coffee"
-                alt="programming"
-                class="w-full"
-              />
-              <div class="py-8 px-6">
-                <h3>
-                  <a
-                    href="#"
-                    class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white"
-                    >Menikamati Secangkir Kopi</a
-                  >
-                </h3>
-                <p class="font-medium text-base text-secondary mb-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusantium maiores non nam minus! Repellat adipisci sed eos.
+              <div class="w-full p-4 text-slate-300 font-medium md:w-1/3">
+                <h2 class="font-bold text-2xl text-dark dark:text-white mb-3">
+                  Pemrograman
+                </h2>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-filetype-html"></i> HTML & CSS
                 </p>
-                <a
-                  href="#"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80"
-                  >Baca Selengkapnya</a
-                >
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-filetype-php"></i> PHP
+                </p>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-filetype-js"></i> JavaScript
+                </p>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-filetype-java"></i> Java
+                </p>
+              </div>
+              <div class="w-full p-4 text-slate-300 font-medium md:w-1/3">
+                <h2 class="font-bold text-2xl text-dark dark:text-white mb-3">
+                  Sosial
+                </h2>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-chat-dots"></i> Kemampuan Komunikasi
+                </p>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-people"></i> Kerjasama Tim
+                </p>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-person-x"></i> Kemampuan Pemecahan Masalah
+                </p>
+                <p class="text-secondary font-medium">
+                  <i class="bi bi-clock"></i> Keterampilan Manajemen Waktu
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Blog Section End -->
-
-    <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
-            <h2
-              class="font-bold text-dark text-3xl mb-4 md:text-4xl lg:text-5xl dark:text-white"
-            >
-              Hubungi Kami
-            </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores at ut ad!
-            </p>
-          </div>
-        </div>
-        <form action="">
-          <div class="w-full lg:w-2/3 lg:mx-auto">
-            <div class="w-full px-4 mb-8">
-              <label for="name" class="text-base font-bold text-primary"
-                >Nama</label
-              >
-              <input
-                type="text"
-                id="name"
-                class="w-full bg-slate-200 text-dark p-3 rounded-md capitalize focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
-              />
-            </div>
-            <div class="w-full px-4 mb-8">
-              <label for="email" class="text-base font-bold text-primary"
-                >Email</label
-              >
-              <input
-                type="email"
-                id="email"
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
-              />
-            </div>
-            <div class="w-full px-4 mb-8">
-              <label for="message" class="text-base font-bold text-primary"
-                >Pesan</label
-              >
-              <textarea
-                type="text"
-                id="message"
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
-              ></textarea>
-            </div>
-            <div class="w-full px-4">
-              <button
-                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
-              >
-                Kirim
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- Contact Section End -->
+    <!-- Skill Section End -->
 
     <!-- Footer Section Start -->
-    <footer class="bg-dark pt-24 pb-12">
+    <footer class="bg-dark pt-36 pb-12" id="contact">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-            <h2 class="font-bold text-4xl text-white">WPU</h2>
-            <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
-            <p>skrnagrh@gmail.com</p>
-            <p>Jl. 45 AMD Kalanganyar</p>
-            <p>Serang Banten</p>
+          <div
+            class="w-full px-4 mb-12 text-slate-300 font-medium text-center justify-center lg:w-1/2"
+          >
+            <h2 class="font-bold text-white text-2xl uppercase mb-2">Lokasi</h2>
+            <h2 class="font-bold text-xl">Taktakan</h2>
+            <p class="text-base">Kota Serang Banten</p>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">
-              Kategory Tulisan
-            </h3>
-            <ul class="text-slate-300">
-              <li>
-                <a
-                  href="#"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Programming</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Teknologi</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Gaya Hidup</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
-            <ul class="text-slate-300">
-              <li>
-                <a
-                  href="#home"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Branda</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Tentang Saya</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#portofolio"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Portofolio</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#clients"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Client</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#blog"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Blog</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+          <div
+            class="w-full px-4 mb-12 text-slate-300 font-medium text-center justify-center lg:w-1/2"
+          >
+            <h2 class="font-bold text-2xl text-white uppercase mb-2">Kontak</h2>
+            <div class="flex items-center justify-center mb-5">
+              <a
+                href="mailto:suk12on512@gmail.com"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+                ><i class="bi bi-envelope"></i
+              ></a>
+
+              <a
+                href="https://instagram.com/skrnagrh"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=6285691468025"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+
+              <a
+                href="https://linkedin.com/in/sukron"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/skrnagrh"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div class="w-full pt-10 border-t border-slate-700">
-          <div class="flex items-center justify-center mb-5">
-            <a
-              href="#"
-              target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
-              ><svg
-                width="20"
-                class="fill-current"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>YouTube</title>
-                <path
-                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                /></svg
-            ></a>
-
-            <!-- Instagram -->
-            <a
-              href="#"
-              target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
-              ><svg
-                width="20"
-                class="fill-current"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Instagram</title>
-                <path
-                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                /></svg
-            ></a>
-          </div>
-          <p class="font-medium text-xs text-slate-500 text-center">
-            Dibuat dengan <span class="text-pink-500">❤</span> oleh
-            <a
-              href="https://instagram.com/skrnagrh"
-              target="_blank"
-              class="font-bold text-primary"
-              >Sukron</a
-            >, Menggunakan
-            <a
-              href="https://tailwindcss.com"
-              target="_blank"
-              class="font-bold text-sky-500"
-              >Tailwind CSS</a
-            >.
+          <p class="font-medium text-md text-slate-500 text-center">
+            Copyright &copy; Portofolio -
+            <a class="font-bold text-primary">Sukron</a>
+            <span id="current-year" class="font-bold text-white"></span>
           </p>
         </div>
       </div>
@@ -706,7 +691,8 @@
       class="h-14 w-14 bg-primary justify-around items-center fixed z-[9999] bottom-4 right-4 rounded-full p-4 hover:animate-pulse hidden"
       id="to-top"
     >
-      <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+      <i class="bi bi-arrow-up font-bold text-white"></i>
+      <!-- <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span> -->
     </a>
     <!-- Back To Top End -->
     <script src="dist/js/script.js"></script>
