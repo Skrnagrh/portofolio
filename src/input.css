@@ -29,3 +29,88 @@ body {
 #dark-toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
 }
+
+/* index.html */
+
+/* Experience Start */
+.experience-h2 {
+  @apply font-bold text-primary text-3xl mb-4 md:text-4xl lg:text-5xl uppercase;
+}
+
+.card-experience {
+  @apply bg-white rounded-xl overflow-hidden  dark:bg-dark border-2  dark:border-dark  dark:shadow-none;
+}
+
+.img-experience {
+  @apply rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100;
+}
+.pt-experience {
+  @apply font-semibold text-xl text-dark mt-5 dark:text-white uppercase;
+}
+.jabatan-experience {
+  @apply font-medium text-dark dark:text-white;
+}
+.masa-experience {
+  @apply font-medium text-sm text-secondary mb-2;
+}
+/* Experience End */
+
+/* Education Start */
+.h2-education {
+  @apply font-bold text-white text-3xl mb-4 md:text-4xl lg:text-5xl dark:grayscale uppercase;
+}
+.a-education {
+  @apply py-4 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 border-2 border-teal-500 lg:mx-6 xl:mx-auto items-center justify-center;
+}
+.img-education {
+  @apply max-w-[120px] mx-auto;
+}
+.univ-education {
+  @apply font-bold uppercase text-white text-lg;
+}
+.text-education {
+  @apply font-medium text-base text-white;
+}
+/* Education End */
+
+/* Portofolio Start */
+.h2-portofolio {
+  @apply font-bold text-dark text-3xl mb-4 md:text-4xl lg:text-5xl dark:text-white uppercase;
+}
+.text-portofolio {
+  @apply font-medium text-secondary text-sm md:text-lg;
+}
+.img-portofolio {
+  @apply rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-800 relative dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 border-2 border-teal-500;
+}
+.icon-portofolio {
+  @apply text-base text-white text-center bg-primary;
+}
+/* Portofolio End */
+
+/* Skill Start */
+.card-skill {
+  @apply bg-white shadow-lg dark:bg-dark py-4 rounded-lg xl:mx-auto xl:w-10/12;
+}
+.h2-skill {
+  @apply font-bold text-primary uppercase text-3xl mb-4 md:text-4xl lg:text-5xl;
+}
+.p-skill {
+  @apply font-medium text-xs text-secondary md:text-base dark:text-slate-300 mb-2;
+}
+.text-skill {
+  @apply font-bold text-2xl text-dark dark:text-white mb-3;
+}
+.ul-skill {
+  @apply text-secondary font-medium;
+}
+/* Skill End */
+
+/* index.html End */
+
+.a-footer {
+  @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white;
+}
+.back-to-top {
+  @apply h-14 w-14 bg-primary justify-around items-center fixed z-[9999] bottom-5 right-5 rounded-full p-4 hover:animate-pulse ;
+}

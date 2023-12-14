@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="dist/output.css" rel="stylesheet" />
+    <link href="/dist/output.css" rel="stylesheet" />
     <title>Portofolio - Sukron</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script>
       if (
         localStorage.theme === "dark" ||
@@ -134,19 +133,19 @@
       </div>
     </header>
 
-    <section id="home" class="pt-36 pb-16 bg-slate-600 dark:bg-slate-800">
+    <section id="home" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
       <div class="container">
         <div class="flex flex-wrap justify-center">
           <div class="w-full self-center px-4 lg:w-1/2 text-center">
-            <h1 class="text-base font-semibold text-primary md:text-xl">
+            <h1 class="text-base font-semibold text-primary md:text-xl mb-2">
               Pengalaman Kerja
               <span
-                class="block font-bold text-dark text-4xl my-1 lg:text-5xl dark:text-white"
+                class="block font-bold text-dark text-4xl mt-2 lg:text-5xl dark:text-white uppercase"
               >
                 Sukron
               </span>
             </h1>
-            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">
+            <h2 class="font-medium text-secondary text-md lg:text-lg mb-5 mt-4">
               PT. Imam Putra Mandiri - Sakina Fried Chicken - Jhon Chicken and
               Burger - Dinas Kelautan dan Perikanan Prov. Banten
             </h2>
@@ -155,32 +154,20 @@
       </div>
     </section>
 
-    <section class="pt-2 pb-2 bg-slate-600 dark:bg-slate-700">
+    <section class="pt-2 pb-2 bg-slate-200 dark:bg-slate-700">
       <div class="container">
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
-            <a
-              href="#ipm"
-              class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8"
-            >
+            <a href="#ipm" class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8">
               <img src="dist/img/clients/1.png" alt="ipm" />
             </a>
-            <a
-              href="#sakina"
-              class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8"
-            >
-              <img src="dist/img/clients/3.png" alt="ipm" />
-            </a>
-            <a
-              href="#jhon"
-              class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8"
-            >
+            <a href="#sakina" class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8">
               <img src="dist/img/clients/2.png" alt="ipm" />
             </a>
-            <a
-              href="#pkl"
-              class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8"
-            >
+            <a href="#jhon" class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/3.png" alt="ipm" />
+            </a>
+            <a href="#pkl" class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8">
               <img src="dist/img/clients/4.png" alt="ipm" />
             </a>
           </div>
@@ -189,11 +176,13 @@
     </section>
 
     <section class="pt-24 pb-16 lg:pb-0 dark:bg-dark">
-      <div class="mx-2 lg:mx-0">
-        <div class="dark:bg-dark">
+      <div class="mx-4 lg:mx-0">
+        <div
+          class="dark:bg-slate-800 lg:dark:bg-dark rounded-xl lg:rounded-none"
+        >
           <div
             id="ipm"
-            class="container mb-10 px-6 font-serif max-w-md sm:mx-10 lg:mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:p-0 rounded-xl shadow-lg border-2 border-blue-600 lg:border-none shadow-blue-400 lg:shadow-none"
+            class="container mb-10 px-6 font-serif max-w-md sm:mx-10 lg:mx-auto sm:max-w-xl md:max-w-5xl lg:pt-16 lg:flex lg:max-w-full lg:px-0 rounded-xl shadow-md border-2 border-blue-600 lg:border-none shadow-blue-400 lg:shadow-none"
           >
             <div class="lg:p-12 lg:flex-1">
               <div class="flex items-center">
@@ -203,16 +192,18 @@
                   class="max-w-[80px] lg:hidden"
                 />
                 <h3
-                  class="ml-4 lg:ml-0 text-lg font-bold text-slate-800 sm:text-3xl md:text-4xl dark:text-slate-50"
+                  class="ml-4 lg:ml-0 text-lg font-bold text-dark sm:text-3xl md:text-4xl dark:text-white"
                 >
                   PT. Imam Putra Mandiri
                 </h3>
               </div>
               <hr class="border-b border-blue-600 w-full md:hidden" />
 
-              <ul class="my-2 text-slate-950 dark:text-slate-50 sm:mt-4 sm:text-xl">
+              <ul
+                class="my-2 text-dark dark:text-white sm:mt-4 text-md text-md font-medium"
+              >
                 <li>
-                  <span class="font-semibold">Bagian</span> : Staff Administrasi
+                  <span class="font-bold">Bagian</span> : Staff Administrasi
                 </li>
                 <li>
                   <span class="font-semibold">Alamat</span> : Bojonegara, Kab.
@@ -224,42 +215,42 @@
                 <li><span class="font-semibold">Sampai</span> : April 2022</li>
               </ul>
               <h2
-                class="mt-6 text-2xl font-semibold text-slate-950 dark:text-slate-50 sm:mt-8 sm:text-4xl"
+                class="mt-6 text-2xl font-semibold text-dark dark:text-white sm:mt-8 sm:text-4xl"
               >
                 Job desk
               </h2>
               <ul class="list-disc ml-4 mb-4">
                 <li
-                  class="mt-2 text-slate-950 sm:mt-4 sm:text-xl relative custom-list-item"
+                  class="text-dark dark:text-white sm:mt-4 text-md relative custom-list-item"
                 >
                   Bertanggung jawab untuk melakukan entry data karyawan secara
                   akurat dan efisien.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
                   Memastikan kelancaran laporan absensi karyawan dan
                   memverifikasinya untuk keakuratan.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
                   Melakukan pengecekan jam kerja karyawan untuk mengoptimalkan
                   produktivitas.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
                   Mengelola dan memasukkan data ke dalam sistem payroll
                   perusahaan.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
                   Berperan dalam pembuatan internal memo untuk menyampaikan
                   informasi penting.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
                   Bertanggung jawab atas pengarsipan data yang rapi dan mudah
                   diakses.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
                   Menyusun dan merangkum data untuk memastikan informasi terkini
                   dan teratur.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
                   Menghasilkan berita acara yang akurat dan lengkap.
                 </li>
               </ul>
@@ -274,10 +265,12 @@
           </div>
         </div>
 
-        <div class="lg:bg-slate-600 lg:dark:bg-slate-700">
+        <div
+          class="dark:bg-slate-800 lg:bg-slate-200 lg:dark:bg-slate-700 rounded-xl lg:rounded-none lg:pt-16"
+        >
           <div
             id="sakina"
-            class="container mb-10 px-6 font-serif max-w-md sm:mx-10 lg:mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:px-0 lg:pt-24 rounded-xl shadow-lg border-2 border-blue-600 lg:border-none shadow-blue-400 lg:shadow-none"
+            class="container mb-10 px-6 font-serif max-w-md sm:mx-10 lg:mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:px-0 lg:pt-24 rounded-xl shadow-md border-2 border-red-600 lg:border-none shadow-red-400 lg:shadow-none"
           >
             <div class="hidden lg:flex lg:w-1/2 justify-center items-center">
               <img
@@ -289,98 +282,93 @@
             <div class="lg:p-12 lg:flex-1">
               <div class="flex items-center">
                 <img
-                  src="dist/img/clients/3.png"
+                  src="dist/img/clients/2.png"
                   alt="2"
                   class="max-w-[80px] lg:hidden"
                 />
                 <h3
-                  class="ml-4 lg:ml-0 text-lg font-bold text-slate-800 sm:text-3xl md:text-4xl"
+                  class="ml-4 lg:ml-0 text-lg font-bold text-dark dark:text-white sm:text-3xl md:text-4xl"
                 >
-                  PT. Imam Putra Mandiri
+                  Sakina Fried Chicken
                 </h3>
               </div>
               <hr class="border-b border-blue-600 w-full md:hidden" />
 
-              <ul class="my-2 text-slate-950 sm:mt-4 sm:text-xl">
+              <ul class="my-2 text-dark dark:text-white sm:mt-4 text-md">
                 <li>
-                  <span class="font-semibold">Bagian</span> : Staff Administrasi
+                  <span class="font-semibold">Bagian</span> : Waiters & Cook
                 </li>
                 <li>
-                  <span class="font-semibold">Alamat</span> : Bojonegara, Kab.
+                  <span class="font-semibold">Alamat</span> : Serang, Kota
                   Serang Banten
                 </li>
                 <li>
-                  <span class="font-semibold">Mulai Kerja</span> : Juni 2020
+                  <span class="font-semibold">Mulai Kerja</span> : Juli 2019
                 </li>
-                <li><span class="font-semibold">Sampai</span> : April 2022</li>
+                <li>
+                  <span class="font-semibold">Sampai</span> : Oktober 2019
+                </li>
               </ul>
               <h2
-                class="mt-6 text-2xl font-semibold text-slate-950 sm:mt-8 sm:text-4xl"
+                class="mt-6 text-2xl font-semibold text-dark dark:text-white sm:mt-8 sm:text-4xl"
               >
                 Job desk
               </h2>
-              <ul class="list-disc ml-4 mb-4">
+              <ul class="list-disc ml-4 mb-4 text-md">
                 <li
-                  class="mt-2 text-slate-950 sm:mt-4 sm:text-xl relative custom-list-item"
+                  class="text-dark dark:text-white sm:mt-4 text-md relative custom-list-item"
                 >
-                  Bertanggung jawab untuk melakukan entry data karyawan secara
-                  akurat dan efisien.
+                  Memberikan pelayanan pelanggan yang ramah dan mengakomodasi
+                  kebutuhan mereka dengan baik.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Memastikan kelancaran laporan absensi karyawan dan
-                  memverifikasinya untuk keakuratan.
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
+                  Memberikan rekomendasi menu berdasarkan pengetahuan yang
+                  mendalam tentang produk makanan dan minuman.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Melakukan pengecekan jam kerja karyawan untuk mengoptimalkan
-                  produktivitas.
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
+                  Mengambil pesanan dengan akurat dan memastikan bahwa pesanan
+                  diproses dengan tepat.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Mengelola dan memasukkan data ke dalam sistem payroll
-                  perusahaan.
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
+                  Menjaga kebersihan area kerja dan memastikan lingkungan tetap
+                  bersih dan nyaman.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Berperan dalam pembuatan internal memo untuk menyampaikan
-                  informasi penting.
-                </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Bertanggung jawab atas pengarsipan data yang rapi dan mudah
-                  diakses.
-                </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Menyusun dan merangkum data untuk memastikan informasi terkini
-                  dan teratur.
-                </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Menghasilkan berita acara yang akurat dan lengkap.
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
+                  Berkontribusi dalam memastikan pengalaman makan yang
+                  menyenangkan bagi setiap pelanggan.
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="dark:bg-dark">
+        <div
+          class="dark:bg-slate-800 lg:dark:bg-dark rounded-xl lg:rounded-none"
+        >
           <div
             id="jhon"
-            class="container mb-10 px-6 font-serif max-w-md sm:mx-10 lg:mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:p-0 rounded-xl shadow-lg border-2 border-blue-600 lg:border-none shadow-blue-400 lg:shadow-none"
+            class="container mb-10 px-6 font-serif max-w-md sm:mx-10 lg:mx-auto sm:max-w-xl md:max-w-5xl lg:pt-16 lg:flex lg:max-w-full lg:px-0 rounded-xl shadow-md border-2 border-blue-600 lg:border-none shadow-blue-400 lg:shadow-none"
           >
             <div class="lg:p-12 lg:flex-1">
               <div class="flex items-center">
                 <img
                   src="dist/img/clients/3.png"
-                  alt="2"
+                  alt="3"
                   class="max-w-[80px] lg:hidden"
                 />
                 <h3
-                  class="ml-4 lg:ml-0 text-lg font-bold text-slate-800 sm:text-3xl md:text-4xl"
+                  class="ml-4 lg:ml-0 text-lg font-bold text-dark sm:text-3xl md:text-4xl dark:text-white"
                 >
-                  PT. Imam Putra Mandiri
+                  Resto Jhon Chicken & Burger
                 </h3>
               </div>
               <hr class="border-b border-blue-600 w-full md:hidden" />
 
-              <ul class="my-2 text-slate-950 sm:mt-4 sm:text-xl">
+              <ul
+                class="my-2 text-dark dark:text-white sm:mt-4 text-md text-md font-medium"
+              >
                 <li>
-                  <span class="font-semibold">Bagian</span> : Staff Administrasi
+                  <span class="font-bold">Bagian</span> : Staff Administrasi
                 </li>
                 <li>
                   <span class="font-semibold">Alamat</span> : Bojonegara, Kab.
@@ -392,65 +380,56 @@
                 <li><span class="font-semibold">Sampai</span> : April 2022</li>
               </ul>
               <h2
-                class="mt-6 text-2xl font-semibold text-slate-950 sm:mt-8 sm:text-4xl"
+                class="mt-6 text-2xl font-semibold text-dark dark:text-white sm:mt-8 sm:text-4xl"
               >
                 Job desk
               </h2>
               <ul class="list-disc ml-4 mb-4">
                 <li
-                  class="mt-2 text-slate-950 sm:mt-4 sm:text-xl relative custom-list-item"
+                  class="text-dark dark:text-white sm:mt-4 text-md relative custom-list-item"
                 >
-                  Bertanggung jawab untuk melakukan entry data karyawan secara
-                  akurat dan efisien.
+                  Memberikan pelayanan pelanggan yang ramah dan mengakomodasi
+                  kebutuhan mereka dengan baik.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Memastikan kelancaran laporan absensi karyawan dan
-                  memverifikasinya untuk keakuratan.
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
+                  Memberikan rekomendasi menu berdasarkan pengetahuan yang
+                  mendalam tentang produk makanan dan minuman.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Melakukan pengecekan jam kerja karyawan untuk mengoptimalkan
-                  produktivitas.
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
+                  Mengambil pesanan dengan akurat dan memastikan bahwa pesanan
+                  diproses dengan tepat.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Mengelola dan memasukkan data ke dalam sistem payroll
-                  perusahaan.
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
+                  Menjaga kebersihan area kerja dan memastikan lingkungan tetap
+                  bersih dan nyaman.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Berperan dalam pembuatan internal memo untuk menyampaikan
-                  informasi penting.
-                </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Bertanggung jawab atas pengarsipan data yang rapi dan mudah
-                  diakses.
-                </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Menyusun dan merangkum data untuk memastikan informasi terkini
-                  dan teratur.
-                </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Menghasilkan berita acara yang akurat dan lengkap.
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
+                  Berkontribusi dalam memastikan pengalaman makan yang
+                  menyenangkan bagi setiap pelanggan.
                 </li>
               </ul>
             </div>
             <div class="hidden lg:flex lg:w-1/2 justify-center items-center">
               <img
                 src="dist/img/index/experience/3.png"
-                alt="2"
+                alt="3"
                 class="object-cover rounded-l-full"
               />
             </div>
           </div>
         </div>
 
-        <div class="lg:bg-slate-600 lg:dark:bg-slate-700">
+        <div
+          class="dark:bg-slate-800 lg:bg-slate-200 lg:dark:bg-slate-700 rounded-xl lg:rounded-none lg:py-16"
+        >
           <div
             id="pkl"
-            class="container mb-10 px-6 font-serif max-w-md sm:mx-10 lg:mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:px-0 lg:pt-24 rounded-xl shadow-lg border-2 border-blue-600 lg:border-none shadow-blue-400 lg:shadow-none"
+            class="container mb-10 px-6 font-serif max-w-md sm:mx-10 lg:mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:px-0 lg:pt-24 rounded-xl shadow-md border-2 border-sky-600 lg:border-none shadow-sky-400 lg:shadow-none"
           >
             <div class="hidden lg:flex lg:w-1/2 justify-center items-center">
               <img
                 src="dist/img/index/experience/4.png"
-                alt="2"
+                alt="4"
                 class="object-cover rounded-r-full"
               />
             </div>
@@ -458,68 +437,47 @@
               <div class="flex items-center">
                 <img
                   src="dist/img/clients/4.png"
-                  alt="2"
+                  alt="4"
                   class="max-w-[80px] lg:hidden"
                 />
                 <h3
-                  class="ml-4 lg:ml-0 text-lg font-bold text-slate-800 sm:text-3xl md:text-4xl"
+                  class="ml-4 lg:ml-0 text-lg font-bold text-dark dark:text-white sm:text-3xl md:text-4xl"
                 >
-                  PT. Imam Putra Mandiri
+                  Dinas Kelautan dan Perikanan Prov. Banten
                 </h3>
               </div>
               <hr class="border-b border-blue-600 w-full md:hidden" />
 
-              <ul class="my-2 text-slate-950 sm:mt-4 sm:text-xl">
+              <ul class="my-2 text-dark dark:text-white sm:mt-4 text-md">
                 <li>
-                  <span class="font-semibold">Bagian</span> : Staff Administrasi
+                  <span class="font-semibold">Bagian</span> : Praktek Kerja
+                  Industri (Prakerin)
                 </li>
                 <li>
-                  <span class="font-semibold">Alamat</span> : Bojonegara, Kab.
-                  Serang Banten
+                  <span class="font-semibold">Alamat</span> : Curug, Kota Serang
+                  Banten
                 </li>
                 <li>
-                  <span class="font-semibold">Mulai Kerja</span> : Juni 2020
+                  <span class="font-semibold">Mulai Kerja</span> : Desember 2016
                 </li>
-                <li><span class="font-semibold">Sampai</span> : April 2022</li>
+                <li>
+                  <span class="font-semibold">Sampai</span> : Februari 2017
+                </li>
               </ul>
               <h2
-                class="mt-6 text-2xl font-semibold text-slate-950 sm:mt-8 sm:text-4xl"
+                class="mt-6 text-2xl font-semibold text-dark dark:text-white sm:mt-8 sm:text-4xl"
               >
                 Job desk
               </h2>
-              <ul class="list-disc ml-4 mb-4">
+              <ul class="list-disc ml-4 mb-4 text-md">
                 <li
-                  class="mt-2 text-slate-950 sm:mt-4 sm:text-xl relative custom-list-item"
+                  class="text-dark dark:text-white sm:mt-4 text-md relative custom-list-item"
                 >
-                  Bertanggung jawab untuk melakukan entry data karyawan secara
-                  akurat dan efisien.
+                  Melakukan salinan data untuk memudahkan administrasi.
                 </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Memastikan kelancaran laporan absensi karyawan dan
-                  memverifikasinya untuk keakuratan.
-                </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Melakukan pengecekan jam kerja karyawan untuk mengoptimalkan
-                  produktivitas.
-                </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Mengelola dan memasukkan data ke dalam sistem payroll
-                  perusahaan.
-                </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Berperan dalam pembuatan internal memo untuk menyampaikan
-                  informasi penting.
-                </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Bertanggung jawab atas pengarsipan data yang rapi dan mudah
-                  diakses.
-                </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Menyusun dan merangkum data untuk memastikan informasi terkini
-                  dan teratur.
-                </li>
-                <li class="mt-2 text-slate-950 sm:mt-4 sm:text-xl">
-                  Menghasilkan berita acara yang akurat dan lengkap.
+                <li class="text-dark dark:text-white sm:mt-4 text-md">
+                  Sortir dokumen sesuai dengan prioritas, sehingga lebih mudah
+                  pengawasannya.
                 </li>
               </ul>
             </div>

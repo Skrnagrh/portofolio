@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="dist/output.css" rel="stylesheet" />
+    <link href="/dist/output.css" rel="stylesheet" />
     <title>Portofolio - Sukron</title>
     <link
       rel="stylesheet"
@@ -55,7 +55,7 @@
 
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-300 lg:dark:bg-transparent"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-300 lg:dark:bg-transparent"
             >
               <ul class="block lg:flex">
                 <li class="group">
@@ -136,7 +136,7 @@
     <!-- Header end -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36 dark:bg-dark">
+    <section id="home" class="pt-36 bg-slate-100 dark:bg-slate-800">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
@@ -151,18 +151,6 @@
               Web Developer &
               <span class="text-dark dark:text-white">Staff Administrasi</span>
             </h2>
-            <!-- <p class="font-medium text-secondary mb-10 leading-relaxed">
-              belajar web programming itu mudah dan menyenangkan bukan.
-              <span class="text-dark font-semibold dark:text-white"
-                >bukan!</span
-              >
-            </p> -->
-
-            <!-- <a
-              href="#"
-              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-              >Hubungi Saya</a
-            > -->
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="mt-10 relative lg:mt-10 lg:right-0">
@@ -174,15 +162,15 @@
               <span
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125"
                 ><svg
-                  width="400"
-                  hight="400"
+                  width="500"
+                  hight="500"
                   viewBox="0 0 200 200"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     fill="#14b8a6"
                     d="M54.7,-46.7C64.1,-31.8,60.3,-9.4,53.9,9.6C47.4,28.7,38.2,44.4,24.6,51C10.9,57.5,-7.1,54.8,-26.8,48.2C-46.5,41.6,-67.8,31,-72.2,15.4C-76.6,-0.1,-64,-20.6,-49.1,-36.7C-34.3,-52.9,-17.1,-64.8,2.8,-67C22.6,-69.2,45.3,-61.7,54.7,-46.7Z"
-                    transform="translate(100 100) scale(1.1)"
+                    transform="translate(100 100)"
                   />
                 </svg>
               </span>
@@ -250,14 +238,7 @@
       <div class="container">
         <div class="w-full">
           <div class="max-w-xl mx-auto text-center mb-4">
-            <!-- <h4 class="font-semibold text-lg text-primary mb-2 uppercase">
-              Pengalaman Kerja
-            </h4> -->
-            <h2
-              class="font-bold text-primary text-3xl mb-4 md:text-4xl lg:text-5xl uppercase"
-            >
-              Pengalaman Kerja
-            </h2>
+            <h2 class="experience-h2">Pengalaman Kerja</h2>
           </div>
         </div>
 
@@ -265,106 +246,76 @@
           <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
             <a href="experience.html#ipm">
               <div
-                class="bg-white rounded-xl overflow-hidden shadow-lg dark:bg-dark"
+                class="card-experience border-blue-600 shadow-blue-400 shadow-lg"
               >
-                <div
-                  class="rounded-t-md overflow-hidden grayscale opacity-95 transition hover:grayscale-0 hover:opacity-100"
-                >
+                <div class="img-experience">
                   <img
                     src="dist/img/index/experience/1.png"
                     alt="portofolio"
                     width="w-full"
                   />
                 </div>
-                <h3
-                  class="font-semibold text-xl text-dark mt-5 dark:text-white uppercase"
-                >
-                  PT. Imam Putra Mandiri
-                </h3>
-                <h4 class="font-medium text-md text-dark dark:text-white">
-                  Staff Administrasi
-                </h4>
-                <p class="font-medium text-sm text-secondary mb-2">
-                  Juni 2020 - April 2022
-                </p>
+                <h3 class="pt-experience">PT. Imam Putra Mandiri</h3>
+                <h4 class="jabatan-experience">Staff Administrasi</h4>
+                <p class="masa-experience">Juni 2020 - April 2022</p>
               </div>
             </a>
           </div>
           <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
             <a href="experience.html#sakina">
               <div
-                class="bg-white rounded-xl overflow-hidden shadow-lg dark:bg-dark"
+                class="card-experience border-red-600 shadow-red-400 shadow-lg"
               >
-                <div class="rounded-t-md overflow-hidden">
+                <div class="img-experience">
                   <img
                     src="dist/img/index/experience/2.png"
                     alt="portofolio"
                     width="w-full"
                   />
                 </div>
-                <h3
-                  class="font-semibold text-xl text-dark mt-5 dark:text-white uppercase"
-                >
-                  Sakina Fried Chicken
-                </h3>
-                <h4 class="font-medium text-md text-dark dark:text-white">
-                  Waiters & Cook
-                </h4>
-                <p class="font-medium text-sm text-secondary mb-2">
-                  Juli 2019 - Oktober 2019
-                </p>
+                <h3 class="pt-experience">Sakina Fried Chicken</h3>
+                <h4 class="jabatan-experience">Waiters & Cook</h4>
+                <p class="masa-experience">Juli 2019 - Oktober 2019</p>
               </div>
             </a>
           </div>
           <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
-            <a href="#ipm">
+            <a href="experience.html#jhon">
               <div
-                class="bg-white rounded-xl overflow-hidden shadow-lg dark:bg-dark"
+                class="card-experience border-yellow-600 shadow-yellow-400 shadow-lg"
               >
-                <div class="rounded-t-md overflow-hidden">
+                <div class="img-experience">
                   <img
                     src="dist/img/index/experience/3.png"
                     alt="portofolio"
                     width="w-full"
                   />
                 </div>
-                <h3
-                  class="font-semibold text-xl text-dark mt-5 dark:text-white uppercase"
-                >
-                  Jhon Chicken & Burger
-                </h3>
-                <h4 class="font-medium text-md text-dark dark:text-white">
-                  Waiters & Cook
-                </h4>
-                <p class="font-medium text-sm text-secondary mb-2">
-                  Juni 2018 - Maret 2019
-                </p>
+                <h3 class="pt-experience">Jhon Chicken & Burger</h3>
+                <h4 class="jabatan-experience">Waiters & Cook</h4>
+                <p class="masa-experience">Juni 2018 - Maret 2019</p>
               </div>
             </a>
           </div>
           <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
-            <a href="#ipm">
+            <a href="experience.html#pkl">
               <div
-                class="bg-white rounded-xl overflow-hidden shadow-lg dark:bg-dark"
+                class="card-experience border-sky-600 shadow-sky-400 shadow-lg"
               >
-                <div class="rounded-t-md overflow-hidden">
+                <div class="img-experience">
                   <img
                     src="dist/img/index/experience/4.png"
                     alt="portofolio"
                     width="w-full"
                   />
                 </div>
-                <h3
-                  class="font-bold text-xl text-dark mt-5 dark:text-white uppercase"
-                >
+                <h3 class="pt-experience">
                   Dinas Kelautan dan Perikanan Prov. Banten
                 </h3>
-                <h4 class="font-medium text-md text-dark dark:text-white">
+                <h4 class="jabatan-experience">
                   Praktek Kerja Industri (Prakerin)
                 </h4>
-                <p class="font-medium text-sm text-secondary mb-2">
-                  Desember 2016 - Februari 2017
-                </p>
+                <p class="masa-experience">Desember 2016 - Februari 2017</p>
               </div>
             </a>
           </div>
@@ -382,11 +333,7 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto text-center">
-            <h2
-              class="font-bold text-white text-3xl mb-4 md:text-4xl lg:text-5xl dark:text-slate-300 uppercase"
-            >
-              Pendidikan
-            </h2>
+            <h2 class="h2-education">Pendidikan</h2>
           </div>
         </div>
 
@@ -396,30 +343,31 @@
               <a
                 href="https://unsera.ac.id/"
                 target="_blank"
-                class="py-4 text-white transition hover:text-primary lg:mx-6 xl:mx-auto items-center justify-self-center"
+                class="a-education"
               >
                 <img
                   src="dist/img/index/education/1.png"
-                  alt="ipm"
-                  class="max-w-[120px] mx-auto"
+                  alt="education"
+                  class="img-education"
                 />
-                <h4 class="font-bold uppercase text-white text-lg">
-                  Universitas Serang Raya
-                </h4>
-                <h4 class="font-medium text-base text-white">
-                  Serang, Kota Serang, Banten
-                </h4>
-                <h4 class="font-medium text-base text-white">
+                <h4 class="univ-education">Universitas Serang Raya</h4>
+                <p class="text-education">Serang, Kota Serang, Banten</p>
+                <p class="text-education">
                   Teknik Informatika ~ IPK Kumulatif 3.73 / 4.00
-                </h4>
-                <p class="font-medium text-base text-white mb-2">2019 ~ 2023</p>
+                </p>
+                <p class="text-education">2019 ~ 2023</p>
               </a>
             </div>
             <div class="mx-auto text-center">
-              <a
+              <!-- <a
                 href="https://unsera.ac.id/"
                 target="_blank"
                 class="py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-auto items-center justify-center"
+              > -->
+              <a
+                href="https://unsera.ac.id/"
+                target="_blank"
+                class="py-4 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 lg:mx-6 xl:mx-auto items-center justify-center"
               >
                 <img
                   src="dist/img/index/education/1.png"
@@ -449,73 +397,53 @@
       <div class="container xl:mx-auto xl:w-10/12">
         <div class="w-full px-4">
           <div class="mx-auto text-center mb-16">
-            <!-- <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4> -->
-            <h2
-              class="font-bold text-dark text-3xl mb-4 md:text-4xl lg:text-5xl dark:text-white uppercase"
-            >
-              Portofolio
-            </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Ini beberapa karya saya mulai dari vektor, pemrograman web,
-              tipografi dan lain sebagainya.
+            <h2 class="h2-portofolio">Portofolio</h2>
+            <p class="text-portofolio">
+              Ini beberapa karya saya mulai dari portofolio website, portofolio
+              design, portofolio tipografi dan lain sebagainya.
             </p>
           </div>
         </div>
 
         <div class="flex flex-wrap">
-          <div class="w-full px-4 md:w-1/2 xl:w-1/3 transition-transform">
+          <div class="w-full px-4 md:w-1/2 xl:w-1/3">
             <a href="#">
-              <div
-                class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-800 relative"
-              >
+              <div class="img-portofolio">
                 <img
                   src="dist/img/index/portofolio/2.jpg"
                   alt="programming"
                   class="w-full"
                 />
-                <p
-                  class="font-semibold text-xl text-white text-center bg-primary"
-                >
-                  <i class="bi bi-globe"></i>
-                  <span class="text-base">Website</span>
+                <p class="icon-portofolio">
+                  <i class="bi bi-globe"></i> Website
                 </p>
               </div>
             </a>
           </div>
           <div class="w-full px-4 md:w-1/2 xl:w-1/3">
             <a href="#">
-              <div
-                class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-800 relative"
-              >
+              <div class="img-portofolio">
                 <img
                   src="dist/img/index/portofolio/1.jpg"
                   alt="programming"
                   class="w-full"
                 />
-                <p
-                  class="font-semibold text-xl text-white text-center bg-primary"
-                >
-                  <i class="bi bi-file-earmark-richtext"></i>
-                  <span class="text-base">Vektor</span>
+                <p class="icon-portofolio">
+                  <i class="bi bi-file-earmark-richtext"></i> Vektor
                 </p>
               </div>
             </a>
           </div>
           <div class="w-full px-4 md:w-1/2 xl:w-1/3">
             <a href="#">
-              <div
-                class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-800 relative"
-              >
+              <div class="img-portofolio">
                 <img
                   src="dist/img/index/portofolio/3.jpg"
                   alt="programming"
                   class="w-full"
                 />
-                <p
-                  class="font-semibold text-xl text-white text-center bg-primary"
-                >
-                  <i class="bi bi-file-image"></i>
-                  <span class="text-base">Typographi</span>
+                <p class="icon-portofolio">
+                  <i class="bi bi-file-image"></i> Typographi
                 </p>
               </div>
             </a>
@@ -532,19 +460,11 @@
       style="background-image: url(&quot;dist/img/index/bg/edu.png&quot;)"
     >
       <div class="container">
-        <div
-          class="bg-white shadow-lg dark:bg-dark py-4 rounded-lg xl:mx-auto xl:w-10/12"
-        >
+        <div class="card-skill">
           <div class="w-full px-4">
             <div class="mx-auto text-center mb-5">
-              <h2
-                class="font-bold text-primary uppercase text-3xl mb-4 md:text-4xl lg:text-5xl"
-              >
-                Kemampuan
-              </h2>
-              <p
-                class="font-medium text-xs text-secondary md:text-md lg:text-md dark:text-slate-300 mb-2"
-              >
+              <h2 class="h2-skill">Kemampuan</h2>
+              <p class="p-skill">
                 Ini Beberapa Kemampuan Saya Seperti Kemampuan Teknis, Kemampuan
                 Pemrograman Serta Kemampuan Sosial
               </p>
@@ -553,65 +473,51 @@
           </div>
           <div class="w-full lg:mx-auto px-4">
             <div class="flex flex-wrap">
-              <div class="w-full p-4 text-slate-300 font-medium md:w-1/3">
-                <h2 class="font-bold text-2xl text-dark dark:text-white mb-3">
-                  Teknis
-                </h2>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-file-earmark-word"></i> Microsoft Word
-                </p>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-file-earmark-excel"></i> Microsoft Excel
-                </p>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-file-earmark-ppt"></i> Microsoft PowerPoint
-                </p>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-file-earmark-richtext"></i> Corel Draw
-                </p>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-file-earmark-richtext"></i> Adobe Ilustrator
-                </p>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-file-earmark-richtext"></i> Adobe Photosop
-                </p>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-file-earmark-richtext"></i> Figma
-                </p>
+              <div class="w-full p-4 md:w-1/3">
+                <h2 class="text-skill">Teknis</h2>
+                <ul class="ul-skill">
+                  <li>
+                    <i class="bi bi-file-earmark-word"></i> Microsoft Word
+                  </li>
+                  <li>
+                    <i class="bi bi-file-earmark-excel"></i> Microsoft Excel
+                  </li>
+                  <li>
+                    <i class="bi bi-file-earmark-ppt"></i> Microsoft PowerPoint
+                  </li>
+                  <li>
+                    <i class="bi bi-file-earmark-richtext"></i> Corel Draw
+                  </li>
+                  <li>
+                    <i class="bi bi-file-earmark-richtext"></i> Adobe Ilustrator
+                  </li>
+                  <li>
+                    <i class="bi bi-file-earmark-richtext"></i> Adobe Photosop
+                  </li>
+                  <li><i class="bi bi-file-earmark-richtext"></i> Figma</li>
+                </ul>
               </div>
               <div class="w-full p-4 text-slate-300 font-medium md:w-1/3">
-                <h2 class="font-bold text-2xl text-dark dark:text-white mb-3">
-                  Pemrograman
-                </h2>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-filetype-html"></i> HTML & CSS
-                </p>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-filetype-php"></i> PHP
-                </p>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-filetype-js"></i> JavaScript
-                </p>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-filetype-java"></i> Java
-                </p>
+                <h2 class="text-skill">Pemrograman</h2>
+                <ul class="ul-skill">
+                  <li><i class="bi bi-filetype-html"></i> HTML & CSS</li>
+                  <li><i class="bi bi-filetype-php"></i> PHP</li>
+                  <li><i class="bi bi-filetype-js"></i> JavaScript</li>
+                  <li><i class="bi bi-filetype-java"></i> Java</li>
+                </ul>
               </div>
               <div class="w-full p-4 text-slate-300 font-medium md:w-1/3">
-                <h2 class="font-bold text-2xl text-dark dark:text-white mb-3">
-                  Sosial
-                </h2>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-chat-dots"></i> Kemampuan Komunikasi
-                </p>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-people"></i> Kerjasama Tim
-                </p>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-person-x"></i> Kemampuan Pemecahan Masalah
-                </p>
-                <p class="text-secondary font-medium">
-                  <i class="bi bi-clock"></i> Keterampilan Manajemen Waktu
-                </p>
+                <h2 class="text-skill">Sosial</h2>
+                <ul class="ul-skill">
+                  <li><i class="bi bi-chat-dots"></i> Kemampuan Komunikasi</li>
+                  <li><i class="bi bi-people"></i> Kerjasama Tim</li>
+                  <li>
+                    <i class="bi bi-person-x"></i> Kemampuan Pemecahan Masalah
+                  </li>
+                  <li>
+                    <i class="bi bi-clock"></i> Keterampilan Manajemen Waktu
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -623,51 +529,51 @@
     <!-- Footer Section Start -->
     <footer class="bg-dark pt-36 pb-12" id="contact">
       <div class="container">
-        <div class="flex flex-wrap">
-          <div
-            class="w-full px-4 mb-12 text-slate-300 font-medium text-center justify-center lg:w-1/2"
-          >
+        <div class="flex flex-wrap justify-center text-center">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium lg:w-1/2">
             <h2 class="font-bold text-white text-2xl uppercase mb-2">Lokasi</h2>
             <h2 class="font-bold text-xl">Taktakan</h2>
             <p class="text-base">Kota Serang Banten</p>
           </div>
-          <div
-            class="w-full px-4 mb-12 text-slate-300 font-medium text-center justify-center lg:w-1/2"
-          >
-            <h2 class="font-bold text-2xl text-white uppercase mb-2">Kontak</h2>
-            <div class="flex items-center justify-center mb-5">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium lg:w-1/2">
+            <h2
+              class="font-bold text-2xl text-white uppercase mb-2 text-center"
+            >
+              Kontak
+            </h2>
+            <div class="flex mx-4 mb-5 justify-center">
               <a
                 href="mailto:suk12on512@gmail.com"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+                class="a-footer"
                 ><i class="bi bi-envelope"></i
               ></a>
 
               <a
                 href="https://instagram.com/skrnagrh"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+                class="a-footer"
               >
                 <i class="bi bi-instagram"></i>
               </a>
               <a
                 href="https://api.whatsapp.com/send?phone=6285691468025"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+                class="a-footer"
                 ><i class="bi bi-whatsapp"></i
               ></a>
 
               <a
                 href="https://linkedin.com/in/sukron"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+                class="a-footer"
               >
                 <i class="bi bi-linkedin"></i>
               </a>
               <a
                 href="https://github.com/skrnagrh"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+                class="a-footer"
               >
                 <i class="bi bi-github"></i>
               </a>
@@ -678,7 +584,7 @@
           <p class="font-medium text-md text-slate-500 text-center">
             Copyright &copy; Portofolio -
             <a class="font-bold text-primary">Sukron</a>
-            <span id="current-year" class="font-bold text-white"></span>
+            <span id="current-year" class="font-base text-white"></span>
           </p>
         </div>
       </div>
@@ -686,11 +592,7 @@
     <!-- Footer Section End -->
 
     <!-- Back To Top Start -->
-    <a
-      href="#home"
-      class="h-14 w-14 bg-primary justify-around items-center fixed z-[9999] bottom-4 right-4 rounded-full p-4 hover:animate-pulse hidden"
-      id="to-top"
-    >
+    <a href="#home" class="back-to-top hidden" id="to-top">
       <i class="bi bi-arrow-up font-bold text-white"></i>
       <!-- <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span> -->
     </a>
