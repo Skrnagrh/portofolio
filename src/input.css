@@ -112,5 +112,5 @@ body {
   @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white;
 }
 .back-to-top {
-  @apply h-14 w-14 bg-primary justify-around items-center fixed z-[9999] bottom-5 right-5 rounded-full p-4 hover:animate-pulse ;
+  @apply h-14 w-14 bg-primary justify-around items-center fixed z-[9999] bottom-5 right-5 rounded-full p-4 hover:animate-pulse;
 }
