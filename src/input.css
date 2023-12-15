@@ -114,3 +114,4 @@ body {
 .back-to-top {
   @apply h-14 w-14 bg-primary justify-around items-center fixed z-[9999] bottom-5 right-5 rounded-full p-4 hover:animate-pulse;
 }
+

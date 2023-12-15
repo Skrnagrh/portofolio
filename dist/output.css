@@ -758,10 +758,6 @@ video {
   height: 100%;
 }
 
-.w-1\/3 {
-  width: 33.333333%;
-}
-
 .w-4 {
   width: 1rem;
 }
@@ -840,10 +836,6 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -900,6 +892,11 @@ video {
 .rounded-r-full {
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
+}
+
+.rounded-t-md {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
 }
 
 .border {
@@ -993,6 +990,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\/dist\/img\/portofolio\/vektor\/1\.jpg\'\)\] {
+  background-image: url('/dist/img/portofolio/vektor/1.jpg');
 }
 
 .bg-\[url\(\'\/dist\/img\/portofolio\/vektor\/2\.jpg\'\)\] {
@@ -1270,6 +1271,10 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .ease-in-out {
@@ -1803,6 +1808,17 @@ body {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.active\:text-dark:active {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:scale-150 {
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:text-primary {
   --tw-text-opacity: 1;
   color: rgb(20 184 166 / var(--tw-text-opacity));
@@ -1898,10 +1914,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .md\:inline {
     display: inline;
   }
@@ -2117,3 +2129,4 @@ body {
     width: 83.333333%;
   }
 }
+
