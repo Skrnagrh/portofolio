@@ -29,7 +29,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
 
-    <!-- Demo styles -->
     <style>
       .swiper {
         width: 100%;
@@ -40,20 +39,6 @@
         text-align: center;
         font-size: 18px;
         background: #fff;
-
-        /* Center slide text vertically */
-        /* display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center; */
       }
 
       .swiper-slide img {
@@ -196,7 +181,7 @@
       </div>
     </section>
 
-    <!-- <section class="pt-2 pb-2 bg-slate-200 dark:bg-slate-700">
+    <section class="pt-2 pb-2 bg-slate-200 dark:bg-slate-700">
       <div class="container">
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
@@ -215,34 +200,7 @@
           </div>
         </div>
       </div>
-    </section> -->
-
-    <!-- <section class="pt-2 pb-2 bg-slate-200 dark:bg-slate-600">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="icon-links flex flex-wrap items-center justify-center">
-            <a
-              class="nav-link mx-2 text-xl text-dark dark:text-white"
-              data-page="vektor"
-              onclick="showImages('vektor')"
-              style="cursor: pointer"
-            >
-              <i class="bi bi-file-earmark-richtext icon"></i>
-              <span class="hidden md:inline"> Vektor</span>
-            </a>
-            <a
-              class="nav-link mx-2 text-xl text-dark dark:text-white"
-              data-page="web"
-              onclick="showImages('web')"
-              style="cursor: pointer"
-            >
-              <i class="bi bi-globe icon"></i>
-              <span class="hidden md:inline"> Web</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section> -->
+    </section>
 
     <!-- <section class="pb-32 bg-slate-200 dark:bg-slate-700" id="portofolio">
       <div class="container lg:w-10/12"> -->
@@ -362,12 +320,12 @@
 
     <section class="pb-32 bg-slate-200 dark:bg-slate-800" id="portofolio">
       <div class="container lg:w-10/12">
-        <div class="slide-content px-4 lg:px-0">
+        <div class="lg:px-0">
           <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
             Portofolio Vektor
           </h1>
           <hr class="border-b-2 border-blue-600 w-full" />
-          <div class="font-sans grid grid-cols-3 gap-1 md:grid-cols-3 pt-4">
+          <div class="font-sans grid grid-cols-3 gap-1 pt-4">
             <div
               class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
             >
@@ -473,14 +431,14 @@
         </div>
 
         <div class="swiper">
-          <div class="slide-content px-4 lg:px-0">
+          <div class="slide-content lg:px-0">
             <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
               Portofolio Website
             </h1>
             <hr class="border-b-2 border-blue-600 w-full" />
-            <div class="card-wrapper swiper-wrapper text-center pt-4">
+            <div class="swiper-wrapper text-center pt-4">
               <div
-                class="swiper-slide bg-white rounded-xl overflow-hidden dark:bg-dark border-2 border-slate-950 dark:border-white dark:shadow-none; shadow-lg"
+                class="swiper-slide w-1/2 bg-white rounded-xl overflow-hidden dark:bg-dark border-2 border-slate-950 dark:border-dark dark:shadow-none; shadow-lg"
               >
                 <div
                   class="rounded-t-md rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
@@ -498,7 +456,7 @@
                 </h3>
               </div>
               <div
-                class="swiper-slide bg-white rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none; shadow-lg"
+                class="swiper-slide w-1/2 bg-white rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none; shadow-lg"
               >
                 <div
                   class="rounded-t-md rounded-bl-lg overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
@@ -553,16 +511,16 @@
               </div>
             </div>
           </div>
-          <!-- <div
+          <div
             class="swiper-button-next text-primary dark:text-white text-sm sm:hidden"
           ></div>
           <div
             class="swiper-button-prev text-primary dark:text-white text-sm"
-          ></div> -->
-          <!-- <div class="swiper-pagination"></div> -->
+          ></div>
+          <div class="swiper-pagination"></div>
         </div>
 
-        <div class="slide-content px-4 lg:px-0">
+        <div class="slide-content lg:px-0">
           <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
             Portofolio Typographi
           </h1>
@@ -570,45 +528,45 @@
           <div class="swiper mySwiper pt-10">
             <div class="swiper-wrapper">
               <div
-              class="swiper-slide h-15 aspect-[4/3] md:aspect-[4/3] xl:aspect-[9/16] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-            >
+                class="swiper-slide h-64 transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 cursor-grab bg-white text-center justify-center items-center"
+              >
+                <div class="py-36 text-center aspect-square">
+                  <a
+                    href="https://pin.it/3V4400Q"
+                    target="_blank"
+                    class="text-primary dark:text-dark font-medium text-center justify-center"
+                  >
+                    Lanjut Lihat di Pinterest
+                    <i class="bi bi-arrow-right-circle"></i>
+                  </a>
+                </div>
+              </div>
               <div
-                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-                style="
-                  background-image: url(&quot;dist/img/portofolio/typography/1.jpg&quot;);
-                "
-              ></div>
-            </div>
-
-              <div class="swiper-slide transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100  cursor-grab">
-                <img src="dist/img/portofolio/typography/1.jpg" alt="" class="group-hover:scale-150 transition-all duration-500"/>
+                class="swiper-slide w-1/2 bg-white rounded-xl overflow-hidden dark:bg-dark dark:shadow-none; shadow-lg"
+              >
+                <div
+                  class="rounded-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                >
+                  <img
+                    src="dist/img/portofolio/typography/1.jpg"
+                    alt="portofolio"
+                    width="w-full"
+                  />
+                </div>
               </div>
-              <div class="swiper-slide">
-                <img src="dist/img/portofolio/typography/2.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="dist/img/portofolio/typography/3.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="dist/img/portofolio/typography/4.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="dist/img/portofolio/typography/5.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="dist/img/portofolio/typography/6.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="dist/img/portofolio/typography/7.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="dist/img/portofolio/typography/8.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="dist/img/portofolio/typography/9.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="dist/img/portofolio/typography/10.jpg" alt="" />
+              <div
+                class="swiper-slide w-1/2 bg-white rounded-xl overflow-hidden dark:bg-dark dark:shadow-none; shadow-lg"
+              >
+                <div
+                  class="rounded-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                >
+                <a href="">
+                  <img
+                    src="dist/img/portofolio/typography/1.jpg"
+                    alt="portofolio"
+                    width="w-full" class="hidden"
+                  /></a>
+                </div>
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -616,8 +574,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Swiper JS -->
 
     <footer class="bg-dark pt-36 pb-12" id="contact">
       <div class="container">
