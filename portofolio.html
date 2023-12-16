@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script>
       if (
@@ -21,6 +23,46 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        /* display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center; */
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <header
@@ -175,7 +217,7 @@
       </div>
     </section> -->
 
-    <section class="pt-2 pb-2 bg-slate-200 dark:bg-slate-600">
+    <!-- <section class="pt-2 pb-2 bg-slate-200 dark:bg-slate-600">
       <div class="container">
         <div class="w-full px-4">
           <div class="icon-links flex flex-wrap items-center justify-center">
@@ -200,37 +242,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="pb-32 bg-slate-200 dark:bg-slate-700" id="portofolio">
-      <div class="container lg:w-10/12">
-        <!-- Vektor -->
-        <div id="vektor-images" class="hidden pt-8">
+    <!-- <section class="pb-32 bg-slate-200 dark:bg-slate-700" id="portofolio">
+      <div class="container lg:w-10/12"> -->
+    <!-- Vektor -->
+    <!-- <div id="vektor-images" class="hidden pt-8">
           <div class="font-sans grid grid-cols-3 gap-1 md:grid-cols-3">
-            <!-- <div
-              class="h-15 aspect-w-4 aspect-h-3 md:aspect-w-3 md:aspect-h-4 xl:aspect-w-4 xl:aspect-h-3 overflow-hidden group relative"
-            >
-              <a
-                href="dist/img/portofolio/vektor/1.jpg"
-                data-lightbox="gallery"
-                data-title="Image 1"
-              >
-                <div class="w-full h-full relative">
-                  <div
-                    class="w-full h-full bg-cover bg-center absolute"
-                    style="
-                      background-image: url(&quot;dist/img/portofolio/vektor/1.jpg&quot;);
-                    "
-                  ></div>
-
-                  <div
-                    class="overlay absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 bg-slate-800 hover:bg-opacity-50"
-                  >
-                    <span class="text-white font-semibold text-xl">Open</span>
-                  </div>
-                </div>
-              </a>
-            </div> -->
+            
 
             <div
               class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500"
@@ -253,7 +272,6 @@
                 class="w-full h-full bg-[url('dist/img/portofolio/vektor/3.jpg')] bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
               ></div>
             </div>
-
           </div>
 
           <div class="text-center mt-8 pb-10">
@@ -266,10 +284,10 @@
               <i class="bi bi-arrow-right-circle"></i>
             </a>
           </div>
-        </div>
+        </div> -->
 
-        <!-- Web -->
-        <div id="web-images" class="hidden w-full">
+    <!-- Web -->
+    <!-- <div id="web-images" class="hidden w-full">
           <div class="w-full flex flex-wrap justify-center xl:mx-auto">
             <div class="p-4 md:w-1/3 text-center">
               <a href="experience.html#ipm">
@@ -340,7 +358,266 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+    <section class="pb-32 bg-slate-200 dark:bg-slate-800" id="portofolio">
+      <div class="container lg:w-10/12">
+        <div class="slide-content px-4 lg:px-0">
+          <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
+            Portofolio Vektor
+          </h1>
+          <hr class="border-b-2 border-blue-600 w-full" />
+          <div class="font-sans grid grid-cols-3 gap-1 md:grid-cols-3 pt-4">
+            <div
+              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
+                style="
+                  background-image: url(&quot;dist/img/portofolio/vektor/1.jpg&quot;);
+                "
+              ></div>
+            </div>
+            <div
+              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
+                style="
+                  background-image: url(&quot;dist/img/portofolio/vektor/2.jpg&quot;);
+                "
+              ></div>
+            </div>
+            <div
+              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
+                style="
+                  background-image: url(&quot;dist/img/portofolio/vektor/3.jpg&quot;);
+                "
+              ></div>
+            </div>
+            <div
+              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
+                style="
+                  background-image: url(&quot;dist/img/portofolio/vektor/4.jpg&quot;);
+                "
+              ></div>
+            </div>
+            <div
+              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
+                style="
+                  background-image: url(&quot;dist/img/portofolio/vektor/5.jpg&quot;);
+                "
+              ></div>
+            </div>
+            <div
+              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
+                style="
+                  background-image: url(&quot;dist/img/portofolio/vektor/6.jpg&quot;);
+                "
+              ></div>
+            </div>
+            <div
+              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
+                style="
+                  background-image: url(&quot;dist/img/portofolio/vektor/7.jpg&quot;);
+                "
+              ></div>
+            </div>
+            <div
+              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
+                style="
+                  background-image: url(&quot;dist/img/portofolio/vektor/8.jpg&quot;);
+                "
+              ></div>
+            </div>
+            <div
+              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
+                style="
+                  background-image: url(&quot;dist/img/portofolio/vektor/9.jpg&quot;);
+                "
+              ></div>
+            </div>
+          </div>
+
+          <div class="text-center mt-4 pb-10">
+            <a
+              href="https://pin.it/3V4400Q"
+              target="_blank"
+              class="text-dark dark:text-white font-medium"
+            >
+              Lanjut Lihat di Pinterest
+              <i class="bi bi-arrow-right-circle"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper">
+          <div class="slide-content px-4 lg:px-0">
+            <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
+              Portofolio Website
+            </h1>
+            <hr class="border-b-2 border-blue-600 w-full" />
+            <div class="card-wrapper swiper-wrapper text-center pt-4">
+              <div
+                class="swiper-slide bg-white rounded-xl overflow-hidden dark:bg-dark border-2 border-slate-950 dark:border-white dark:shadow-none; shadow-lg"
+              >
+                <div
+                  class="rounded-t-md rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                >
+                  <img
+                    src="dist/img/portofolio/web/airterjun/1.png"
+                    alt="portofolio"
+                    width="w-full"
+                  />
+                </div>
+                <h3
+                  class="font-medium text-md text-dark mt-5 mb-5 dark:text-white"
+                >
+                  SPK Pemilihan Wisata dengan Metode SMART
+                </h3>
+              </div>
+              <div
+                class="swiper-slide bg-white rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none; shadow-lg"
+              >
+                <div
+                  class="rounded-t-md rounded-bl-lg overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                >
+                  <img
+                    src="dist/img/portofolio/web/airterjun/1.png"
+                    alt="portofolio"
+                    width="w-full"
+                  />
+                </div>
+                <h3
+                  class="font-medium text-md text-dark mt-5 mb-5 dark:text-white"
+                >
+                  SPK Pemilihan Wisata dengan Metode SMART
+                </h3>
+              </div>
+              <div
+                class="swiper-slide bg-white rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none; shadow-lg"
+              >
+                <div
+                  class="rounded-t-md rounded-bl-lg overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                >
+                  <img
+                    src="dist/img/portofolio/web/airterjun/1.png"
+                    alt="portofolio"
+                    width="w-full"
+                  />
+                </div>
+                <h3
+                  class="font-medium text-md text-dark mt-5 mb-5 dark:text-white"
+                >
+                  SPK Pemilihan Wisata dengan Metode SMART
+                </h3>
+              </div>
+              <div
+                class="swiper-slide bg-white rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none; shadow-lg"
+              >
+                <div
+                  class="rounded-t-md rounded-bl-lg overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                >
+                  <img
+                    src="dist/img/portofolio/web/airterjun/1.png"
+                    alt="portofolio"
+                    width="w-full"
+                  />
+                </div>
+                <h3
+                  class="font-medium text-md text-dark mt-5 mb-5 dark:text-white"
+                >
+                  SPK Pemilihan Wisata dengan Metode SMART
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            class="swiper-button-next text-primary dark:text-white text-sm sm:hidden"
+          ></div>
+          <div
+            class="swiper-button-prev text-primary dark:text-white text-sm"
+          ></div> -->
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+
+        <div class="slide-content px-4 lg:px-0">
+          <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
+            Portofolio Typographi
+          </h1>
+          <hr class="border-b-2 border-blue-600 w-full" />
+          <div class="swiper mySwiper pt-10">
+            <div class="swiper-wrapper">
+              <div
+              class="swiper-slide h-15 aspect-[4/3] md:aspect-[4/3] xl:aspect-[9/16] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
+                style="
+                  background-image: url(&quot;dist/img/portofolio/typography/1.jpg&quot;);
+                "
+              ></div>
+            </div>
+
+              <div class="swiper-slide transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100  cursor-grab">
+                <img src="dist/img/portofolio/typography/1.jpg" alt="" class="group-hover:scale-150 transition-all duration-500"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="dist/img/portofolio/typography/2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="dist/img/portofolio/typography/3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="dist/img/portofolio/typography/4.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="dist/img/portofolio/typography/5.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="dist/img/portofolio/typography/6.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="dist/img/portofolio/typography/7.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="dist/img/portofolio/typography/8.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="dist/img/portofolio/typography/9.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="dist/img/portofolio/typography/10.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- Swiper JS -->
 
     <footer class="bg-dark pt-36 pb-12" id="contact">
       <div class="container">
@@ -412,45 +689,60 @@
     </a>
     <!-- Back To Top End -->
     <script src="dist/js/script.js"></script>
-
+    <script src="dist/js/swiper-bundle.min.js"></script>
     <script>
-      // Function to show images based on the stored category or the default category
-      function showStoredImages() {
-        const storedCategory =
-          localStorage.getItem("selectedCategory") || "vektor";
-
-        // Hide all image sections
-        document.getElementById("vektor-images").classList.add("hidden");
-        document.getElementById("web-images").classList.add("hidden");
-
-        // Show the selected image section
-        document
-          .getElementById(storedCategory + "-images")
-          .classList.remove("hidden");
-      }
-
-      // Function to show images based on the clicked category and store it in localStorage
-      function showImages(category) {
-        // Hide all image sections
-        document.getElementById("vektor-images").classList.add("hidden");
-        document.getElementById("web-images").classList.add("hidden");
-
-        // Show the selected image section
-        document
-          .getElementById(category + "-images")
-          .classList.remove("hidden");
-
-        // Store the selected category in localStorage
-        localStorage.setItem("selectedCategory", category);
-      }
-
-      // Call showStoredImages when the page loads
-      document.addEventListener("DOMContentLoaded", showStoredImages);
+      var swiper = new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        // loop: true,
+        centerSlide: "true",
+        fade: "true",
+        grabCursor: "true",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicsBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          950: {
+            slidesPerView: 3,
+          },
+        },
+      });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
-      lightbox.option({
-        resizeDuration: 200,
-        wrapAround: true,
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          950: {
+            slidesPerView: 3,
+          },
+        },
       });
     </script>
   </body>
