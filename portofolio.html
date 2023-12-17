@@ -26,25 +26,25 @@
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
     <style>
       .swiper {
         width: 100%;
-        height: 100%;
+        height: auto;
       }
 
       .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: #fff;
+        /* background: #fff; */
       }
 
       .swiper-slide img {
         display: block;
         width: 100%;
-        height: 100%;
+        height: auto;
         object-fit: cover;
       }
     </style>
@@ -201,122 +201,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <section class="pb-32 bg-slate-200 dark:bg-slate-700" id="portofolio">
-      <div class="container lg:w-10/12"> -->
-    <!-- Vektor -->
-    <!-- <div id="vektor-images" class="hidden pt-8">
-          <div class="font-sans grid grid-cols-3 gap-1 md:grid-cols-3">
-            
-
-            <div
-              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500"
-            >
-              <div
-                class="w-full h-full bg-[url('dist/img/portofolio/vektor/1.jpg')] bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-              ></div>
-            </div>
-            <div
-              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500"
-            >
-              <div
-                class="w-full h-full bg-[url('dist/img/portofolio/vektor/2.jpg')] bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-              ></div>
-            </div>
-            <div
-              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500"
-            >
-              <div
-                class="w-full h-full bg-[url('dist/img/portofolio/vektor/3.jpg')] bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-              ></div>
-            </div>
-          </div>
-
-          <div class="text-center mt-8 pb-10">
-            <a
-              href="https://pin.it/3V4400Q"
-              target="_blank"
-              class="text-dark dark:text-white font-medium"
-            >
-              Lanjut Lihat di Pinterest
-              <i class="bi bi-arrow-right-circle"></i>
-            </a>
-          </div>
-        </div> -->
-
-    <!-- Web -->
-    <!-- <div id="web-images" class="hidden w-full">
-          <div class="w-full flex flex-wrap justify-center xl:mx-auto">
-            <div class="p-4 md:w-1/3 text-center">
-              <a href="experience.html#ipm">
-                <div
-                  class="card-experience border-blue-600 shadow-blue-400 shadow-lg"
-                >
-                  <div
-                    class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                  >
-                    <img
-                      src="dist/img/index/experience/1.png"
-                      alt="portofolio"
-                      width="w-full"
-                    />
-                  </div>
-                  <h3
-                    class="font-semibold text-xl text-dark mt-5 mb-5 dark:text-white uppercase"
-                  >
-                    PT. Imam Putra Mandiri
-                  </h3>
-                </div>
-              </a>
-            </div>
-            <div class="p-4 md:w-1/3 text-center">
-              <a href="experience.html#ipm">
-                <div
-                  class="card-experience border-blue-600 shadow-blue-400 shadow-lg"
-                >
-                  <div
-                    class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                  >
-                    <img
-                      src="dist/img/index/experience/1.png"
-                      alt="portofolio"
-                      width="w-full"
-                    />
-                  </div>
-                  <h3
-                    class="font-semibold text-xl text-dark mt-5 mb-5 dark:text-white uppercase"
-                  >
-                    PT. Imam Putra Mandiri
-                  </h3>
-                </div>
-              </a>
-            </div>
-            <div class="p-4 md:w-1/3 text-center">
-              <a href="experience.html#ipm">
-                <div
-                  class="card-experience border-blue-600 shadow-blue-400 shadow-lg"
-                >
-                  <div
-                    class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                  >
-                    <img
-                      src="dist/img/index/experience/1.png"
-                      alt="portofolio"
-                      width="w-full"
-                    />
-                  </div>
-                  <h3
-                    class="font-semibold text-xl text-dark mt-5 mb-5 dark:text-white uppercase"
-                  >
-                    PT. Imam Putra Mandiri
-                  </h3>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <section class="pb-32 bg-slate-200 dark:bg-slate-800" id="portofolio">
       <div class="container lg:w-10/12">
@@ -520,7 +404,7 @@
           <div class="swiper-pagination"></div>
         </div>
 
-        <div class="slide-content lg:px-0">
+        <!-- <div class="slide-content lg:px-0">
           <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
             Portofolio Typographi
           </h1>
@@ -560,17 +444,61 @@
                 <div
                   class="rounded-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
                 >
-                <a href="">
-                  <img
-                    src="dist/img/portofolio/typography/1.jpg"
-                    alt="portofolio"
-                    width="w-full" class="hidden"
+                  <a href="">
+                    <img
+                      src="dist/img/portofolio/typography/1.jpg"
+                      alt="portofolio"
+                      width="w-full"
+                      class="hidden"
                   /></a>
                 </div>
               </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
+        </div> -->
+
+        <div class="slide-content lg:px-0">
+          <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
+            Portofolio Typographi
+          </h1>
+          <hr class="border-b-2 border-blue-600 w-full" />
+          <div class="w-full flex flex-wrap justify-center xl:mx-0">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide pt-4">
+                  <div
+                    class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none"
+                  >
+                    <div
+                      class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                    >
+                      <img
+                        src="dist/img/portofolio/typography/1.jpg"
+                        alt="portofolio"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide pt-4">
+                  <div
+                    class="bg-white rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none"
+                  >
+                    <div
+                      class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 py-36"
+                    >
+                      <h3
+                        class="h3-a mt-2 pb-10"
+                      >
+                        <a href=""> Lihat di Pinterset</a>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -637,7 +565,6 @@
         </div>
       </div>
     </footer>
-    <!-- Footer Section End -->
 
     <!-- Back To Top Start -->
     <a href="#home" class="back-to-top hidden" id="to-top">

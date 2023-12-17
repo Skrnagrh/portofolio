@@ -713,10 +713,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .block {
   display: block;
 }
@@ -1019,18 +1015,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'dist\/img\/portofolio\/vektor\/1\.jpg\'\)\] {
-  background-image: url('dist/img/portofolio/vektor/1.jpg');
-}
-
-.bg-\[url\(\'dist\/img\/portofolio\/vektor\/2\.jpg\'\)\] {
-  background-image: url('dist/img/portofolio/vektor/2.jpg');
-}
-
-.bg-\[url\(\'dist\/img\/portofolio\/vektor\/3\.jpg\'\)\] {
-  background-image: url('dist/img/portofolio/vektor/3.jpg');
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -1141,10 +1125,6 @@ video {
   padding-top: 1rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1214,6 +1194,10 @@ video {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
 }
 
 .text-dark {
@@ -1807,6 +1791,29 @@ body {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+.h3-a {
+  margin-top: 1.25rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+:is(.dark .h3-a) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .h3-a {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+}
+
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(20 184 166 / var(--tw-bg-opacity));
@@ -1884,6 +1891,12 @@ body {
 
 :is(.dark .dark\:opacity-60) {
   opacity: 0.6;
+}
+
+:is(.dark .dark\:shadow-none) {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 :is(.dark .dark\:shadow-slate-300) {
@@ -1971,10 +1984,6 @@ body {
     --tw-scale-x: 1.25;
     --tw-scale-y: 1.25;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:text-4xl {
@@ -2140,6 +2149,11 @@ body {
 }
 
 @media (min-width: 1280px) {
+  .xl\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .xl\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -2162,4 +2176,3 @@ body {
     width: 83.333333%;
   }
 }
-
