@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth focus:scroll-auto">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -80,6 +80,7 @@
               >Sukron</a
             >
           </div>
+
           <div class="flex items-center px-4">
             <button
               id="hamburger"
@@ -100,12 +101,12 @@
 
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-300 lg:dark:bg-transparent"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-300 lg:dark:bg-transparent z-[9999]"
             >
               <ul class="block lg:flex">
                 <li class="group">
                   <a
-                    href="index.html"
+                    href="index.html#home"
                     class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
                     >Beranda</a
                   >
@@ -113,7 +114,7 @@
                 <li class="group">
                   <a
                     href="index.html#about"
-                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
+                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white active:text-dark"
                     >Tentang Saya</a
                   >
                 </li>
@@ -133,47 +134,37 @@
                 </li>
                 <li class="group">
                   <a
-                    href="index.html#portofolio"
+                    href="portofolio.html"
                     class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
                     >Portofolio</a
                   >
                 </li>
-                <li class="group">
+                <li class="group lg:-mr-36">
                   <a
                     href="index.html#skill"
                     class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
                     >Kemampuan</a
                   >
                 </li>
-                <li class="group">
-                  <a
-                    href="#contact"
-                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
-                    >Kontak</a
-                  >
-                </li>
-                <li class="flex items-center pl-8 mt-3 lg:mt-0">
-                  <div class="flex">
-                    <!-- <span class="mr-2 text-sm text-slate-500">Light</span> -->
-                    <i class="bi bi-sun-fill mr-2 text-sm text-slate-500"></i>
-                    <input type="checkbox" class="hidden" id="dark-toggle" />
-                    <label for="dark-toggle">
-                      <div
-                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
-                      >
-                        <div
-                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
-                        ></div>
-                      </div>
-                    </label>
-                    <!-- <span class="ml-2 text-sm text-slate-500">Dark</span> -->
-                    <i
-                      class="bi bi-moon-stars-fill ml-2 text-sm text-slate-500"
-                    ></i>
-                  </div>
-                </li>
               </ul>
             </nav>
+          </div>
+
+          <div class="flex relative right-16">
+            <div class="flex">
+              <i class="bi bi-sun-fill mr-2 text-sm text-slate-500"></i>
+              <input type="checkbox" class="hidden" id="dark-toggle" />
+              <label for="dark-toggle">
+                <div
+                  class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                >
+                  <div
+                    class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                  ></div>
+                </div>
+              </label>
+              <i class="bi bi-moon-stars-fill ml-2 text-sm text-slate-500"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -220,7 +211,7 @@
       </div>
     </section>
 
-    <section class="pb-32 bg-slate-200 dark:bg-slate-800" id="portofolio">
+    <!-- <section class="pb-32 bg-slate-200 dark:bg-slate-800" id="portofolio">
       <div class="container lg:w-10/12">
         <div class="lg:px-0">
           <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
@@ -422,60 +413,6 @@
           <div class="swiper-pagination"></div>
         </div>
 
-        <!-- <div class="slide-content lg:px-0">
-          <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
-            Portofolio Typographi
-          </h1>
-          <hr class="border-b-2 border-blue-600 w-full" />
-          <div class="swiper mySwiper pt-10">
-            <div class="swiper-wrapper">
-              <div
-                class="swiper-slide h-64 transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 cursor-grab bg-white text-center justify-center items-center"
-              >
-                <div class="py-36 text-center aspect-square">
-                  <a
-                    href="https://pin.it/3V4400Q"
-                    target="_blank"
-                    class="text-primary dark:text-dark font-medium text-center justify-center"
-                  >
-                    Lanjut Lihat di Pinterest
-                    <i class="bi bi-arrow-right-circle"></i>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="swiper-slide w-1/2 bg-white rounded-xl overflow-hidden dark:bg-dark dark:shadow-none; shadow-lg"
-              >
-                <div
-                  class="rounded-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
-                  <img
-                    src="dist/img/portofolio/typography/1.jpg"
-                    alt="portofolio"
-                    width="w-full"
-                  />
-                </div>
-              </div>
-              <div
-                class="swiper-slide w-1/2 bg-white rounded-xl overflow-hidden dark:bg-dark dark:shadow-none; shadow-lg"
-              >
-                <div
-                  class="rounded-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
-                  <a href="">
-                    <img
-                      src="dist/img/portofolio/typography/1.jpg"
-                      alt="portofolio"
-                      width="w-full"
-                      class="hidden"
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div> -->
-
         <div class="slide-content lg:px-0">
           <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
             Portofolio Typographi
@@ -517,99 +454,53 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="experience" class="pt-24 pb-16 bg-slate-100 dark:bg-slate-800">
+    <section id="experience" class="bg-slate-100 dark:bg-slate-800">
       <div class="container justify-content-center">
-        <hr class="border-b-2 border-teal-500 w-full mb-4" />
+        <div class="lg:border-t lg:border-teal-500 w-full pt-4"></div>
         <div class="icon-links text-center">
           <a
-            class="nav-link"
+            class="portofolio-link mx-4 text-lg dark:text-white active:border-b-4 p-4"
             data-page="vektor"
             onclick="showImages('vektor')"
             style="cursor: pointer"
           >
-            <i class="bi bi-file-earmark-richtext icon text-5xl"></i>
-            <span class="d-none d-md-inline"> Vektor</span>
+            <i class="bi bi-file-earmark-richtext icon text-3xl lg:text-lg"></i>
+            <span class="hidden md:inline"> Vektor</span>
           </a>
           <a
-            class="nav-link"
+            class="portofolio-link mx-4 text-lg dark:text-white"
             data-page="web"
             onclick="showImages('web')"
             style="cursor: pointer"
           >
-            <i class="bi bi-globe icon text-5xl"></i>
-            <span class="d-none d-md-inline"> Web</span>
+            <i class="bi bi-globe icon text-3xl lg:text-lg"></i>
+            <span class="hidden md:inline"> Website</span>
+          </a>
+          <a
+            class="portofolio-link mx-4 text-lg dark:text-white"
+            data-page="typography"
+            onclick="showImages('typography')"
+            style="cursor: pointer"
+          >
+            <i class="bi bi-file-earmark-font icon text-3xl lg:text-lg"></i>
+            <span class="hidden md:inline"> Tipograpi</span>
+          </a>
+          <a
+            class="portofolio-link mx-4 text-lg dark:text-white"
+            data-page="other"
+            onclick="showImages('other')"
+            style="cursor: pointer"
+          >
+            <i class="bi bi-file-image icon text-3xl lg:text-lg"></i>
+            <span class="hidden md:inline"> Lainnya</span>
           </a>
         </div>
-        <hr class="border-b-2 border-teal-500 w-full mt-4" />
+        <div class="border-b border-teal-500 lg:border-none w-full pt-4"></div>
 
         <!-- Vektor -->
-        <!-- <div class="w-full flex flex-wrap justify-center xl:mx-auto xl:w-10/12" id="vektor-images">
-          <div class="row row-cols-3 my-3">
-            <div class="p-4 md:w-1/3 text-center">
-              <div class="work-box">
-                <a
-                  href="dist/img/portofolio/vektor/1.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                >
-                  <div class="work-img">
-                    <img
-                      src="dist/img/portofolio/vektor/1.jpg"
-                      class="img-fluid"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3 text-center">
-              <div class="work-box">
-                <a
-                  href="dist/img/portofolio/vektor/2.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                >
-                  <div class="work-img">
-                    <img
-                      src="dist/img/portofolio/vektor/2.jpg"
-                      class="img-fluid"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3 text-center">
-              <div class="work-box">
-                <a
-                  href="dist/img/portofolio/vektor/1.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                >
-                  <div class="work-img">
-                    <img
-                      src="dist/img/portofolio/vektor/1.jpg"
-                      class="img-fluid"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="row justify-content-center text-center">
-            <div class="col-md-4 mt-3">
-              <a
-                href="https://pin.it/3V4400Q"
-                target="_blank"
-                class="text-decoration-none text-dark"
-                >Lanjut Lihat di Pinterest
-                <i class="bi bi-arrow-right-circle"></i
-              ></a>
-            </div>
-          </div>
-        </div> -->
-        <div class="lg:px-0" id="vektor-images">
+        <div class="lg:px-0" id="vektor-section">
           <div class="font-sans grid grid-cols-3 gap-1 pt-4">
             <a
               href="dist/img/portofolio/vektor/1.jpg"
@@ -770,96 +661,182 @@
         </div>
 
         <!-- Web -->
-        <div id="web-images" class="d-none">
-          <div class="row justify-content-center">
-            <!-- Air Terjun -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
-              <div class="card card-web">
-                <div id="webAT" class="carousel slide">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <a
-                        href="dist/img/portofolio/web/airterjun/1.png"
-                        data-gallery="GalleryWebAT"
-                        class="portfolio-lightbox"
-                      >
-                        <div class="work-img">
-                          <img
-                            src="dist/img/portofolio/web/airterjun/1.png"
-                            class="d-block w-100"
-                            style="min-height: 200px"
-                          />
-                        </div>
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a
-                        href="dist/img/portofolio/web/airterjun/2.png"
-                        data-gallery="GalleryWebAT"
-                        class="portfolio-lightbox"
-                      >
-                        <div class="work-img">
-                          <img
-                            src="dist/img/portofolio/web/airterjun/2.png"
-                            class="d-block w-100"
-                            style="min-height: 200px"
-                          />
-                        </div>
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a
-                        href="dist/img/portofolio/web/airterjun/3.png"
-                        data-gallery="GalleryWebAT"
-                        class="portfolio-lightbox"
-                      >
-                        <div class="work-img">
-                          <img
-                            src="dist/img/portofolio/web/airterjun/3.png"
-                            class="d-block w-100"
-                            style="min-height: 200px"
-                          />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#webAT"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#webAT"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-                <div class="card-body text-center">
-                  <a
-                    href="https://github.com/Skrnagrh/spk_smart_curug"
-                    class="text-decoration-none"
-                    target="_blank"
-                  >
-                    <h6>SPK Pemilihan Wisata dengan Metode SMART</h6>
-                  </a>
-                </div>
+        <div id="web-section" class="d-none">
+          <div
+            class="font-sans grid grid-cols-1 lg:grid-cols-3 gap-2 pt-4 pb-16"
+          >
+            <div
+              class="aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center absolute"
+                style="
+                  background-image: url(&quot;dist/img/portofolio/web/airterjun/1.png&quot;);
+                "
+              ></div>
+              <div
+                class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+              >
+                <div class="absolute inset-0 bg-slate-600 opacity-80"></div>
+
+                <a
+                  href="https://github.com/Skrnagrh/spk_smart_curug"
+                  target="_blank"
+                  class="text-white font-semibold text-sm lg:text-2xl z-10 relative text-center hover:text-primary"
+                >
+                  SPK Pemilihan Wisata dengan Metode SMART
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div
+              class="aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center absolute"
+                style="
+                  background-image: url(&quot;dist/img/portofolio/web/airterjun/1.png&quot;);
+                "
+              ></div>
+              <div
+                class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+              >
+                <div class="absolute inset-0 bg-slate-600 opacity-80"></div>
+
+                <a
+                  href="https://github.com/Skrnagrh/spk_smart_curug"
+                  target="_blank"
+                  class="text-white font-semibold text-sm lg:text-2xl z-10 relative text-center hover:text-primary"
+                >
+                  SPK Pemilihan Wisata dengan Metode SMART
+                  <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
+        </div>
+
+        <div id="typography-section" class="d-none">
+          <div class="font-sans grid grid-cols-2 lg:grid-cols-5 gap-1 pt-4">
+            <a
+              href="dist/img/portofolio/typography/1.jpg"
+              data-gallery="typoGallery"
+              class="portfolio-lightbox relative"
+            >
+              <div
+                class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+              >
+                <div
+                  class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                >
+                  <img
+                    src="dist/img/portofolio/typography/1.jpg"
+                    alt="portofolio"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                >
+                  <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                  <p class="text-white font-semibold text-sm lg:text-2xl z-10">
+                    Open
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="dist/img/portofolio/typography/2.jpg"
+              data-gallery="typoGallery"
+              class="portfolio-lightbox relative"
+            >
+              <div
+                class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+              >
+                <div
+                  class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                >
+                  <img
+                    src="dist/img/portofolio/typography/2.jpg"
+                    alt="portofolio"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                >
+                  <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                  <p class="text-white font-semibold text-sm lg:text-2xl z-10">
+                    Open
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="dist/img/portofolio/typography/1.jpg"
+              data-gallery="typoGallery"
+              class="portfolio-lightbox relative"
+            >
+              <div
+                class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+              >
+                <div
+                  class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                >
+                  <img
+                    src="dist/img/portofolio/typography/1.jpg"
+                    alt="portofolio"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                >
+                  <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                  <p class="text-white font-semibold text-sm lg:text-2xl z-10">
+                    Open
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="dist/img/portofolio/typography/2.jpg"
+              data-gallery="typoGallery"
+              class="portfolio-lightbox relative"
+            >
+              <div
+                class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+              >
+                <div
+                  class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                >
+                  <img
+                    src="dist/img/portofolio/typography/2.jpg"
+                    alt="portofolio"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                >
+                  <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                  <p class="text-white font-semibold text-sm lg:text-2xl z-10">
+                    Open
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="text-center mt-4 pb-10">
+            <a
+              href="https://pin.it/3V4400Q"
+              target="_blank"
+              class="text-dark dark:text-white font-medium"
+            >
+              Lanjut Lihat di Pinterest
+              <i class="bi bi-arrow-right-circle"></i>
+            </a>
+          </div>
+        </div>
+        <div id="other-section" class="d-none">
+          <p class="pb-10">ini halaman other</p>
         </div>
       </div>
     </section>
@@ -990,7 +967,7 @@
       });
     </script>
 
-    <script>
+    <!-- <script>
       function showImages(category) {
         const imageSets = document.querySelectorAll('[id$="-images"]');
         imageSets.forEach((imageSet) => {
@@ -1010,8 +987,97 @@
         activeLink.classList.add("active");
         localStorage.setItem("selectedCategory", category);
       }
-    </script>
+    </script> -->
 
+    <!-- <script>
+      function showImages(category) {
+        const vektorSection = document.getElementById("vektor-section");
+        const webSection = document.getElementById("web-section");
+
+        if (category === "vektor") {
+          vektorSection.classList.remove("d-none");
+          webSection.classList.add("d-none");
+        } else if (category === "web") {
+          vektorSection.classList.add("d-none");
+          webSection.classList.remove("d-none");
+        }
+
+        const links = document.querySelectorAll(".icon-links .nav-link");
+        links.forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        const activeLink = document.querySelector(`[data-page="${category}"]`);
+        activeLink.classList.add("active");
+        localStorage.setItem("selectedCategory", category);
+      }
+
+      // Check if there is a hash in the URL on page load
+      window.addEventListener("load", () => {
+        const hash = window.location.hash.substring(1);
+        if (hash === "web-section") {
+          // If the hash is web-section, show the web section
+          showImages("web");
+        } else if (hash === "vektor-section") {
+          // If the hash is vektor-section, show the vektor section
+          showImages("vektor");
+        }
+      });
+    </script> -->
+
+    <script>
+      function showImages(category) {
+        const vektorSection = document.getElementById("vektor-section");
+        const webSection = document.getElementById("web-section");
+        const typographySection = document.getElementById("typography-section");
+        const otherSection = document.getElementById("other-section");
+
+        if (category === "vektor") {
+          vektorSection.classList.remove("d-none");
+          webSection.classList.add("d-none");
+          typographySection.classList.add("d-none");
+          otherSection.classList.add("d-none");
+        } else if (category === "web") {
+          vektorSection.classList.add("d-none");
+          webSection.classList.remove("d-none");
+          typographySection.classList.add("d-none");
+          otherSection.classList.add("d-none");
+        } else if (category === "typography") {
+          vektorSection.classList.add("d-none");
+          webSection.classList.add("d-none");
+          typographySection.classList.remove("d-none");
+          otherSection.classList.add("d-none");
+        } else if (category === "other") {
+          vektorSection.classList.add("d-none");
+          webSection.classList.add("d-none");
+          typographySection.classList.add("d-none");
+          otherSection.classList.remove("d-none");
+        }
+
+        const links = document.querySelectorAll(".icon-links .portofolio-link");
+        links.forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        const activeLink = document.querySelector(`[data-page="${category}"]`);
+        activeLink.classList.add("active");
+        localStorage.setItem("selectedCategory", category);
+      }
+
+      // Check if there is a hash in the URL on page load
+      window.addEventListener("load", () => {
+        const hash = window.location.hash.substring(1);
+        if (hash === "web-section") {
+          showImages("web");
+        } else if (hash === "vektor-section") {
+          showImages("vektor");
+        } else if (hash === "typography-section") {
+          showImages("typography");
+        } else if (hash === "other-section") {
+          showImages("other");
+        }
+      });
+    </script>
     <script src="dist/js/swiper-bundle.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1026,3 +1092,68 @@
     <script src="dist/js/main.js"></script>
   </body>
 </html>
+
+<!-- <div class="w-full flex flex-wrap justify-center xl:mx-auto xl:w-10/12" id="vektor-images">
+          <div class="row row-cols-3 my-3">
+            <div class="p-4 md:w-1/3 text-center">
+              <div class="work-box">
+                <a
+                  href="dist/img/portofolio/vektor/1.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="dist/img/portofolio/vektor/1.jpg"
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 text-center">
+              <div class="work-box">
+                <a
+                  href="dist/img/portofolio/vektor/2.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="dist/img/portofolio/vektor/2.jpg"
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 text-center">
+              <div class="work-box">
+                <a
+                  href="dist/img/portofolio/vektor/1.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox"
+                >
+                  <div class="work-img">
+                    <img
+                      src="dist/img/portofolio/vektor/1.jpg"
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center text-center">
+            <div class="col-md-4 mt-3">
+              <a
+                href="https://pin.it/3V4400Q"
+                target="_blank"
+                class="text-decoration-none text-dark"
+                >Lanjut Lihat di Pinterest
+                <i class="bi bi-arrow-right-circle"></i
+              ></a>
+            </div>
+          </div>
+        </div> -->
