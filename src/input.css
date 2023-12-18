@@ -107,14 +107,20 @@ body {
 /* Skill End */
 
 /* index.html End */
+.hero-contact {
+  @apply w-9 h-9 lg:w-12 lg:h-12 mr-3 lg:mr-4 rounded-full flex justify-center items-center border-2 border-slate-500 text-slate-500 hover:bg-primary hover:text-white hover:border-2 hover:border-white shadow-lg dark:shadow-primary dark:shadow-md  dark:border-2 dark:border-primary dark:hover:border-white;
+}
+.icon-contact {
+  @apply dark:text-primary dark:hover:text-white lg:text-2xl;
+}
 
 .a-footer {
   @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-500 text-slate-500 hover:bg-primary hover:text-white hover:border-2 hover:border-white;
 }
 .back-to-top {
-  @apply h-14 w-14 bg-primary justify-around items-center fixed z-[9999] bottom-5 right-5 rounded-full p-4 hover:animate-pulse;
+  @apply h-10 w-10 bg-primary justify-around items-center fixed z-[9999] bottom-4 right-4 rounded-full p-2 hover:animate-pulse;
 }
 
-.h3-a{
-  @apply font-semibold text-xl text-dark mt-5 dark:text-white pt-3.5 pb-3.5 lg:pt-40 lg:pb-32
+.h3-a {
+  @apply font-semibold text-xl text-dark mt-5 dark:text-white pt-3.5 pb-3.5 lg:pt-40 lg:pb-32;
 }
