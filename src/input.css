@@ -42,7 +42,7 @@ body {
 }
 
 .img-experience {
-  @apply rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100;
+  @apply rounded-t-md rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100;
 }
 .pt-experience {
   @apply font-semibold text-xl text-dark mt-5 dark:text-white uppercase;
