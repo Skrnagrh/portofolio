@@ -124,3 +124,105 @@ body {
 .h3-a {
   @apply font-semibold text-xl text-dark mt-5 dark:text-white pt-3.5 pb-3.5 lg:pt-40 lg:pb-32;
 }
+
+/* Portofolio.html Start */
+/* Vektor Start */
+.vektor-1 {
+  @apply aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden relative transition-all duration-500;
+}
+.vektor-2 {
+  @apply w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500;
+}
+.vektor-3 {
+  @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
+}
+.vektor-4 {
+  @apply absolute inset-0 bg-slate-600 opacity-50;
+}
+.vektor-5 {
+  @apply text-white font-semibold text-sm lg:text-2xl z-10;
+}
+/* Vektor End */
+
+/* Web Start */
+.web-1 {
+  @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative;
+}
+.web-2 {
+  @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
+}
+.web-3 {
+  @apply absolute inset-0 bg-slate-600 opacity-70;
+}
+.web-4 {
+  @apply text-white font-semibold text-sm lg:text-2xl z-10 relative text-center hover:text-primary px-4;
+}
+/* Web End */
+
+/* Typography Start */
+.typo-1 {
+  @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative;
+}
+.typo-2 {
+  @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
+}
+.typo-3 {
+  @apply absolute inset-0 bg-slate-600 opacity-50;
+}
+.typo-4 {
+  @apply text-white font-semibold text-sm lg:text-2xl z-10;
+}
+/* Typography End */
+
+/* Other Start*/
+.other-1 {
+  @apply border-b border-t border-primary mt-4 justify-center text-center;
+}
+.other-2 {
+  @apply text-primary text-xl md:text-lg lg:text-2xl py-2 font-semibold;
+}
+/* Android */
+.android-1 {
+  @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative;
+}
+.android-2 {
+  @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
+}
+.android-3 {
+  @apply absolute inset-0 bg-slate-600 opacity-50;
+}
+.android-4 {
+  @apply text-white font-semibold text-sm lg:text-2xl z-10;
+}
+/* Android End*/
+
+/* Desktop Start*/
+.dekstop-p {
+  @apply text-primary text-sm md:text-lg pt-4 pb-2 font-semibold;
+}
+.dekstop-1 {
+  @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative;
+}
+.dekstop-2 {
+  @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
+}
+.dekstop-3 {
+  @apply absolute inset-0 bg-slate-600 opacity-50;
+}
+.dekstop-4 {
+  @apply text-white font-semibold text-sm lg:text-2xl z-10;
+}
+/* Desktop End*/
+
+/* Other End */
+.porto-1 {
+  @apply absolute inset-0 flex items-center justify-center;
+}
+.porto-2 {
+  @apply absolute inset-0 bg-white dark:bg-slate-700 opacity-100;
+}
+.porto-3 {
+  @apply text-dark hover:text-primary dark:text-white dark:hover:text-primary font-semibold text-sm lg:text-2xl z-10 text-center;
+}
+
+/* Portofolio.html End */
