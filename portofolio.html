@@ -22,11 +22,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="dist/css/img.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    /> -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <!-- batas -->
     <link href="dist/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
@@ -191,314 +191,50 @@
     </section>
 
     <section class="pt-2 pb-2 bg-slate-200 dark:bg-slate-700">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="flex flex-wrap items-center justify-center">
-            <a href="#ipm" class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8">
-              <img src="dist/img/clients/1.png" alt="ipm" />
-            </a>
-            <a href="#sakina" class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8">
-              <img src="dist/img/clients/2.png" alt="ipm" />
-            </a>
-            <a href="#jhon" class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8">
-              <img src="dist/img/clients/3.png" alt="ipm" />
-            </a>
-            <a href="#pkl" class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8">
-              <img src="dist/img/clients/4.png" alt="ipm" />
-            </a>
-          </div>
-        </div>
+      <div class="border-t border-teal-500 w-full pt-4"></div>
+      <div class="icon-links text-center lg:mx-6 xl:mx-8">
+        <a
+          class="portofolio-link mx-auto text-lg dark:text-white"
+          data-page="vektor"
+          onclick="showImages('vektor')"
+          style="cursor: pointer"
+        >
+          <i class="bi bi-file-image icon text-3xl lg:text-lg"></i>
+          <span class="hidden md:inline"> Vektor</span>
+        </a>
+        <a
+          class="portofolio-link mx-4 text-lg dark:text-white"
+          data-page="web"
+          onclick="showImages('web')"
+          style="cursor: pointer"
+        >
+          <i class="bi bi-globe icon text-3xl lg:text-lg"></i>
+          <span class="hidden md:inline"> Website</span>
+        </a>
+        <a
+          class="portofolio-link mx-4 text-lg dark:text-white"
+          data-page="typography"
+          onclick="showImages('typography')"
+          style="cursor: pointer"
+        >
+          <i class="bi bi-file-earmark-font icon text-3xl lg:text-lg"></i>
+          <span class="hidden md:inline"> Tipograpi</span>
+        </a>
+        <a
+          class="portofolio-link mx-4 text-lg dark:text-white"
+          data-page="other"
+          onclick="showImages('other')"
+          style="cursor: pointer"
+        >
+          <i class="bi bi-file-earmark-text icon text-3xl lg:text-lg"></i>
+          <span class="hidden md:inline"> Lainnya</span>
+        </a>
       </div>
+      <div class="border-b border-teal-500 w-full pt-4"></div>
     </section>
-
-    <!-- <section class="pb-32 bg-slate-200 dark:bg-slate-800" id="portofolio">
-      <div class="container lg:w-10/12">
-        <div class="lg:px-0">
-          <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
-            Portofolio Vektor
-          </h1>
-          <hr class="border-b-2 border-blue-600 w-full" />
-          <div class="font-sans grid grid-cols-3 gap-1 pt-4">
-            <div
-              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-            >
-              <div
-                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-                style="
-                  background-image: url(&quot;dist/img/portofolio/vektor/1.jpg&quot;);
-                "
-              ></div>
-            </div>
-            <div
-              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-            >
-              <div
-                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-                style="
-                  background-image: url(&quot;dist/img/portofolio/vektor/2.jpg&quot;);
-                "
-              ></div>
-            </div>
-            <div
-              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-            >
-              <div
-                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-                style="
-                  background-image: url(&quot;dist/img/portofolio/vektor/3.jpg&quot;);
-                "
-              ></div>
-            </div>
-            <div
-              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-            >
-              <div
-                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-                style="
-                  background-image: url(&quot;dist/img/portofolio/vektor/4.jpg&quot;);
-                "
-              ></div>
-            </div>
-            <div
-              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-            >
-              <div
-                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-                style="
-                  background-image: url(&quot;dist/img/portofolio/vektor/5.jpg&quot;);
-                "
-              ></div>
-            </div>
-            <div
-              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-            >
-              <div
-                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-                style="
-                  background-image: url(&quot;dist/img/portofolio/vektor/6.jpg&quot;);
-                "
-              ></div>
-            </div>
-            <div
-              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-            >
-              <div
-                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-                style="
-                  background-image: url(&quot;dist/img/portofolio/vektor/7.jpg&quot;);
-                "
-              ></div>
-            </div>
-            <div
-              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-            >
-              <div
-                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-                style="
-                  background-image: url(&quot;dist/img/portofolio/vektor/8.jpg&quot;);
-                "
-              ></div>
-            </div>
-            <div
-              class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-            >
-              <div
-                class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
-                style="
-                  background-image: url(&quot;dist/img/portofolio/vektor/9.jpg&quot;);
-                "
-              ></div>
-            </div>
-          </div>
-
-          <div class="text-center mt-4 pb-10">
-            <a
-              href="https://pin.it/3V4400Q"
-              target="_blank"
-              class="text-dark dark:text-white font-medium"
-            >
-              Lanjut Lihat di Pinterest
-              <i class="bi bi-arrow-right-circle"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="swiper">
-          <div class="slide-content lg:px-0">
-            <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
-              Portofolio Website
-            </h1>
-            <hr class="border-b-2 border-blue-600 w-full" />
-            <div class="swiper-wrapper text-center pt-4">
-              <div
-                class="swiper-slide w-1/2 bg-white rounded-xl overflow-hidden dark:bg-dark border-2 border-slate-950 dark:border-dark dark:shadow-none; shadow-lg"
-              >
-                <div
-                  class="rounded-t-md rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
-                  <img
-                    src="dist/img/portofolio/web/airterjun/1.png"
-                    alt="portofolio"
-                    width="w-full"
-                  />
-                </div>
-                <h3
-                  class="font-medium text-md text-dark mt-5 mb-5 dark:text-white"
-                >
-                  SPK Pemilihan Wisata dengan Metode SMART
-                </h3>
-              </div>
-              <div
-                class="swiper-slide w-1/2 bg-white rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none; shadow-lg"
-              >
-                <div
-                  class="rounded-t-md rounded-bl-lg overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
-                  <img
-                    src="dist/img/portofolio/web/airterjun/1.png"
-                    alt="portofolio"
-                    width="w-full"
-                  />
-                </div>
-                <h3
-                  class="font-medium text-md text-dark mt-5 mb-5 dark:text-white"
-                >
-                  SPK Pemilihan Wisata dengan Metode SMART
-                </h3>
-              </div>
-              <div
-                class="swiper-slide bg-white rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none; shadow-lg"
-              >
-                <div
-                  class="rounded-t-md rounded-bl-lg overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
-                  <img
-                    src="dist/img/portofolio/web/airterjun/1.png"
-                    alt="portofolio"
-                    width="w-full"
-                  />
-                </div>
-                <h3
-                  class="font-medium text-md text-dark mt-5 mb-5 dark:text-white"
-                >
-                  SPK Pemilihan Wisata dengan Metode SMART
-                </h3>
-              </div>
-              <div
-                class="swiper-slide bg-white rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none; shadow-lg"
-              >
-                <div
-                  class="rounded-t-md rounded-bl-lg overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
-                  <img
-                    src="dist/img/portofolio/web/airterjun/1.png"
-                    alt="portofolio"
-                    width="w-full"
-                  />
-                </div>
-                <h3
-                  class="font-medium text-md text-dark mt-5 mb-5 dark:text-white"
-                >
-                  SPK Pemilihan Wisata dengan Metode SMART
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            class="swiper-button-next text-primary dark:text-white text-sm sm:hidden"
-          ></div>
-          <div
-            class="swiper-button-prev text-primary dark:text-white text-sm"
-          ></div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="slide-content lg:px-0">
-          <h1 class="pt-10 font-semibold dark:text-white text-dark text-xl">
-            Portofolio Typographi
-          </h1>
-          <hr class="border-b-2 border-blue-600 w-full" />
-          <div class="w-full flex flex-wrap justify-center xl:mx-0">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide pt-4">
-                  <div
-                    class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none"
-                  >
-                    <div
-                      class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                    >
-                      <img
-                        src="dist/img/portofolio/typography/1.jpg"
-                        alt="portofolio"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide pt-4">
-                  <div
-                    class="bg-white rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none"
-                  >
-                    <div
-                      class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 py-36"
-                    >
-                      <h3 class="h3-a mt-2 pb-10">
-                        <a href=""> Lihat di Pinterset</a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section> -->
 
     <section id="experience" class="bg-slate-100 dark:bg-slate-800">
       <div class="container justify-content-center">
-        <div class="lg:border-t lg:border-teal-500 w-full pt-4"></div>
-        <div class="icon-links text-center">
-          <a
-            class="portofolio-link mx-4 text-lg dark:text-white active:border-b-4 p-4"
-            data-page="vektor"
-            onclick="showImages('vektor')"
-            style="cursor: pointer"
-          >
-            <i class="bi bi-file-earmark-richtext icon text-3xl lg:text-lg"></i>
-            <span class="hidden md:inline"> Vektor</span>
-          </a>
-          <a
-            class="portofolio-link mx-4 text-lg dark:text-white"
-            data-page="web"
-            onclick="showImages('web')"
-            style="cursor: pointer"
-          >
-            <i class="bi bi-globe icon text-3xl lg:text-lg"></i>
-            <span class="hidden md:inline"> Website</span>
-          </a>
-          <a
-            class="portofolio-link mx-4 text-lg dark:text-white"
-            data-page="typography"
-            onclick="showImages('typography')"
-            style="cursor: pointer"
-          >
-            <i class="bi bi-file-earmark-font icon text-3xl lg:text-lg"></i>
-            <span class="hidden md:inline"> Tipograpi</span>
-          </a>
-          <a
-            class="portofolio-link mx-4 text-lg dark:text-white"
-            data-page="other"
-            onclick="showImages('other')"
-            style="cursor: pointer"
-          >
-            <i class="bi bi-file-image icon text-3xl lg:text-lg"></i>
-            <span class="hidden md:inline"> Lainnya</span>
-          </a>
-        </div>
-        <div class="border-b border-teal-500 lg:border-none w-full pt-4"></div>
-
         <!-- Vektor -->
         <div class="lg:px-0" id="vektor-section">
           <div class="font-sans grid grid-cols-3 gap-1 pt-4">
@@ -508,7 +244,7 @@
               class="portfolio-lightbox relative"
             >
               <div
-                class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500"
               >
                 <div
                   class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
@@ -532,7 +268,7 @@
               class="portfolio-lightbox relative"
             >
               <div
-                class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500"
               >
                 <div
                   class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
@@ -556,7 +292,7 @@
               class="portfolio-lightbox relative"
             >
               <div
-                class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500"
               >
                 <div
                   class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
@@ -580,7 +316,7 @@
               class="portfolio-lightbox relative"
             >
               <div
-                class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500"
               >
                 <div
                   class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
@@ -604,7 +340,7 @@
               class="portfolio-lightbox relative"
             >
               <div
-                class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500"
               >
                 <div
                   class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
@@ -628,7 +364,7 @@
               class="portfolio-lightbox relative"
             >
               <div
-                class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                class="h-15 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative transition-all duration-500"
               >
                 <div
                   class="w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500"
@@ -652,10 +388,10 @@
             <a
               href="https://pin.it/3V4400Q"
               target="_blank"
-              class="text-dark dark:text-white font-medium"
+              class="text-dark text-xl dark:text-white dark:hover:text-primary font-medium"
             >
               Lanjut Lihat di Pinterest
-              <i class="bi bi-arrow-right-circle"></i>
+              <i class="bi bi-arrow-right-circle text-2xl"></i>
             </a>
           </div>
         </div>
@@ -663,7 +399,7 @@
         <!-- Web -->
         <div id="web-section" class="d-none">
           <div
-            class="font-sans grid grid-cols-1 lg:grid-cols-3 gap-2 pt-4 pb-16"
+            class="font-sans grid grid-cols-2 lg:grid-cols-3 gap-2 pt-4 pb-16"
           >
             <div
               class="aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative"
@@ -716,8 +452,11 @@
           </div>
         </div>
 
+        <!-- typography -->
         <div id="typography-section" class="d-none">
-          <div class="font-sans grid grid-cols-2 lg:grid-cols-5 gap-1 pt-4">
+          <div
+            class="font-sans grid grid-cols-3 lg:grid-cols-5 gap-1 pt-4 pb-16"
+          >
             <a
               href="dist/img/portofolio/typography/1.jpg"
               data-gallery="typoGallery"
@@ -726,9 +465,7 @@
               <div
                 class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
               >
-                <div
-                  class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
+                <div class="rounded-t-md overflow-hidden">
                   <img
                     src="dist/img/portofolio/typography/1.jpg"
                     alt="portofolio"
@@ -752,9 +489,7 @@
               <div
                 class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
               >
-                <div
-                  class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
+                <div class="rounded-t-md overflow-hidden">
                   <img
                     src="dist/img/portofolio/typography/2.jpg"
                     alt="portofolio"
@@ -771,18 +506,16 @@
               </div>
             </a>
             <a
-              href="dist/img/portofolio/typography/1.jpg"
+              href="dist/img/portofolio/typography/3.jpg"
               data-gallery="typoGallery"
               class="portfolio-lightbox relative"
             >
               <div
                 class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
               >
-                <div
-                  class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
+                <div class="rounded-t-md overflow-hidden">
                   <img
-                    src="dist/img/portofolio/typography/1.jpg"
+                    src="dist/img/portofolio/typography/3.jpg"
                     alt="portofolio"
                   />
                 </div>
@@ -797,18 +530,16 @@
               </div>
             </a>
             <a
-              href="dist/img/portofolio/typography/2.jpg"
+              href="dist/img/portofolio/typography/4.jpg"
               data-gallery="typoGallery"
               class="portfolio-lightbox relative"
             >
               <div
-                class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+                class="rounded-xl overflow-hidden border-2 dark:border-dark dark:shadow-none relative group"
               >
-                <div
-                  class="rounded-t-md overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
+                <div class="rounded-t-md overflow-hidden">
                   <img
-                    src="dist/img/portofolio/typography/2.jpg"
+                    src="dist/img/portofolio/typography/4.jpg"
                     alt="portofolio"
                   />
                 </div>
@@ -822,21 +553,470 @@
                 </div>
               </div>
             </a>
-          </div>
-
-          <div class="text-center mt-4 pb-10">
-            <a
-              href="https://pin.it/3V4400Q"
-              target="_blank"
-              class="text-dark dark:text-white font-medium"
+            <div
+              class="rounded-xl overflow-hidden border-2 dark:border-dark dark:shadow-none relative group"
             >
-              Lanjut Lihat di Pinterest
-              <i class="bi bi-arrow-right-circle"></i>
-            </a>
+              <div class="rounded-t-md overflow-hidden">
+                <img src="dist/img/portofolio/typography/2.jpg" />
+              </div>
+              <div
+                class="overlay absolute inset-0 flex items-center justify-center"
+              >
+                <div
+                  class="absolute inset-0 bg-white dark:bg-slate-700 opacity-100"
+                ></div>
+                <a
+                  href="https://pin.it/3V4400Q"
+                  target="_blank"
+                  class="text-dark hover:text-primary dark:text-white dark:hover:text-primary font-semibold text-sm lg:text-2xl z-10 text-center"
+                  >Lanjut Lihat di Pinterest
+                  <i class="bi bi-arrow-right-circle"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="other-section" class="d-none">
-          <p class="pb-10">ini halaman other</p>
+
+        <div id="other-section" class="d-none pt-4">
+          <div
+            class="border-b border-t border-primary mt-4 justify-center text-center"
+          >
+            <p
+              class="text-primary text-xl md:text-lg lg:text-2xl py-2 font-semibold"
+            >
+              <i class="bi bi-android2"></i> Projek Android
+            </p>
+          </div>
+          <div
+            class="font-sans grid grid-cols-3 md:grid-cols-6 gap-1 pt-4 pb-16"
+          >
+            <a
+              href="dist/img/portofolio/other/android/1.png"
+              data-gallery="androidGallery"
+              class="portfolio-lightbox relative"
+            >
+              <div
+                class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+              >
+                <div class="rounded-t-md overflow-hidden">
+                  <img
+                    src="dist/img/portofolio/other/android/1.png"
+                    alt="portofolio"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                >
+                  <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                  <p class="text-white font-semibold text-sm lg:text-2xl z-10">
+                    Open
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="dist/img/portofolio/other/android/2.png"
+              data-gallery="androidGallery"
+              class="portfolio-lightbox relative"
+            >
+              <div
+                class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+              >
+                <div class="rounded-t-md overflow-hidden">
+                  <img
+                    src="dist/img/portofolio/other/android/2.png"
+                    alt="portofolio"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                >
+                  <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                  <p class="text-white font-semibold text-sm lg:text-2xl z-10">
+                    Open
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="hidden md:block lg:block">
+              <a
+                href="dist/img/portofolio/other/android/3.png"
+                data-gallery="androidGallery"
+                class="portfolio-lightbox relative"
+              >
+                <div
+                  class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+                >
+                  <div class="rounded-t-md overflow-hidden">
+                    <img
+                      src="dist/img/portofolio/other/android/3.png"
+                      alt="portofolio"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  >
+                    <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                    <p
+                      class="text-white font-semibold text-sm lg:text-2xl z-10"
+                    >
+                      Open
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="hidden md:block lg:block">
+              <a
+                href="dist/img/portofolio/other/android/4.png"
+                data-gallery="androidGallery"
+                class="portfolio-lightbox relative"
+              >
+                <div
+                  class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+                >
+                  <div class="rounded-t-md overflow-hidden">
+                    <img
+                      src="dist/img/portofolio/other/android/4.png"
+                      alt="portofolio"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  >
+                    <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                    <p
+                      class="text-white font-semibold text-sm lg:text-2xl z-10"
+                    >
+                      Open
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="hidden md:block lg:block">
+              <a
+                href="dist/img/portofolio/other/android/5.png"
+                data-gallery="androidGallery"
+                class="portfolio-lightbox relative"
+              >
+                <div
+                  class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+                >
+                  <div class="rounded-t-md overflow-hidden">
+                    <img
+                      src="dist/img/portofolio/other/android/5.png"
+                      alt="portofolio"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  >
+                    <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                    <p
+                      class="text-white font-semibold text-sm lg:text-2xl z-10"
+                    >
+                      Open
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="rounded-xl overflow-hidden border-2 dark:border-dark dark:shadow-none relative group"
+            >
+              <div class="rounded-t-md overflow-hidden">
+                <img src="dist/img/portofolio/typography/2.jpg" />
+              </div>
+              <div
+                class="overlay absolute inset-0 flex items-center justify-center"
+              >
+                <div
+                  class="absolute inset-0 bg-white dark:bg-slate-700 opacity-100"
+                ></div>
+                <a
+                  href="https://pin.it/3V4400Q"
+                  target="_blank"
+                  class="text-dark hover:text-primary dark:text-white dark:hover:text-primary font-semibold text-sm lg:text-2xl z-10 text-center"
+                  >Lihat Projek <i class="bi bi-arrow-right-circle"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="border-b border-t border-primary mt-4 justify-center text-center"
+          >
+            <p
+              class="text-primary text-xl md:text-lg lg:text-2xl pt-4 font-semibold"
+            >
+              <i class="bi bi-laptop"></i> Projek Desktop
+            </p>
+          </div>
+
+          <p class="text-primary text-sm md:text-lg pt-4 pb-2 font-semibold">
+            Projek Desktop Transaksi Kereta Api
+          </p>
+          <div class="font-sans grid grid-cols-3 md:grid-cols-5 gap-1 pb-10">
+            <a
+              href="dist/img/portofolio/other/desktop/kereta-api/1.png"
+              data-gallery="desktopGallery"
+              class="portfolio-lightbox relative"
+            >
+              <div
+                class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+              >
+                <div class="rounded-t-md overflow-hidden">
+                  <img
+                    src="dist/img/portofolio/other/desktop/kereta-api/1.png"
+                    alt="portofolio"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                >
+                  <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                  <p class="text-white font-semibold text-sm lg:text-2xl z-10">
+                    Open
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="dist/img/portofolio/other/desktop/kereta-api/2.png"
+              data-gallery="desktopGallery"
+              class="portfolio-lightbox relative"
+            >
+              <div
+                class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+              >
+                <div class="rounded-t-md overflow-hidden">
+                  <img
+                    src="dist/img/portofolio/other/desktop/kereta-api/2.png"
+                    alt="portofolio"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                >
+                  <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                  <p class="text-white font-semibold text-sm lg:text-2xl z-10">
+                    Open
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="hidden md:block lg:block">
+              <a
+                href="dist/img/portofolio/other/desktop/kereta-api/3.png"
+                data-gallery="desktopGallery"
+                class="portfolio-lightbox relative"
+              >
+                <div
+                  class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+                >
+                  <div class="rounded-t-md overflow-hidden">
+                    <img
+                      src="dist/img/portofolio/other/desktop/kereta-api/3.png"
+                      alt="portofolio"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  >
+                    <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                    <p
+                      class="text-white font-semibold text-sm lg:text-2xl z-10"
+                    >
+                      Open
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="hidden md:block lg:block">
+              <a
+                href="dist/img/portofolio/other/desktop/kereta-api/4.png"
+                data-gallery="desktopGallery"
+                class="portfolio-lightbox relative"
+              >
+                <div
+                  class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+                >
+                  <div class="rounded-t-md overflow-hidden">
+                    <img
+                      src="dist/img/portofolio/other/desktop/kereta-api/4.png"
+                      alt="portofolio"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  >
+                    <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                    <p
+                      class="text-white font-semibold text-sm lg:text-2xl z-10"
+                    >
+                      Open
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="rounded-xl overflow-hidden border-2 dark:border-dark dark:shadow-none relative group"
+            >
+              <div class="rounded-t-md overflow-hidden">
+                <img src="dist/img/portofolio/other/desktop/kereta-api/4.png" />
+              </div>
+              <div
+                class="overlay absolute inset-0 flex items-center justify-center"
+              >
+                <div
+                  class="absolute inset-0 bg-white dark:bg-slate-700 opacity-100"
+                ></div>
+                <a
+                  href="https://pin.it/3V4400Q"
+                  target="_blank"
+                  class="text-dark hover:text-primary dark:text-white dark:hover:text-primary font-semibold text-sm lg:text-2xl z-10 text-center"
+                  >Lihat Projek <i class="bi bi-arrow-right-circle"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-primary text-sm md:text-lg pt-4 pb-2 font-semibold">
+            Projek Desktop Perpustakaan
+          </p>
+          <div class="font-sans grid grid-cols-3 md:grid-cols-5 gap-1 pb-16">
+            <a
+              href="dist/img/portofolio/other/desktop/perpustakaan/1.png"
+              data-gallery="desktopGallery1"
+              class="portfolio-lightbox relative"
+            >
+              <div
+                class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+              >
+                <div class="rounded-t-md overflow-hidden">
+                  <img
+                    src="dist/img/portofolio/other/desktop/perpustakaan/1.png"
+                    alt="portofolio"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                >
+                  <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                  <p class="text-white font-semibold text-sm lg:text-2xl z-10">
+                    Open
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="dist/img/portofolio/other/desktop/perpustakaan/2.png"
+              data-gallery="desktopGallery1"
+              class="portfolio-lightbox relative"
+            >
+              <div
+                class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+              >
+                <div class="rounded-t-md overflow-hidden">
+                  <img
+                    src="dist/img/portofolio/other/desktop/perpustakaan/2.png"
+                    alt="portofolio"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                >
+                  <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                  <p class="text-white font-semibold text-sm lg:text-2xl z-10">
+                    Open
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="hidden md:block lg:block">
+              <a
+                href="dist/img/portofolio/other/desktop/perpustakaan/3.png"
+                data-gallery="desktopGallery1"
+                class="portfolio-lightbox relative"
+              >
+                <div
+                  class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+                >
+                  <div class="rounded-t-md overflow-hidden">
+                    <img
+                      src="dist/img/portofolio/other/desktop/perpustakaan/3.png"
+                      alt="portofolio"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  >
+                    <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                    <p
+                      class="text-white font-semibold text-sm lg:text-2xl z-10"
+                    >
+                      Open
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="hidden md:block lg:block">
+              <a
+                href="dist/img/portofolio/other/desktop/perpustakaan/4.png"
+                data-gallery="desktopGallery1"
+                class="portfolio-lightbox relative"
+              >
+                <div
+                  class="rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative group"
+                >
+                  <div class="rounded-t-md overflow-hidden">
+                    <img
+                      src="dist/img/portofolio/other/desktop/perpustakaan/4.png"
+                      alt="portofolio"
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                  >
+                    <div class="absolute inset-0 bg-slate-600 opacity-50"></div>
+                    <p
+                      class="text-white font-semibold text-sm lg:text-2xl z-10"
+                    >
+                      Open
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="rounded-xl overflow-hidden border-2 dark:border-dark dark:shadow-none relative group"
+            >
+              <div class="rounded-t-md overflow-hidden">
+                <img
+                  src="dist/img/portofolio/other/desktop/perpustakaan/4.png"
+                />
+              </div>
+              <div
+                class="overlay absolute inset-0 flex items-center justify-center"
+              >
+                <div
+                  class="absolute inset-0 bg-white dark:bg-slate-700 opacity-100"
+                ></div>
+                <a
+                  href="https://pin.it/3V4400Q"
+                  target="_blank"
+                  class="text-dark hover:text-primary dark:text-white dark:hover:text-primary font-semibold text-sm lg:text-2xl z-10 text-center"
+                  >Lihat Projek <i class="bi bi-arrow-right-circle"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -967,64 +1147,6 @@
       });
     </script>
 
-    <!-- <script>
-      function showImages(category) {
-        const imageSets = document.querySelectorAll('[id$="-images"]');
-        imageSets.forEach((imageSet) => {
-          if (imageSet.id === `${category}-images`) {
-            imageSet.classList.remove("d-none");
-          } else {
-            imageSet.classList.add("d-none");
-          }
-        });
-
-        const links = document.querySelectorAll(".icon-links .nav-link");
-        links.forEach((link) => {
-          link.classList.remove("active");
-        });
-
-        const activeLink = document.querySelector(`[data-page="${category}"]`);
-        activeLink.classList.add("active");
-        localStorage.setItem("selectedCategory", category);
-      }
-    </script> -->
-
-    <!-- <script>
-      function showImages(category) {
-        const vektorSection = document.getElementById("vektor-section");
-        const webSection = document.getElementById("web-section");
-
-        if (category === "vektor") {
-          vektorSection.classList.remove("d-none");
-          webSection.classList.add("d-none");
-        } else if (category === "web") {
-          vektorSection.classList.add("d-none");
-          webSection.classList.remove("d-none");
-        }
-
-        const links = document.querySelectorAll(".icon-links .nav-link");
-        links.forEach((link) => {
-          link.classList.remove("active");
-        });
-
-        const activeLink = document.querySelector(`[data-page="${category}"]`);
-        activeLink.classList.add("active");
-        localStorage.setItem("selectedCategory", category);
-      }
-
-      // Check if there is a hash in the URL on page load
-      window.addEventListener("load", () => {
-        const hash = window.location.hash.substring(1);
-        if (hash === "web-section") {
-          // If the hash is web-section, show the web section
-          showImages("web");
-        } else if (hash === "vektor-section") {
-          // If the hash is vektor-section, show the vektor section
-          showImages("vektor");
-        }
-      });
-    </script> -->
-
     <script>
       function showImages(category) {
         const vektorSection = document.getElementById("vektor-section");
@@ -1078,10 +1200,11 @@
         }
       });
     </script>
-    <script src="dist/js/swiper-bundle.min.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="dist/js/swiper-bundle.min.js"></script> -->
+
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
 
     <script src="dist/js/scripts.js"></script>
     <script src="dist/js/portofolio.js"></script>
@@ -1093,67 +1216,5 @@
   </body>
 </html>
 
-<!-- <div class="w-full flex flex-wrap justify-center xl:mx-auto xl:w-10/12" id="vektor-images">
-          <div class="row row-cols-3 my-3">
-            <div class="p-4 md:w-1/3 text-center">
-              <div class="work-box">
-                <a
-                  href="dist/img/portofolio/vektor/1.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                >
-                  <div class="work-img">
-                    <img
-                      src="dist/img/portofolio/vektor/1.jpg"
-                      class="img-fluid"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3 text-center">
-              <div class="work-box">
-                <a
-                  href="dist/img/portofolio/vektor/2.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                >
-                  <div class="work-img">
-                    <img
-                      src="dist/img/portofolio/vektor/2.jpg"
-                      class="img-fluid"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3 text-center">
-              <div class="work-box">
-                <a
-                  href="dist/img/portofolio/vektor/1.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                >
-                  <div class="work-img">
-                    <img
-                      src="dist/img/portofolio/vektor/1.jpg"
-                      class="img-fluid"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="row justify-content-center text-center">
-            <div class="col-md-4 mt-3">
-              <a
-                href="https://pin.it/3V4400Q"
-                target="_blank"
-                class="text-decoration-none text-dark"
-                >Lanjut Lihat di Pinterest
-                <i class="bi bi-arrow-right-circle"></i
-              ></a>
-            </div>
-          </div>
-        </div> -->
+<!-- link buat github other desktop Lainnya -->
+<!-- https://github.com/search?q=user%3ASkrnagrh+language%3Ajava&type=repositories&p=1 -->

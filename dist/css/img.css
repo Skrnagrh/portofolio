@@ -132,8 +132,8 @@
 .icon-links .portofolio-link.active {
   font-weight: bold;
   color: #1abc9c;
-  border-top: 4px solid #1abc9c;
-  padding-top: 19px;
+  border-bottom: 4px solid #1abc9c;
+  padding-bottom: 19px;
 }
 
 @media (max-width: 768px) {
