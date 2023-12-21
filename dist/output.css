@@ -631,6 +631,11 @@ video {
   margin-right: 1rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -817,6 +822,10 @@ video {
 
 .gap-1 {
   gap: 0.25rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .self-end {
@@ -1760,8 +1769,8 @@ body {
   bottom: 1rem;
   right: 1rem;
   z-index: 9999;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3rem;
+  width: 3rem;
   align-items: center;
   justify-content: space-around;
   border-radius: 9999px;
@@ -1778,6 +1787,13 @@ body {
 
 .back-to-top:hover {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@media (min-width: 1024px) {
+  .back-to-top {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
 }
 
 .h3-a {
@@ -1891,6 +1907,7 @@ body {
 
 .web-1 {
   position: relative;
+  margin-top: 1rem;
   overflow: hidden;
   border-radius: 0.75rem;
   border-width: 2px;
@@ -1904,6 +1921,12 @@ body {
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 1024px) {
+  .web-1 {
+    margin-top: 0px;
+  }
 }
 
 .web-2 {
@@ -2431,6 +2454,11 @@ body {
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .lg\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .lg\:mx-6 {
