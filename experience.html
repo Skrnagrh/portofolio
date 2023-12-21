@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="dist/output.css" rel="stylesheet" />
-    <link  rel="icon" type="image/x-icon" href="dist/img/icon.png">
+    <link rel="icon" type="image/x-icon" href="dist/img/icon.png" />
     <title>Portofolio - Sukron</title>
+
+    <!-- Icon Bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- Icon Bootstrap -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <!-- Dark Mode Theme -->
     <script>
       if (
         localStorage.theme === "dark" ||
@@ -22,8 +31,11 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
+    <!-- Dark Mode Theme -->
   </head>
+
   <body>
+    <!-- Header start -->
     <header
       class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
     >
@@ -125,7 +137,9 @@
         </div>
       </div>
     </header>
+    <!-- Header End -->
 
+    <!-- Hero Section Start -->
     <section id="home" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
       <div class="container">
         <div class="flex flex-wrap justify-center">
@@ -146,30 +160,47 @@
         </div>
       </div>
     </section>
+    <!-- Hero Section End -->
 
+    <!-- Logo Section Start -->
     <section class="pt-2 pb-2 bg-slate-200 dark:bg-slate-700">
       <div class="container">
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
-            <a href="#ipm" class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8 dark:grayscale dark:hover:grayscale-0">
-              <img src="dist/img/clients/1.png" alt="ipm" />
+            <a
+              href="#ipm"
+              class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8 dark:grayscale dark:hover:grayscale-0 animate__animated animate__backInLeft"
+            >
+              <img src="dist/img/experience/1.png" alt="ipm" />
             </a>
-            <a href="#sakina" class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8 dark:grayscale dark:hover:grayscale-0">
-              <img src="dist/img/clients/2.png" alt="ipm" />
+            <a
+              href="#sakina"
+              class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8 dark:grayscale dark:hover:grayscale-0 animate__animated animate__backInLeft"
+            >
+              <img src="dist/img/experience/2.png" alt="ipm" />
             </a>
-            <a href="#jhon" class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8 dark:grayscale dark:hover:grayscale-0">
-              <img src="dist/img/clients/3.png" alt="ipm" />
+            <a
+              href="#jhon"
+              class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8 dark:grayscale dark:hover:grayscale-0 animate__animated animate__backInRight"
+            >
+              <img src="dist/img/experience/3.png" alt="ipm" />
             </a>
-            <a href="#pkl" class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8 dark:grayscale dark:hover:grayscale-0">
-              <img src="dist/img/clients/4.png" alt="ipm" />
+            <a
+              href="#pkl"
+              class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8 dark:grayscale dark:hover:grayscale-0 animate__animated animate__backInRight"
+            >
+              <img src="dist/img/experience/4.png" alt="ipm" />
             </a>
           </div>
         </div>
       </div>
     </section>
+    <!-- Logo Section End -->
 
+    <!-- Experience Section -->
     <section class="pb-16 lg:pb-0 dark:bg-dark">
       <div class="mx-4 lg:mx-0">
+        <!-- IPM Start -->
         <div class="pt-24 lg:pt-0" id="ipm">
           <div
             class="dark:bg-slate-800 lg:dark:bg-dark rounded-xl lg:rounded-none"
@@ -180,7 +211,7 @@
               <div class="lg:p-12 lg:flex-1">
                 <div class="flex items-center">
                   <img
-                    src="dist/img/clients/1.png"
+                    src="dist/img/experience/1.png"
                     alt="2"
                     class="max-w-[80px] lg:hidden"
                   />
@@ -260,7 +291,9 @@
             </div>
           </div>
         </div>
+        <!-- IPM End -->
 
+        <!-- Sakina Start -->
         <div class="pt-24 lg:pt-0" id="sakina">
           <div
             class="dark:bg-slate-800 lg:bg-slate-200 lg:dark:bg-slate-700 rounded-xl lg:rounded-none lg:pt-16"
@@ -278,7 +311,7 @@
               <div class="lg:p-12 lg:flex-1">
                 <div class="flex items-center">
                   <img
-                    src="dist/img/clients/2.png"
+                    src="dist/img/experience/2.png"
                     alt="2"
                     class="max-w-[80px] lg:hidden"
                   />
@@ -338,7 +371,9 @@
             </div>
           </div>
         </div>
+        <!-- Sakina End -->
 
+        <!-- Jhon Start -->
         <div class="pt-24 lg:pt-0" id="jhon">
           <div
             class="dark:bg-slate-800 lg:dark:bg-dark rounded-xl lg:rounded-none"
@@ -349,7 +384,7 @@
               <div class="lg:p-12 lg:flex-1">
                 <div class="flex items-center">
                   <img
-                    src="dist/img/clients/3.png"
+                    src="dist/img/experience/3.png"
                     alt="3"
                     class="max-w-[80px] lg:hidden"
                   />
@@ -418,7 +453,9 @@
             </div>
           </div>
         </div>
+        <!-- Jhon End -->
 
+        <!-- PKL Start -->
         <div class="pt-24 lg:pt-0" id="pkl">
           <div
             class="dark:bg-slate-800 lg:bg-slate-200 lg:dark:bg-slate-700 rounded-xl lg:rounded-none lg:py-16"
@@ -436,7 +473,7 @@
               <div class="lg:p-12 lg:flex-1">
                 <div class="flex items-center">
                   <img
-                    src="dist/img/clients/4.png"
+                    src="dist/img/experience/4.png"
                     alt="4"
                     class="max-w-[80px] lg:hidden"
                   />
@@ -485,56 +522,55 @@
             </div>
           </div>
         </div>
+        <!-- PKL End -->
       </div>
     </section>
+    <!-- Experience End -->
 
+    <!-- Footer Section Start -->
     <footer class="bg-dark pt-36 pb-12" id="contact">
       <div class="container">
-        <div class="flex flex-wrap">
-          <div
-            class="w-full px-4 mb-12 text-slate-300 font-medium text-center justify-center lg:w-1/2"
-          >
+        <div class="flex flex-wrap justify-center text-center">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium lg:w-1/2">
             <h2 class="font-bold text-white text-2xl uppercase mb-2">Lokasi</h2>
             <h2 class="font-bold text-xl">Taktakan</h2>
             <p class="text-base">Kota Serang Banten</p>
           </div>
-          <div
-            class="w-full px-4 mb-12 text-slate-300 font-medium text-center justify-center lg:w-1/2"
-          >
+          <div class="w-full mb-12 text-slate-300 font-medium lg:w-1/2">
             <h2 class="font-bold text-2xl text-white uppercase mb-2">Kontak</h2>
-            <div class="flex items-center justify-center mb-5">
+            <div class="flex mb-5 justify-center">
               <a
                 href="mailto:suk12on512@gmail.com"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+                class="a-footer"
                 ><i class="bi bi-envelope"></i
               ></a>
 
               <a
                 href="https://instagram.com/skrnagrh"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+                class="a-footer"
               >
                 <i class="bi bi-instagram"></i>
               </a>
               <a
                 href="https://api.whatsapp.com/send?phone=6285691468025"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+                class="a-footer"
                 ><i class="bi bi-whatsapp"></i
               ></a>
 
               <a
                 href="https://linkedin.com/in/sukron"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+                class="a-footer"
               >
                 <i class="bi bi-linkedin"></i>
               </a>
               <a
                 href="https://github.com/skrnagrh"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:bg-primary hover:text-white"
+                class="a-footer"
               >
                 <i class="bi bi-github"></i>
               </a>
@@ -545,7 +581,7 @@
           <p class="font-medium text-md text-slate-500 text-center">
             Copyright &copy; Portofolio -
             <a class="font-bold text-primary">Sukron</a>
-            <span id="current-year" class="font-bold text-white"></span>
+            <span id="current-year" class="font-medium text-white"></span>
           </p>
         </div>
       </div>

@@ -1,6 +1,6 @@
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Portfolio
---------------------------------------------------------------*/
+--------------------------------------------------------------
 
 .work-img {
   display: block;
@@ -44,11 +44,10 @@
 .w-title {
   font-size: 1.2rem;
 }
-*/
   
-/*--------------------------------------------------------------
+--------------------------------------------------------------
 # Portfolio Details
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .portfolio-details {
   padding-top: 40px;
 }
@@ -117,7 +116,6 @@
   padding: 0;
 }
 
-/* Style for the active link */
 .hr-atas {
   margin-bottom: -3px;
 }
@@ -129,12 +127,6 @@
   color: #212529; 
 }
 
-.icon-links .portofolio-link.active {
-  font-weight: bold;
-  color: #1abc9c;
-  border-bottom: 4px solid #1abc9c;
-  padding-bottom: 19px;
-}
 
 @media (max-width: 768px) {
   .bi.icon {
@@ -155,4 +147,11 @@
 .img-typography {
   border: 1px solid #1abc9c;
   border-radius: 10px;
+} */
+
+.icon-links .portofolio-link.active {
+  font-weight: bold;
+  color: #1abc9c;
+  border-bottom: 4px solid #1abc9c;
+  padding-bottom: 19px;
 }

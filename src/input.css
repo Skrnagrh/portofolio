@@ -5,6 +5,7 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
 .navbar-fixed {
   @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm dark:bg-dark dark:bg-opacity-50;
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
@@ -115,7 +116,9 @@ body {
 }
 
 .a-footer {
-  @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-500 text-slate-500 hover:bg-primary hover:text-white hover:border-2 hover:border-white;
+  @apply w-9 h-9 lg:w-12 lg:h-12 mr-3 lg:mr-4 rounded-full flex justify-center items-center border-2 border-slate-500 text-slate-500 hover:bg-primary hover:text-white hover:border-2 hover:border-white;
+
+  /* @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-500 text-slate-500 hover:bg-primary hover:text-white hover:border-2 hover:border-white; */
 }
 .back-to-top {
   @apply h-10 w-10 bg-primary justify-around items-center fixed z-[9999] bottom-4 right-4 rounded-full p-2 hover:animate-pulse;
@@ -176,7 +179,7 @@ body {
 
 /* Other Start*/
 .other-1 {
-  @apply border-b border-t border-primary mt-4 justify-center text-center;
+  @apply mt-4;
 }
 .other-2 {
   @apply text-primary text-xl md:text-lg lg:text-2xl py-2 font-semibold;
@@ -224,5 +227,4 @@ body {
 .porto-3 {
   @apply text-dark hover:text-primary dark:text-white dark:hover:text-primary font-semibold text-sm lg:text-2xl z-10 text-center;
 }
-
 /* Portofolio.html End */

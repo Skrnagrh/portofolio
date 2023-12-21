@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="dist/output.css" rel="stylesheet" />
-    <link  rel="icon" type="image/x-icon" href="dist/img/icon.png">
+    <link rel="icon" type="image/x-icon" href="dist/img/icon.png" />
     <title>Portofolio - Sukron</title>
+    
+    <!-- Icon Bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- Icon Bootstrap -->
+
+    <!-- Dark Mode Theme -->
     <script>
       if (
         localStorage.theme === "dark" ||
@@ -22,6 +26,7 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
+    <!-- Dark Mode Theme -->
   </head>
   <body>
     <!-- Header start -->
@@ -230,9 +235,7 @@
             >
               Tentang Saya
             </h2>
-            <p
-              class="font-medium text-base text-secondary max-w-xl lg:text-lg"
-            >
+            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
               <span
                 class="font-bold text-dark text-sm lg:text-lg dark:text-white capitalize"
               >
@@ -283,7 +286,9 @@
         <div class="w-full flex flex-wrap justify-center xl:mx-auto xl:w-10/12">
           <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
             <a href="experience.html#ipm">
-              <div class="card-experience border-blue-600 shadow-blue-400 shadow-lg">
+              <div
+                class="card-experience border-blue-600 shadow-blue-400 shadow-lg"
+              >
                 <div class="img-experience">
                   <img
                     src="dist/img/index/experience/1.png"
@@ -566,13 +571,9 @@
             <h2 class="font-bold text-xl">Taktakan</h2>
             <p class="text-base">Kota Serang Banten</p>
           </div>
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium lg:w-1/2">
-            <h2
-              class="font-bold text-2xl text-white uppercase mb-2 text-center"
-            >
-              Kontak
-            </h2>
-            <div class="flex mx-4 mb-5 justify-center">
+          <div class="w-full mb-12 text-slate-300 font-medium lg:w-1/2">
+            <h2 class="font-bold text-2xl text-white uppercase mb-2">Kontak</h2>
+            <div class="flex mb-5 justify-center">
               <a
                 href="mailto:suk12on512@gmail.com"
                 target="_blank"
@@ -615,7 +616,7 @@
           <p class="font-medium text-md text-slate-500 text-center">
             Copyright &copy; Portofolio -
             <a class="font-bold text-primary">Sukron</a>
-            <span id="current-year" class="font-base text-white"></span>
+            <span id="current-year" class="font-medium text-white"></span>
           </p>
         </div>
       </div>
@@ -626,27 +627,6 @@
     <a href="#home" class="back-to-top hidden" id="to-top">
       <i class="bi bi-arrow-up font-semibold text-white text-lg"></i>
     </a>
-    <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
-    <!-- Back To Top End -->
     <script src="dist/js/script.js"></script>
   </body>
 </html>
-
-<!-- <li class="items-center pl-8 pt-2 lg:mt-0 lg:flex">
-                  <div class="flex">
-                    <i class="bi bi-sun-fill mr-2 text-sm text-slate-500"></i>
-                    <input type="checkbox" class="hidden" id="dark-toggle" />
-                    <label for="dark-toggle">
-                      <div
-                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
-                      >
-                        <div
-                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
-                        ></div>
-                      </div>
-                    </label>
-                    <i
-                      class="bi bi-moon-stars-fill ml-2 text-sm text-slate-500"
-                    ></i>
-                  </div>
-                </li> -->
