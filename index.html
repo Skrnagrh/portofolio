@@ -14,6 +14,10 @@
     />
     <!-- Icon Bootstrap -->
 
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Aos -->
+
     <!-- Dark Mode Theme -->
     <script>
       if (
@@ -145,14 +149,27 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">
+            <h1
+              class="text-base font-semibold text-primary md:text-xl"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
               Halo Semua ✋, Saya
               <span
                 class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white uppercase"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="300"
                 >Sukron</span
               >
             </h1>
-            <h2 class="font-medium text-secondary textlg mb-5 lg:text-2xl">
+            <h2
+              class="font-medium text-secondary textlg mb-5 lg:text-2xl"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="400"
+              data-aos-delay="400"
+            >
               Web Developer &
               <span class="text-dark dark:text-white">Staff Administrasi</span>
             </h2>
@@ -162,6 +179,10 @@
                 href="mailto:suk12on512@gmail.com"
                 target="_blank"
                 class="hero-contact"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="500"
+                data-aos-delay="500"
                 ><i class="bi bi-envelope icon-contact"></i
               ></a>
 
@@ -169,6 +190,10 @@
                 href="https://instagram.com/skrnagrh"
                 target="_blank"
                 class="hero-contact"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="600"
+                data-aos-delay="600"
               >
                 <i class="bi bi-instagram icon-contact"></i>
               </a>
@@ -176,6 +201,10 @@
                 href="https://api.whatsapp.com/send?phone=6285691468025"
                 target="_blank"
                 class="hero-contact"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="700"
+                data-aos-delay="700"
                 ><i class="bi bi-whatsapp icon-contact"></i
               ></a>
 
@@ -183,6 +212,10 @@
                 href="https://linkedin.com/in/sukron"
                 target="_blank"
                 class="hero-contact"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="800"
+                data-aos-delay="800"
               >
                 <i class="bi bi-linkedin icon-contact"></i>
               </a>
@@ -190,6 +223,10 @@
                 href="https://github.com/skrnagrh"
                 target="_blank"
                 class="hero-contact"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="900"
+                data-aos-delay="900"
               >
                 <i class="bi bi-github icon-contact"></i>
               </a>
@@ -204,6 +241,9 @@
                   hight="400"
                   viewBox="0 0 200 200"
                   xmlns="http://www.w3.org/2000/svg"
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
                 >
                   <path
                     fill="#14b8a6"
@@ -216,6 +256,9 @@
                 src="dist/img/profile.png"
                 alt="skrnagrh"
                 class="relative max-w mx-auto"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1100"
                 style="filter: drop-shadow(10px 0px 5px #0a0a0a)"
               />
             </div>
@@ -226,16 +269,26 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32 dark:bg-dark">
+    <section id="about" class="pt-36 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2">
             <h2
-              class="font-bold text-primary text-3xl mb-4 md:text-4xl lg:text-5xl uppercase"
+              class="font-bold text-primary text-3xl mb-4 md:text-4xl lg:text-5xl uppercase lg:hidden"
             >
               Tentang Saya
             </h2>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
+            <img
+              src="dist/img/1.png"
+              alt="skrnagrh"
+              class="relative max-w mx-auto hidden lg:flex"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-duration="500"
+              data-aos-delay="50"
+              style="filter: drop-shadow(10px 0px 5px #0a0a0a)"
+            />
+            <!-- <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
               <span
                 class="font-bold text-dark text-sm lg:text-lg dark:text-white capitalize"
               >
@@ -246,12 +299,39 @@
               administrasi. Saya memiliki keahlian dalam pemrograman dan
               pengembangan web menggunakan berbagai bahasa pemrograman dan
               framework terkini.
-            </p>
+            </p> -->
           </div>
           <div class="w-full px-4 lg:w-1/2">
+            <h2
+              class="font-bold text-primary text-3xl mb-4 md:text-4xl lg:text-5xl uppercase hidden lg:flex"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-duration="300"
+              data-aos-delay="50"
+            >
+              Tentang Saya
+            </h2>
+            <p
+              class="font-medium text-base text-secondary max-w-xl lg:text-lg pb-10"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-duration="400"
+              data-aos-delay="50"
+            >
+              <span
+                class="font-bold text-dark text-sm lg:text-lg dark:text-white capitalize"
+              >
+                Saya lulusan Teknik Informatika
+              </span>
+              yang memiliki minat dan antusiasme tinggi dalam bidang
+              pengembangan perangkat lunak, teknologi informasi, dan
+              administrasi. Saya memiliki keahlian dalam pemrograman dan
+              pengembangan web menggunakan berbagai bahasa pemrograman dan
+              framework terkini.
+              <!-- </p>
             <p
               class="font-medium text-base text-secondary mb-6 lg:text-lg lg:pt-10"
-            >
+            > -->
               Selain itu, saya juga memiliki kemampuan dalam menganalisis dan
               merancang sistem informasi yang efektif dan efisien. Dengan
               komunikasi yang baik, kemampuan kerjasama tim yang kuat, serta
@@ -259,9 +339,22 @@
               proyek-proyek yang menantang, termasuk dalam peran Staff
               Administrasi.
             </p>
+            <div class="w-full pb-10">
+              <a
+                href="dist/resume/cv_sukron.pdf"
+                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                download="cv_sukron"
+                data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-duration="400"
+                data-aos-delay="50"
+                onclick="return confirm('Apakah Anda yakin ingin mendownload CV Sukron?')"
+                >Download CV</a
+              >
+            </div>
           </div>
         </div>
-        <div class="w-full px-4 flex items-center justify-center">
+        <!-- <div class="w-full px-4 flex items-center justify-center">
           <a
             href="dist/resume/cv_sukron.pdf"
             class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
@@ -269,7 +362,7 @@
             onclick="return confirm('Apakah Anda yakin ingin mendownload CV Sukron?')"
             >Download CV</a
           >
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- About Section End -->
@@ -279,12 +372,26 @@
       <div class="container">
         <div class="w-full">
           <div class="max-w-xl mx-auto text-center mb-4">
-            <h2 class="experience-h2">Pengalaman Kerja</h2>
+            <h2
+              class="experience-h2"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-duration="300"
+              data-aos-delay="50"
+            >
+              Pengalaman Kerja
+            </h2>
           </div>
         </div>
 
         <div class="w-full flex flex-wrap justify-center xl:mx-auto xl:w-10/12">
-          <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
+          <div
+            class="p-4 md:w-1/2 xl:w-1/3 text-center"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="600"
+            data-aos-delay="600"
+          >
             <a href="experience.html#ipm">
               <div
                 class="card-experience border-blue-600 shadow-blue-400 shadow-lg"
@@ -302,7 +409,13 @@
               </div>
             </a>
           </div>
-          <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
+          <div
+            class="p-4 md:w-1/2 xl:w-1/3 text-center"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="700"
+            data-aos-delay="700"
+          >
             <a href="experience.html#sakina">
               <div
                 class="card-experience border-red-600 shadow-red-400 shadow-lg"
@@ -320,7 +433,13 @@
               </div>
             </a>
           </div>
-          <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
+          <div
+            class="p-4 md:w-1/2 xl:w-1/3 text-center"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+            data-aos-delay="800"
+          >
             <a href="experience.html#jhon">
               <div
                 class="card-experience border-yellow-600 shadow-yellow-400 shadow-lg"
@@ -338,7 +457,13 @@
               </div>
             </a>
           </div>
-          <div class="p-4 md:w-1/2 xl:w-1/3 text-center">
+          <div
+            class="p-4 md:w-1/2 xl:w-1/3 text-center"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="900"
+            data-aos-delay="900"
+          >
             <a href="experience.html#pkl">
               <div
                 class="card-experience border-sky-600 shadow-sky-400 shadow-lg"
@@ -374,13 +499,26 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto text-center">
-            <h2 class="h2-education">Pendidikan</h2>
+            <h2
+              class="h2-education"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-duration="300"
+              data-aos-delay="50"
+            >
+              Pendidikan
+            </h2>
           </div>
         </div>
 
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
-            <div class="mx-auto text-center">
+            <div
+              class="mx-auto text-center"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+            >
               <a
                 href="https://unsera.ac.id/"
                 target="_blank"
@@ -399,12 +537,17 @@
                 <p class="text-education">2019 ~ 2023</p>
               </a>
             </div>
-            <div class="mx-auto text-center">
+            <div
+              class="mx-auto text-center"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="600"
+            >
               <a
+                href="https://sekolahloka.com/data/smks-pgri-3-kota-serang/"
                 target="_blank"
                 class="py-4 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 lg:mx-6 xl:mx-auto items-center justify-center"
               >
-                <!-- href="https://unsera.ac.id/" -->
                 <img
                   src="dist/img/index/education/2.png"
                   alt="ipm"
@@ -629,5 +772,10 @@
     </a>
 
     <script src="dist/js/script.js"></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
