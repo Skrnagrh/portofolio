@@ -14,6 +14,10 @@
     />
     <!-- Icon Bootstrap -->
 
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Aos -->
+
     <link rel="stylesheet" href="dist/css/img.css" />
     <link href="dist/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
 
@@ -141,15 +145,24 @@
       <div class="container">
         <div class="flex flex-wrap justify-center">
           <div class="w-full self-center px-4 lg:w-1/2 text-center">
-            <h1 class="text-base font-semibold text-primary md:text-xl mb-2">
+            <h1 class="text-base font-semibold text-primary md:text-xl mb-2" data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="300"
+            data-aos-delay="50">
               Portofolio
               <span
-                class="block font-bold text-dark text-4xl mt-2 lg:text-5xl dark:text-white uppercase"
+                class="block font-bold text-dark text-4xl mt-2 lg:text-5xl dark:text-white uppercase" data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-duration="300"
+                data-aos-delay="100"
               >
                 Sukron
               </span>
             </h1>
-            <h2 class="font-medium text-secondary text-md lg:text-lg mb-5 mt-4">
+            <h2 class="font-medium text-secondary text-md lg:text-lg mb-5 mt-4" data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="300"
+            data-aos-delay="150">
               Design Vektor - Project Web - Design Typographi - Other
             </h2>
           </div>
@@ -1038,17 +1051,39 @@
       <div class="container">
         <div class="flex flex-wrap justify-center text-center">
           <div class="w-full px-4 mb-12 text-slate-300 font-medium lg:w-1/2">
-            <h2 class="font-bold text-white text-2xl uppercase mb-2">Lokasi</h2>
-            <h2 class="font-bold text-xl">Taktakan</h2>
-            <p class="text-base">Kota Serang Banten</p>
+            <h2
+              class="font-bold text-white text-2xl uppercase mb-2"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Lokasi
+            </h2>
+            <h2
+              class="font-bold text-xl"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Taktakan
+            </h2>
+            <p class="text-base" data-aos="fade-up" data-aos-delay="300">
+              Kota Serang Banten
+            </p>
           </div>
           <div class="w-full mb-12 text-slate-300 font-medium lg:w-1/2">
-            <h2 class="font-bold text-2xl text-white uppercase mb-2">Kontak</h2>
+            <h2
+              class="font-bold text-2xl text-white uppercase mb-2"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              Kontak
+            </h2>
             <div class="flex mb-5 justify-center">
               <a
                 href="mailto:suk12on512@gmail.com"
                 target="_blank"
                 class="a-footer"
+                data-aos="fade-up"
+                data-aos-delay="500"
                 ><i class="bi bi-envelope"></i
               ></a>
 
@@ -1056,6 +1091,8 @@
                 href="https://instagram.com/skrnagrh"
                 target="_blank"
                 class="a-footer"
+                data-aos="fade-up"
+                data-aos-delay="600"
               >
                 <i class="bi bi-instagram"></i>
               </a>
@@ -1063,6 +1100,8 @@
                 href="https://api.whatsapp.com/send?phone=6285691468025"
                 target="_blank"
                 class="a-footer"
+                data-aos="fade-up"
+                data-aos-delay="700"
                 ><i class="bi bi-whatsapp"></i
               ></a>
 
@@ -1070,6 +1109,8 @@
                 href="https://linkedin.com/in/sukron"
                 target="_blank"
                 class="a-footer"
+                data-aos="fade-up"
+                data-aos-delay="800"
               >
                 <i class="bi bi-linkedin"></i>
               </a>
@@ -1077,6 +1118,8 @@
                 href="https://github.com/skrnagrh"
                 target="_blank"
                 class="a-footer"
+                data-aos="fade-up"
+                data-aos-delay="900"
               >
                 <i class="bi bi-github"></i>
               </a>
@@ -1168,5 +1211,10 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="dist/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="dist/js/main.js"></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -79,7 +79,7 @@ body {
   @apply font-bold text-dark text-3xl mb-4 md:text-4xl lg:text-5xl dark:text-white uppercase;
 }
 .text-portofolio {
-  @apply font-medium text-secondary text-sm md:text-lg;
+  @apply font-medium text-secondary text-sm md:text-lg mb-4;
 }
 .img-portofolio {
   @apply rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-800 relative dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 border-2 border-teal-500;
