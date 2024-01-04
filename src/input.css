@@ -39,11 +39,11 @@ body {
 }
 
 .card-experience {
-  @apply bg-white rounded-xl overflow-hidden  dark:bg-dark border-2  dark:border-dark  dark:shadow-none;
+  @apply bg-white rounded-xl overflow-hidden  dark:bg-dark  dark:shadow-none hover:border-dark hover:shadow-md dark:shadow-slate-600 dark:hover:border-slate-600 hover:shadow-teal-600;
 }
 
 .img-experience {
-  @apply rounded-t-md rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100;
+  @apply rounded-t-sm rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100;
 }
 .pt-experience {
   @apply font-semibold text-xl text-dark mt-5 dark:text-white uppercase;
