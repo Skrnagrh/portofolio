@@ -21,7 +21,9 @@
     <link rel="stylesheet" href="dist/css/img.css" />
     <link href="dist/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <!-- Swiper -->
-    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dist/css/portofolio/other/swiper.css" />
+    <link rel="stylesheet" href="dist/css/portofolio/other/swiper1.css" />
+    <link rel="stylesheet" href="dist/css/portofolio/other/swiper2.css" />
     <style>
       /* .slide-container {
         max-width: 1120px;
@@ -29,8 +31,11 @@
         padding: 40px 0;
         background-color: #a5a5a5;
       } */
-      .slide-content {
+      .slide-content,
+      .slide-content1,
+      .slide-content2 {
         margin: 20px;
+        margin-bottom: 30px;
         overflow: hidden;
         border-radius: 12px;
       }
@@ -40,14 +45,20 @@
         color: #949494fb;
         font-weight: bold;
       }
-      .swiper-pagination-bullet {
+      .swiper-pagination-bullet,
+      .swiper-pagination1-bullet,
+      .swiper-pagination2-bullet {
         background-color: #14b8a57a;
       }
-      .swiper-pagination-bullet-active {
+      .swiper-pagination-bullet-active,
+      .swiper-pagination1-bullet-active,
+      .swiper-pagination2-bullet-active {
         background-color: #14b8a6;
       }
       @media screen and (max-width: 768px) {
-        .slide-content {
+        .slide-content,
+        .slide-content1,
+        .slide-content2 {
           margin-right: 0px;
           margin-left: 0px;
         }
@@ -219,7 +230,7 @@
       <div class="border-t border-teal-500 w-full pt-4"></div>
       <div class="icon-links justify-center text-center lg:mx-6 xl:mx-8">
         <a
-          class="portofolio-link mx-8 lg:mx-4 text-lg dark:text-white"
+          class="portofolio-link mx-6 lg:mx-4 text-lg dark:text-white"
           data-page="vektor"
           onclick="showImages('vektor')"
           style="cursor: pointer"
@@ -228,7 +239,7 @@
           <span class="hidden md:inline"> Vektor</span>
         </a>
         <a
-          class="portofolio-link mx-8 lg:mx-4 text-lg dark:text-white"
+          class="portofolio-link mx-6 lg:mx-4 text-lg dark:text-white"
           data-page="web"
           onclick="showImages('web')"
           style="cursor: pointer"
@@ -237,7 +248,7 @@
           <span class="hidden md:inline"> Website</span>
         </a>
         <a
-          class="portofolio-link mx-8 lg:mx-4 text-lg dark:text-white"
+          class="portofolio-link mx-6 lg:mx-4 text-lg dark:text-white"
           data-page="typography"
           onclick="showImages('typography')"
           style="cursor: pointer"
@@ -246,7 +257,7 @@
           <span class="hidden md:inline"> Tipograpi</span>
         </a>
         <a
-          class="portofolio-link mx-8 lg:mx-4 text-lg dark:text-white"
+          class="portofolio-link mx-6 lg:mx-4 text-lg dark:text-white"
           data-page="other"
           onclick="showImages('other')"
           style="cursor: pointer"
@@ -764,126 +775,6 @@
         <!-- Other -->
         <div id="other-section" class="d-none pt-4">
           <!-- Project Android -->
-          <!-- <div class="other-1">
-            <p class="other-2"><i class="bi bi-android2"></i> Projek Android</p>
-          </div> -->
-          <!-- <div
-            class="font-sans grid grid-cols-3 md:grid-cols-6 gap-1 pt-4 pb-16"
-          >
-            <a
-              href="dist/img/portofolio/other/android/1.png"
-              data-gallery="androidGallery"
-              class="portfolio-lightbox relative"
-            >
-              <div class="android-1 group">
-                <div class="rounded-t-md overflow-hidden">
-                  <img
-                    src="dist/img/portofolio/other/android/1.png"
-                    alt="portofolio"
-                  />
-                </div>
-                <div class="android-2">
-                  <div class="android-3"></div>
-                  <p class="android-4">Open</p>
-                </div>
-              </div>
-            </a>
-            <a
-              href="dist/img/portofolio/other/android/2.png"
-              data-gallery="androidGallery"
-              class="portfolio-lightbox relative"
-            >
-              <div class="android-1 group">
-                <div class="rounded-t-md overflow-hidden">
-                  <img
-                    src="dist/img/portofolio/other/android/2.png"
-                    alt="portofolio"
-                  />
-                </div>
-                <div class="android-2">
-                  <div class="android-3"></div>
-                  <p class="android-4">Open</p>
-                </div>
-              </div>
-            </a>
-            <div class="hidden md:block lg:block">
-              <a
-                href="dist/img/portofolio/other/android/3.png"
-                data-gallery="androidGallery"
-                class="portfolio-lightbox relative"
-              >
-                <div class="android-1 group">
-                  <div class="rounded-t-md overflow-hidden">
-                    <img
-                      src="dist/img/portofolio/other/android/3.png"
-                      alt="portofolio"
-                    />
-                  </div>
-                  <div class="android-2">
-                    <div class="android-3"></div>
-                    <p class="android-4">Open</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="hidden md:block lg:block">
-              <a
-                href="dist/img/portofolio/other/android/4.png"
-                data-gallery="androidGallery"
-                class="portfolio-lightbox relative"
-              >
-                <div class="android-1 group">
-                  <div class="rounded-t-md overflow-hidden">
-                    <img
-                      src="dist/img/portofolio/other/android/4.png"
-                      alt="portofolio"
-                    />
-                  </div>
-                  <div class="android-2">
-                    <div class="android-3"></div>
-                    <p class="android-4">Open</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="hidden md:block lg:block">
-              <a
-                href="dist/img/portofolio/other/android/5.png"
-                data-gallery="androidGallery"
-                class="portfolio-lightbox relative"
-              >
-                <div class="android-1 group">
-                  <div class="rounded-t-md overflow-hidden">
-                    <img
-                      src="dist/img/portofolio/other/android/5.png"
-                      alt="portofolio"
-                    />
-                  </div>
-                  <div class="android-2">
-                    <div class="android-3"></div>
-                    <p class="android-4">Open</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="typo-1 group">
-              <div class="rounded-t-md overflow-hidden">
-                <img src="dist/img/portofolio/typography/2.jpg" />
-              </div>
-              <div class="porto-1">
-                <div class="porto-2"></div>
-                <a
-                  href="https://github.com/Skrnagrh/android_pencatat_barang"
-                  target="_blank"
-                  class="porto-3"
-                  >Lihat Projek <i class="bi bi-arrow-right-circle"></i
-                ></a>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="swiper"> -->
           <div class="slide-container swiper">
             <div class="other-1">
               <p class="other-2">
@@ -892,7 +783,7 @@
             </div>
             <div class="slide-content mb-10">
               <div class="card-wrapper swiper-wrapper">
-                <div class="swiper-slide p-2 text-center">
+                <div class="swiper-slide p-1 text-center">
                   <a
                     href="dist/img/portofolio/other/android/1.png"
                     data-gallery="androidGallery"
@@ -912,7 +803,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="swiper-slide p-2 text-center">
+                <div class="swiper-slide p-1 text-center">
                   <a
                     href="dist/img/portofolio/other/android/2.png"
                     data-gallery="androidGallery"
@@ -932,7 +823,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="swiper-slide p-2 text-center">
+                <div class="swiper-slide p-1 text-center">
                   <a
                     href="dist/img/portofolio/other/android/3.png"
                     data-gallery="androidGallery"
@@ -952,7 +843,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="swiper-slide p-2 text-center">
+                <div class="swiper-slide p-1 text-center">
                   <a
                     href="dist/img/portofolio/other/android/4.png"
                     data-gallery="androidGallery"
@@ -972,7 +863,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="swiper-slide p-2 text-center">
+                <div class="swiper-slide p-1 text-center">
                   <a
                     href="dist/img/portofolio/other/android/5.png"
                     data-gallery="androidGallery"
@@ -992,7 +883,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="swiper-slide p-2 text-center">
+                <div class="swiper-slide p-1 text-center">
                   <div class="typo-1 group">
                     <div class="rounded-t-md overflow-hidden">
                       <img src="dist/img/portofolio/typography/2.jpg" />
@@ -1022,198 +913,226 @@
           <div class="other-1">
             <p class="other-2"><i class="bi bi-laptop"></i> Projek Desktop</p>
           </div>
-          <p class="dekstop-p">Projek Desktop Transaksi Kereta Api</p>
-          <div class="font-sans grid grid-cols-2 md:grid-cols-5 gap-1">
-            <a
-              href="dist/img/portofolio/other/desktop/kereta-api/1.png"
-              data-gallery="desktopGallery"
-              class="portfolio-lightbox relative"
-            >
-              <div class="dekstop-1 group">
-                <div class="rounded-t-md overflow-hidden">
-                  <img
-                    src="dist/img/portofolio/other/desktop/kereta-api/1.png"
-                    alt="portofolio"
-                  />
+          <!-- Kereta Api -->
+          <div class="slide-container swiper">
+            <div class="slide-content1 mb-10">
+              <p class="dekstop-p">Projek Transaksi Tiket Kereta</p>
+              <div class="card-wrapper swiper-wrapper">
+                <div class="swiper-slide p-1 text-center">
+                  <a
+                    href="dist/img/portofolio/other/desktop/kereta-api/1.png"
+                    data-gallery="desktopGallery"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="dekstop-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/desktop/kereta-api/1.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="dekstop-2">
+                        <div class="dekstop-3"></div>
+                        <p class="dekstop-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-                <div class="dekstop-2">
-                  <div class="dekstop-3"></div>
-                  <p class="dekstop-4">Open</p>
+                <div class="swiper-slide p-1 text-center">
+                  <a
+                    href="dist/img/portofolio/other/desktop/kereta-api/2.png"
+                    data-gallery="desktopGallery"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="dekstop-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/desktop/kereta-api/2.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="dekstop-2">
+                        <div class="dekstop-3"></div>
+                        <p class="dekstop-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide p-1 text-center">
+                  <a
+                    href="dist/img/portofolio/other/desktop/kereta-api/3.png"
+                    data-gallery="desktopGallery"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="dekstop-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/desktop/kereta-api/3.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="dekstop-2">
+                        <div class="dekstop-3"></div>
+                        <p class="dekstop-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide p-1 text-center">
+                  <a
+                    href="dist/img/portofolio/other/desktop/kereta-api/4.png"
+                    data-gallery="desktopGallery"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="dekstop-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/desktop/kereta-api/4.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="dekstop-2">
+                        <div class="dekstop-3"></div>
+                        <p class="dekstop-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide p-2 text-center">
+                  <div class="typo-1 group">
+                    <div class="rounded-t-md overflow-hidden">
+                      <img
+                        src="dist/img/portofolio/other/desktop/kereta-api/4.png"
+                      />
+                    </div>
+                    <div class="porto-1">
+                      <div class="porto-2"></div>
+                      <a
+                        href="https://github.com/Skrnagrh/java_transaksi_tiket"
+                        target="_blank"
+                        class="porto-3"
+                        >Lihat Projek <i class="bi bi-arrow-right-circle"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </a>
-            <div class="hidden md:block lg:block">
-              <a
-                href="dist/img/portofolio/other/desktop/kereta-api/2.png"
-                data-gallery="desktopGallery"
-                class="portfolio-lightbox relative"
-              >
-                <div class="dekstop-1 group">
-                  <div class="rounded-t-md overflow-hidden">
-                    <img
-                      src="dist/img/portofolio/other/desktop/kereta-api/2.png"
-                      alt="portofolio"
-                    />
-                  </div>
-                  <div class="dekstop-2">
-                    <div class="dekstop-3"></div>
-                    <p class="dekstop-4">Open</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="hidden md:block lg:block">
-              <a
-                href="dist/img/portofolio/other/desktop/kereta-api/3.png"
-                data-gallery="desktopGallery"
-                class="portfolio-lightbox relative"
-              >
-                <div class="dekstop-1 group">
-                  <div class="rounded-t-md overflow-hidden">
-                    <img
-                      src="dist/img/portofolio/other/desktop/kereta-api/3.png"
-                      alt="portofolio"
-                    />
-                  </div>
-                  <div class="dekstop-2">
-                    <div class="dekstop-3"></div>
-                    <p class="dekstop-4">Open</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="hidden md:block lg:block">
-              <a
-                href="dist/img/portofolio/other/desktop/kereta-api/4.png"
-                data-gallery="desktopGallery"
-                class="portfolio-lightbox relative"
-              >
-                <div class="dekstop-1 group">
-                  <div class="rounded-t-md overflow-hidden">
-                    <img
-                      src="dist/img/portofolio/other/desktop/kereta-api/4.png"
-                      alt="portofolio"
-                    />
-                  </div>
-                  <div class="dekstop-2">
-                    <div class="dekstop-3"></div>
-                    <p class="dekstop-4">Open</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="typo-1 group">
-              <div class="rounded-t-md overflow-hidden">
-                <img src="dist/img/portofolio/other/desktop/kereta-api/4.png" />
-              </div>
-              <div class="porto-1">
-                <div class="porto-2"></div>
-                <a
-                  href="https://github.com/Skrnagrh/java_transaksi_tiket"
-                  target="_blank"
-                  class="porto-3"
-                  >Lihat Projek <i class="bi bi-arrow-right-circle"></i
-                ></a>
-              </div>
+              <div class="swiper-button-next1 swiper-navBtn"></div>
+              <div class="swiper-button-prev1 swiper-navBtn"></div>
+              <div
+                class="swiper-pagination1 pt-10 opacity-100 dark:opacity-100 dark:grayscale"
+              ></div>
             </div>
           </div>
-
-          <p class="dekstop-p">Projek Desktop Perpustakaan</p>
-          <div class="font-sans grid grid-cols-2 md:grid-cols-5 gap-1 pb-16">
-            <a
-              href="dist/img/portofolio/other/desktop/perpustakaan/1.png"
-              data-gallery="desktopGallery1"
-              class="portfolio-lightbox relative"
-            >
-              <div class="dekstop-1 group">
-                <div class="rounded-t-md overflow-hidden">
-                  <img
-                    src="dist/img/portofolio/other/desktop/perpustakaan/1.png"
-                    alt="portofolio"
-                  />
+          <!-- Delpho Perpustakaan -->
+          <div class="slide-container swiper">
+            <div class="slide-content2 mb-10">
+              <p class="dekstop-p">Projek Desktop Perpustakaan</p>
+              <div class="card-wrapper swiper-wrapper">
+                <div class="swiper-slide p-1 text-center">
+                  <a
+                    href="dist/img/portofolio/other/desktop/perpustakaan/1.png"
+                    data-gallery="desktopGallery1"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="dekstop-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/desktop/perpustakaan/1.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="dekstop-2">
+                        <div class="dekstop-3"></div>
+                        <p class="dekstop-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-                <div class="dekstop-2">
-                  <div class="dekstop-3"></div>
-                  <p class="dekstop-4">Open</p>
+                <div class="swiper-slide p-1 text-center">
+                  <a
+                    href="dist/img/portofolio/other/desktop/perpustakaan/2.png"
+                    data-gallery="desktopGallery1"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="dekstop-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/desktop/perpustakaan/2.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="dekstop-2">
+                        <div class="dekstop-3"></div>
+                        <p class="dekstop-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide p-1 text-center">
+                  <a
+                    href="dist/img/portofolio/other/desktop/perpustakaan/3.png"
+                    data-gallery="desktopGallery1"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="dekstop-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/desktop/perpustakaan/3.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="dekstop-2">
+                        <div class="dekstop-3"></div>
+                        <p class="dekstop-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide p-1 text-center">
+                  <a
+                    href="dist/img/portofolio/other/desktop/perpustakaan/4.png"
+                    data-gallery="desktopGallery1"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="dekstop-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/desktop/perpustakaan/4.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="dekstop-2">
+                        <div class="dekstop-3"></div>
+                        <p class="dekstop-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide p-1 text-center">
+                  <div class="typo-1 group">
+                    <div class="rounded-t-md overflow-hidden">
+                      <img
+                        src="dist/img/portofolio/other/desktop/perpustakaan/4.png"
+                      />
+                    </div>
+                    <div class="porto-1">
+                      <div class="porto-2"></div>
+                      <a
+                        href="https://github.com/Skrnagrh/delphi_aplikasi_perpustakaan"
+                        target="_blank"
+                        class="porto-3"
+                        >Lihat Projek <i class="bi bi-arrow-right-circle"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </a>
-            <div class="hidden md:block lg:block">
-              <a
-                href="dist/img/portofolio/other/desktop/perpustakaan/2.png"
-                data-gallery="desktopGallery1"
-                class="portfolio-lightbox relative"
-              >
-                <div class="dekstop-1 group">
-                  <div class="rounded-t-md overflow-hidden">
-                    <img
-                      src="dist/img/portofolio/other/desktop/perpustakaan/2.png"
-                      alt="portofolio"
-                    />
-                  </div>
-                  <div class="dekstop-2">
-                    <div class="dekstop-3"></div>
-                    <p class="dekstop-4">Open</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="hidden md:block lg:block">
-              <a
-                href="dist/img/portofolio/other/desktop/perpustakaan/3.png"
-                data-gallery="desktopGallery1"
-                class="portfolio-lightbox relative"
-              >
-                <div class="dekstop-1 group">
-                  <div class="rounded-t-md overflow-hidden">
-                    <img
-                      src="dist/img/portofolio/other/desktop/perpustakaan/3.png"
-                      alt="portofolio"
-                    />
-                  </div>
-                  <div class="dekstop-2">
-                    <div class="dekstop-3"></div>
-                    <p class="dekstop-4">Open</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="hidden md:block lg:block">
-              <a
-                href="dist/img/portofolio/other/desktop/perpustakaan/4.png"
-                data-gallery="desktopGallery1"
-                class="portfolio-lightbox relative"
-              >
-                <div class="dekstop-1 group">
-                  <div class="rounded-t-md overflow-hidden">
-                    <img
-                      src="dist/img/portofolio/other/desktop/perpustakaan/4.png"
-                      alt="portofolio"
-                    />
-                  </div>
-                  <div class="dekstop-2">
-                    <div class="dekstop-3"></div>
-                    <p class="dekstop-4">Open</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="typo-1 group">
-              <div class="rounded-t-md overflow-hidden">
-                <img
-                  src="dist/img/portofolio/other/desktop/perpustakaan/4.png"
-                />
-              </div>
-              <div class="porto-1">
-                <div class="porto-2"></div>
-                <a
-                  href="https://github.com/Skrnagrh/delphi_aplikasi_perpustakaan"
-                  target="_blank"
-                  class="porto-3"
-                  >Lihat Projek <i class="bi bi-arrow-right-circle"></i
-                ></a>
-              </div>
+              <div class="swiper-button-next2 swiper-navBtn"></div>
+              <div class="swiper-button-prev2 swiper-navBtn"></div>
+              <div
+                class="swiper-pagination2 pt-10 opacity-100 dark:opacity-100 dark:grayscale"
+              ></div>
             </div>
           </div>
           <!-- Project desktop end -->
@@ -1415,7 +1334,7 @@
         },
         breakpoints: {
           0: {
-            slidesPerView: 2,
+            slidesPerView: 2.1,
           },
           520: {
             slidesPerView: 3,
@@ -1426,6 +1345,283 @@
         },
       });
     </script>
+    <!-- asli -->
+    <script>
+      var swiper1 = new Swiper(".slide-content1", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        // loop: true,
+        centerSlide: true,
+        fade: true,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination1",
+          clickable: true,
+          dynamicsBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next1",
+          prevEl: ".swiper-button-prev1",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1.1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          950: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper1 = new Swiper(".slide-content2", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centerSlide: true,
+        fade: true,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination2",
+          clickable: true,
+          dynamicsBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next2",
+          prevEl: ".swiper-button-prev2",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1.1,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          950: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
     <!-- Swiper -->
   </body>
 </html>
+
+<!-- android-->
+<!-- <div class="other-1">
+  <p class="other-2"><i class="bi bi-android2"></i> Projek Android</p>
+</div>
+<div class="font-sans grid grid-cols-3 md:grid-cols-6 gap-1 pt-4 pb-16">
+  <a
+    href="dist/img/portofolio/other/android/1.png"
+    data-gallery="androidGallery"
+    class="portfolio-lightbox relative"
+  >
+    <div class="android-1 group">
+      <div class="rounded-t-md overflow-hidden">
+        <img src="dist/img/portofolio/other/android/1.png" alt="portofolio" />
+      </div>
+      <div class="android-2">
+        <div class="android-3"></div>
+        <p class="android-4">Open</p>
+      </div>
+    </div>
+  </a>
+  <a
+    href="dist/img/portofolio/other/android/2.png"
+    data-gallery="androidGallery"
+    class="portfolio-lightbox relative"
+  >
+    <div class="android-1 group">
+      <div class="rounded-t-md overflow-hidden">
+        <img src="dist/img/portofolio/other/android/2.png" alt="portofolio" />
+      </div>
+      <div class="android-2">
+        <div class="android-3"></div>
+        <p class="android-4">Open</p>
+      </div>
+    </div>
+  </a>
+  <div class="hidden md:block lg:block">
+    <a
+      href="dist/img/portofolio/other/android/3.png"
+      data-gallery="androidGallery"
+      class="portfolio-lightbox relative"
+    >
+      <div class="android-1 group">
+        <div class="rounded-t-md overflow-hidden">
+          <img src="dist/img/portofolio/other/android/3.png" alt="portofolio" />
+        </div>
+        <div class="android-2">
+          <div class="android-3"></div>
+          <p class="android-4">Open</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="hidden md:block lg:block">
+    <a
+      href="dist/img/portofolio/other/android/4.png"
+      data-gallery="androidGallery"
+      class="portfolio-lightbox relative"
+    >
+      <div class="android-1 group">
+        <div class="rounded-t-md overflow-hidden">
+          <img src="dist/img/portofolio/other/android/4.png" alt="portofolio" />
+        </div>
+        <div class="android-2">
+          <div class="android-3"></div>
+          <p class="android-4">Open</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="hidden md:block lg:block">
+    <a
+      href="dist/img/portofolio/other/android/5.png"
+      data-gallery="androidGallery"
+      class="portfolio-lightbox relative"
+    >
+      <div class="android-1 group">
+        <div class="rounded-t-md overflow-hidden">
+          <img src="dist/img/portofolio/other/android/5.png" alt="portofolio" />
+        </div>
+        <div class="android-2">
+          <div class="android-3"></div>
+          <p class="android-4">Open</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="typo-1 group">
+    <div class="rounded-t-md overflow-hidden">
+      <img src="dist/img/portofolio/typography/2.jpg" />
+    </div>
+    <div class="porto-1">
+      <div class="porto-2"></div>
+      <a
+        href="https://github.com/Skrnagrh/android_pencatat_barang"
+        target="_blank"
+        class="porto-3"
+        >Lihat Projek <i class="bi bi-arrow-right-circle"></i
+      ></a>
+    </div>
+  </div>
+</div> -->
+
+<!-- Desktop java netbeans-->
+<!-- <div class="font-sans grid grid-cols-2 md:grid-cols-5 gap-1">
+  <a
+    href="dist/img/portofolio/other/desktop/kereta-api/1.png"
+    data-gallery="desktopGallery"
+    class="portfolio-lightbox relative"
+  >
+    <div class="dekstop-1 group">
+      <div class="rounded-t-md overflow-hidden">
+        <img
+          src="dist/img/portofolio/other/desktop/kereta-api/1.png"
+          alt="portofolio"
+        />
+      </div>
+      <div class="dekstop-2">
+        <div class="dekstop-3"></div>
+        <p class="dekstop-4">Open</p>
+      </div>
+    </div>
+  </a>
+  <div class="hidden md:block lg:block">
+    <a
+      href="dist/img/portofolio/other/desktop/kereta-api/2.png"
+      data-gallery="desktopGallery"
+      class="portfolio-lightbox relative"
+    >
+      <div class="dekstop-1 group">
+        <div class="rounded-t-md overflow-hidden">
+          <img
+            src="dist/img/portofolio/other/desktop/kereta-api/2.png"
+            alt="portofolio"
+          />
+        </div>
+        <div class="dekstop-2">
+          <div class="dekstop-3"></div>
+          <p class="dekstop-4">Open</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="typo-1 group">
+    <div class="rounded-t-md overflow-hidden">
+      <img src="dist/img/portofolio/other/desktop/kereta-api/4.png" />
+    </div>
+    <div class="porto-1">
+      <div class="porto-2"></div>
+      <a
+        href="https://github.com/Skrnagrh/java_transaksi_tiket"
+        target="_blank"
+        class="porto-3"
+        >Lihat Projek <i class="bi bi-arrow-right-circle"></i
+      ></a>
+    </div>
+  </div>
+</div> -->
+
+<!-- Desktop delphi-->
+<!-- <p class="dekstop-p">Projek Desktop Perpustakaan</p>
+<div class="font-sans grid grid-cols-2 md:grid-cols-5 gap-1 pb-16">
+  <a
+    href="dist/img/portofolio/other/desktop/perpustakaan/1.png"
+    data-gallery="desktopGallery1"
+    class="portfolio-lightbox relative"
+  >
+    <div class="dekstop-1 group">
+      <div class="rounded-t-md overflow-hidden">
+        <img
+          src="dist/img/portofolio/other/desktop/perpustakaan/1.png"
+          alt="portofolio"
+        />
+      </div>
+      <div class="dekstop-2">
+        <div class="dekstop-3"></div>
+        <p class="dekstop-4">Open</p>
+      </div>
+    </div>
+  </a>
+  <div class="hidden md:block lg:block">
+    <a
+      href="dist/img/portofolio/other/desktop/perpustakaan/2.png"
+      data-gallery="desktopGallery1"
+      class="portfolio-lightbox relative"
+    >
+      <div class="dekstop-1 group">
+        <div class="rounded-t-md overflow-hidden">
+          <img
+            src="dist/img/portofolio/other/desktop/perpustakaan/2.png"
+            alt="portofolio"
+          />
+        </div>
+        <div class="dekstop-2">
+          <div class="dekstop-3"></div>
+          <p class="dekstop-4">Open</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="typo-1 group">
+    <div class="rounded-t-md overflow-hidden">
+      <img src="dist/img/portofolio/other/desktop/perpustakaan/4.png" />
+    </div>
+    <div class="porto-1">
+      <div class="porto-2"></div>
+      <a
+        href="https://github.com/Skrnagrh/delphi_aplikasi_perpustakaan"
+        target="_blank"
+        class="porto-3"
+        >Lihat Projek <i class="bi bi-arrow-right-circle"></i
+      ></a>
+    </div>
+  </div>
+</div> -->

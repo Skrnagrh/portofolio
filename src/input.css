@@ -40,7 +40,7 @@ body {
 
 .card-experience {
   /* @apply bg-white rounded-xl overflow-hidden  dark:bg-dark  dark:shadow-none hover:border-dark hover:shadow-md dark:shadow-slate-600 dark:hover:border-slate-600 hover:shadow-teal-600; */
-  @apply bg-white rounded-xl overflow-hidden shadow-sm dark:bg-dark dark:shadow-none hover:border-dark hover:shadow-md dark:shadow-slate-600 dark:hover:border-slate-600 hover:shadow-teal-600 py-5;
+  @apply bg-white rounded-xl overflow-hidden shadow-md shadow-primary dark:bg-dark dark:shadow-slate-700 hover:border-dark hover:shadow-lg  dark:hover:border-slate-600 hover:shadow-teal-600 py-5;
 }
 
 .img-experience {
