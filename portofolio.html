@@ -20,7 +20,43 @@
 
     <link rel="stylesheet" href="dist/css/img.css" />
     <link href="dist/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-
+    <!-- Swiper -->
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css" />
+    <style>
+      /* .slide-container {
+        max-width: 1120px;
+        width: 100%;
+        padding: 40px 0;
+        background-color: #a5a5a5;
+      } */
+      .slide-content {
+        margin: 20px;
+        overflow: hidden;
+        border-radius: 12px;
+      }
+      .swiper-navBtn::before,
+      .swiper-navBtn::after {
+        font-size: 16px;
+        color: #949494fb;
+        font-weight: bold;
+      }
+      .swiper-pagination-bullet {
+        background-color: #14b8a57a;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #14b8a6;
+      }
+      @media screen and (max-width: 768px) {
+        .slide-content {
+          margin-right: 0px;
+          margin-left: 0px;
+        }
+        .swiper-navBtn {
+          display: none;
+        }
+      }
+    </style>
+    <!-- Swiper -->
     <!-- Dark Mode Theme -->
     <script>
       if (
@@ -145,13 +181,17 @@
       <div class="container">
         <div class="flex flex-wrap justify-center">
           <div class="w-full self-center px-4 lg:w-1/2 text-center">
-            <h1 class="text-base font-semibold text-primary md:text-xl mb-2" data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-duration="300"
-            data-aos-delay="50">
+            <h1
+              class="text-base font-semibold text-primary md:text-xl mb-2"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-duration="300"
+              data-aos-delay="50"
+            >
               Portofolio
               <span
-                class="block font-bold text-dark text-4xl mt-2 lg:text-5xl dark:text-white uppercase" data-aos="fade-up"
+                class="block font-bold text-dark text-4xl mt-2 lg:text-5xl dark:text-white uppercase"
+                data-aos="fade-up"
                 data-aos-offset="300"
                 data-aos-duration="300"
                 data-aos-delay="100"
@@ -159,10 +199,13 @@
                 Sukron
               </span>
             </h1>
-            <h2 class="font-medium text-secondary text-md lg:text-lg mb-5 mt-4" data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-duration="300"
-            data-aos-delay="150">
+            <h2
+              class="font-medium text-secondary text-md lg:text-lg mb-5 mt-4"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-duration="300"
+              data-aos-delay="150"
+            >
               Design Vektor - Project Web - Design Typographi - Other
             </h2>
           </div>
@@ -721,10 +764,10 @@
         <!-- Other -->
         <div id="other-section" class="d-none pt-4">
           <!-- Project Android -->
-          <div class="other-1">
+          <!-- <div class="other-1">
             <p class="other-2"><i class="bi bi-android2"></i> Projek Android</p>
-          </div>
-          <div
+          </div> -->
+          <!-- <div
             class="font-sans grid grid-cols-3 md:grid-cols-6 gap-1 pt-4 pb-16"
           >
             <a
@@ -838,6 +881,140 @@
                 ></a>
               </div>
             </div>
+          </div> -->
+
+          <!-- <div class="swiper"> -->
+          <div class="slide-container swiper">
+            <div class="other-1">
+              <p class="other-2">
+                <i class="bi bi-android2"></i> Projek Android
+              </p>
+            </div>
+            <div class="slide-content mb-10">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="swiper-slide p-2 text-center">
+                  <a
+                    href="dist/img/portofolio/other/android/1.png"
+                    data-gallery="androidGallery"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="android-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/android/1.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="android-2">
+                        <div class="android-3"></div>
+                        <p class="android-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide p-2 text-center">
+                  <a
+                    href="dist/img/portofolio/other/android/2.png"
+                    data-gallery="androidGallery"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="android-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/android/2.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="android-2">
+                        <div class="android-3"></div>
+                        <p class="android-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide p-2 text-center">
+                  <a
+                    href="dist/img/portofolio/other/android/3.png"
+                    data-gallery="androidGallery"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="android-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/android/3.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="android-2">
+                        <div class="android-3"></div>
+                        <p class="android-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide p-2 text-center">
+                  <a
+                    href="dist/img/portofolio/other/android/4.png"
+                    data-gallery="androidGallery"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="android-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/android/4.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="android-2">
+                        <div class="android-3"></div>
+                        <p class="android-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide p-2 text-center">
+                  <a
+                    href="dist/img/portofolio/other/android/5.png"
+                    data-gallery="androidGallery"
+                    class="portfolio-lightbox relative"
+                  >
+                    <div class="android-1 group">
+                      <div class="rounded-t-md overflow-hidden">
+                        <img
+                          src="dist/img/portofolio/other/android/5.png"
+                          alt="portofolio"
+                        />
+                      </div>
+                      <div class="android-2">
+                        <div class="android-3"></div>
+                        <p class="android-4">Open</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide p-2 text-center">
+                  <div class="typo-1 group">
+                    <div class="rounded-t-md overflow-hidden">
+                      <img src="dist/img/portofolio/typography/2.jpg" />
+                    </div>
+                    <div class="porto-1">
+                      <div class="porto-2"></div>
+                      <a
+                        href="https://github.com/Skrnagrh/android_pencatat_barang"
+                        target="_blank"
+                        class="porto-3"
+                        >Lihat Projek <i class="bi bi-arrow-right-circle"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div
+              class="swiper-pagination pt-10 opacity-100 dark:opacity-100 dark:grayscale"
+            ></div>
           </div>
           <!-- Project Anrdroid end -->
 
@@ -1216,5 +1393,39 @@
     <script>
       AOS.init();
     </script>
+
+    <!-- Swiper -->
+    <script src="dist/js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".slide-content", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        // loop: true,
+        centerSlide: "true",
+        fade: "true",
+        grabCursor: "true",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicsBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 2,
+          },
+          520: {
+            slidesPerView: 3,
+          },
+          950: {
+            slidesPerView: 5,
+          },
+        },
+      });
+    </script>
+    <!-- Swiper -->
   </body>
 </html>

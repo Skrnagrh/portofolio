@@ -17,57 +17,18 @@
     <!-- Aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Aos -->
-    <!-- Add these to the head of your HTML document -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="dist/swiper-bundle.min.css" />
-    <!-- Dark Mode Theme -->
-    <script>
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
-    <!-- Dark Mode Theme -->
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css" />
     <style>
-      .swiper-navBtn {
-        color: #949494fb;
-        transition: color 0.3s ease;
-        background: #ffffff;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        padding: 5px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-      }
-      .swiper-navBtn:hover {
-        color: #949494fb;
-        /* background: rgb(223, 250, 247); */
-        background: rgb(241, 245, 249);
-      }
       .swiper-navBtn::before,
       .swiper-navBtn::after {
         font-size: 16px;
-        font-weight: 900;
-      }
-      .swiper-button-next {
-        margin-right: 80px;
-      }
-      .swiper-button-prev {
-        margin-left: 80px;
+        color: #949494fb;
+        font-weight: bold;
       }
       .swiper-pagination-bullet {
         background-color: #14b8a57a;
-        opacity: 1;
       }
       .swiper-pagination-bullet-active {
         background-color: #14b8a6;
@@ -82,6 +43,20 @@
         }
       }
     </style>
+    <!-- Swiper -->
+    <!-- Dark Mode Theme -->
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+    <!-- Dark Mode Theme -->
   </head>
   <body>
     <!-- Header start -->
@@ -519,151 +494,11 @@
               </div>
             </a>
           </div>
-
-          <div
-            class="p-2 md:w-1/2 xl:w-1/4 text-center"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="300"
-            data-aos-delay="250"
-          >
-            <a href="experience.html#pkl">
-              <div
-                class="bg-white rounded-xl overflow-hidden dark:bg-dark dark:shadow-none hover:border-dark hover:shadow-md dark:shadow-slate-600 dark:hover:border-slate-600 hover:shadow-teal-600 p-5"
-              >
-                <div
-                  class="flex items-center justify-center rounded-t-sm rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
-                  <img
-                    src="dist/img/experience/1.png"
-                    alt="portofolio"
-                    class="w-36 h-36 bg-slate-100 rounded-full m-4"
-                  />
-                </div>
-                <h3
-                  class="font-semibold text-sm text-dark mt-5 dark:text-white capitalize"
-                >
-                  PT. Imam Putra Mandiri
-                </h3>
-                <h4 class="font-medium text-xs text-dark dark:text-white">
-                  Staff Administrasi
-                </h4>
-                <p class="text-xs text-secondary mb-2">
-                  Desember 2016 - Februari 2017
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="p-2 md:w-1/2 xl:w-1/4 text-center"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="300"
-            data-aos-delay="250"
-          >
-            <a href="experience.html#pkl">
-              <div
-                class="bg-white rounded-xl overflow-hidden dark:bg-dark dark:shadow-none hover:border-dark hover:shadow-md dark:shadow-slate-600 dark:hover:border-slate-600 hover:shadow-teal-600 p-5"
-              >
-                <div
-                  class="flex items-center justify-center rounded-t-sm rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
-                  <img
-                    src="dist/img/experience/2.png"
-                    alt="portofolio"
-                    class="w-36 h-36 bg-slate-100 rounded-full m-4"
-                  />
-                </div>
-                <h3
-                  class="font-semibold text-sm text-dark mt-5 dark:text-white capitalize"
-                >
-                  Sakina Fried Chicken
-                </h3>
-                <h4 class="font-medium text-xs text-dark dark:text-white">
-                  Waiters & Cook
-                </h4>
-                <p class="text-xs text-secondary mb-2">
-                  Desember 2016 - Februari 2017
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="p-2 md:w-1/2 xl:w-1/4 text-center"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="300"
-            data-aos-delay="250"
-          >
-            <a href="experience.html#pkl">
-              <div
-                class="bg-white rounded-xl overflow-hidden dark:bg-dark dark:shadow-none hover:border-dark hover:shadow-md dark:shadow-slate-600 dark:hover:border-slate-600 hover:shadow-teal-600 p-5"
-              >
-                <div
-                  class="flex items-center justify-center rounded-t-sm rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
-                  <img
-                    src="dist/img/experience/3.png"
-                    alt="portofolio"
-                    class="w-36 h-36 bg-slate-100 rounded-full m-4"
-                  />
-                </div>
-                <h3
-                  class="font-semibold text-sm text-dark mt-5 dark:text-white capitalize"
-                >
-                  Jhon Chicken & Burger
-                </h3>
-                <h4 class="font-medium text-xs text-dark dark:text-white">
-                  Waiters & Cook
-                </h4>
-                <p class="text-xs text-secondary mb-2">
-                  Desember 2016 - Februari 2017
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="p-2 md:w-1/2 xl:w-1/4 text-center"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="300"
-            data-aos-delay="250"
-          >
-            <a href="experience.html#pkl">
-              <div
-                class="bg-white rounded-xl overflow-hidden dark:bg-dark dark:shadow-none hover:border-dark hover:shadow-md dark:shadow-slate-600 dark:hover:border-slate-600 hover:shadow-teal-600 p-5"
-              >
-                <div
-                  class="flex items-center justify-center rounded-t-sm rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                >
-                  <img
-                    src="dist/img/experience/4.png"
-                    alt="portofolio"
-                    class="w-36 h-36 bg-slate-100 rounded-full m-4"
-                  />
-                </div>
-                <h3
-                  class="font-semibold text-sm text-dark mt-5 dark:text-white capitalize"
-                >
-                  Dinas Kelautan dan Perikanan
-                </h3>
-                <h4 class="font-medium text-xs text-dark dark:text-white">
-                  Praktek Kerja Industri (Prakerin)
-                </h4>
-                <p class="text-xs text-secondary mb-2">
-                  Desember 2016 - Februari 2017
-                </p>
-              </div>
-            </a>
-          </div>
         </div>
       </div>
     </section> -->
 
-    <section
-      id="experience1"
-      class="pt-24 pb-16 bg-slate-100 dark:bg-slate-800"
-    >
+    <section id="experience" class="pt-24 pb-16 bg-slate-100 dark:bg-slate-800">
       <div class="container">
         <div class="w-full">
           <div
@@ -691,141 +526,100 @@
               data-aos-duration="300"
               data-aos-delay="100"
             >
-              <div
-                class="bg-white rounded-xl overflow-hidden shadow-sm dark:bg-dark dark:shadow-none hover:border-dark hover:shadow-md dark:shadow-slate-600 dark:hover:border-slate-600 hover:shadow-teal-600 py-5"
-              >
-                <a href="experience.html#ipm">
-                  <div
-                    class="flex items-center justify-center rounded-t-sm rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                  >
+              <a href="experience.html#ipm">
+                <div class="card-experience">
+                  <div class="img-experience">
                     <img
                       src="dist/img/experience/1.png"
                       alt="portofolio"
                       class="w-36 h-36 bg-slate-100 rounded-full m-4"
                     />
                   </div>
-                </a>
-                <h3
-                  class="font-semibold text-sm text-dark mt-5 dark:text-white capitalize"
-                >
-                  PT. Imam Putra Mandiri
-                </h3>
-                <h4 class="font-medium text-xs text-dark dark:text-white">
-                  Staff Administrasi
-                </h4>
-                <p class="text-xs text-secondary mb-2">
-                  Juni 2020 - April 2022
-                </p>
-              </div>
+                  <h3 class="pt-experience">PT. Imam Putra Mandiri</h3>
+                  <h4 class="jabatan-experience">Staff Administrasi</h4>
+                  <p class="masa-experience">Juni 2020 - April 2022</p>
+                </div>
+              </a>
             </div>
             <div
               class="swiper-slide p-2 text-center"
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="300"
-              data-aos-delay="150"
+              data-aos-delay="110"
             >
-              <div
-                class="bg-white rounded-xl overflow-hidden dark:bg-dark dark:shadow-none hover:border-dark hover:shadow-md dark:shadow-slate-600 dark:hover:border-slate-600 hover:shadow-teal-600 p-5"
-              >
-                <a href="experience.html#sakina">
-                  <div
-                    class="flex items-center justify-center rounded-t-sm rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                  >
+              <a href="experience.html#sakina">
+                <div class="card-experience">
+                  <div class="img-experience">
                     <img
                       src="dist/img/experience/2.png"
                       alt="portofolio"
                       class="w-36 h-36 bg-slate-100 rounded-full m-4"
                     />
                   </div>
-                </a>
-                <h3
-                  class="font-semibold text-sm text-dark mt-5 dark:text-white capitalize"
-                >
-                  Sakina Fried Chicken
-                </h3>
-                <h4 class="font-medium text-xs text-dark dark:text-white">
-                  Waiters & Cook
-                </h4>
-                <p class="text-xs text-secondary mb-2">
-                  Juli 2019 - Oktober 2019
-                </p>
-              </div>
+                  <h3 class="pt-experience">Sakina Fried Chicken</h3>
+                  <h4 class="jabatan-experience">Waiters & Cook</h4>
+                  <p class="masa-experience">Juli 2019 - Oktober 2019</p>
+                </div>
+              </a>
             </div>
             <div
               class="swiper-slide p-2 text-center"
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="300"
-              data-aos-delay="200"
+              data-aos-delay="120"
             >
-              <div
-                class="bg-white rounded-xl overflow-hidden dark:bg-dark dark:shadow-none hover:border-dark hover:shadow-md dark:shadow-slate-600 dark:hover:border-slate-600 hover:shadow-teal-600 p-5"
-              >
-                <a href="experience.html#jhon">
-                  <div
-                    class="flex items-center justify-center rounded-t-sm rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                  >
+              <a href="experience.html#jhon">
+                <div class="card-experience">
+                  <div class="img-experience">
                     <img
                       src="dist/img/experience/3.png"
                       alt="portofolio"
                       class="w-36 h-36 bg-slate-100 rounded-full m-4"
                     />
                   </div>
-                </a>
-                <h3
-                  class="font-semibold text-sm text-dark mt-5 dark:text-white capitalize"
-                >
-                  Jhon Chicken & Burger
-                </h3>
-                <h4 class="font-medium text-xs text-dark dark:text-white">
-                  Waiters & Cook
-                </h4>
-                <p class="text-xs text-secondary mb-2">
-                  Juni 2018 - Maret 2019
-                </p>
-              </div>
+                  <h3 class="pt-experience">Jhon Chicken & Burger</h3>
+                  <h4 class="jabatan-experience">Waiters & Cook</h4>
+                  <p class="masa-experience">Juni 2018 - Maret 2019</p>
+                </div>
+              </a>
             </div>
             <div
               class="swiper-slide p-2 text-center"
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="300"
-              data-aos-delay="250"
+              data-aos-delay="130"
             >
-              <div
-                class="bg-white rounded-xl overflow-hidden dark:bg-dark dark:shadow-none hover:border-dark hover:shadow-md dark:shadow-slate-600 dark:hover:border-slate-600 hover:shadow-teal-600 p-5"
-              >
-                <a href="experience.html#pkl">
-                  <div
-                    class="flex items-center justify-center rounded-t-sm rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
-                  >
+              <a href="experience.html#pkl">
+                <div class="card-experience">
+                  <div class="img-experience">
                     <img
                       src="dist/img/experience/4.png"
                       alt="portofolio"
                       class="w-36 h-36 bg-slate-100 rounded-full m-4"
                     />
                   </div>
-                </a>
-                <h3
-                  class="font-semibold text-sm text-dark mt-5 dark:text-white capitalize"
-                >
-                  Dinas Kelautan dan Perikanan
-                  <span class="lg:hidden">Prov. Banten</span>
-                </h3>
-                <h4 class="font-medium text-xs text-dark dark:text-white">
-                  Praktek Kerja Industri <span class="lg:hidden">(Prakerin)</span>
-                </h4>
-                <p class="text-xs text-secondary mb-2">
-                  Desember 2016 - Februari 2017
-                </p>
-              </div>
+                  <h3 class="pt-experience">
+                    Dinas Kelautan dan Perikanan
+                    <!-- <span class="lg:hidden">Prov. Banten</span> -->
+                  </h3>
+                  <h4 class="jabatan-experience">
+                    Praktek Kerja Industri
+                    <span class="lg:hidden">(Prakerin)</span>
+                  </h4>
+                  <p class="masa-experience">Desember 2016 - Februari 2017</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination pt-10"></div>
+        <div class="swiper-button-next swiper-navBtn mr-20"></div>
+        <div class="swiper-button-prev swiper-navBtn ml-20"></div>
+        <div
+          class="swiper-pagination pt-10 opacity-100 dark:opacity-100 dark:grayscale"
+        ></div>
       </div>
     </section>
     <!-- Experience Section End -->
@@ -838,23 +632,24 @@
     >
       <div class="container">
         <div class="w-full px-4">
-          <div class="mx-auto text-center">
-            <h2
-              class="h2-education"
-              data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-duration="300"
-              data-aos-delay="50"
-            >
-              Pendidikan
-            </h2>
+          <div
+            class="mx-auto text-center"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="300"
+            data-aos-delay="50"
+          >
+            <h2 class="h2-education">Pendidikan</h2>
+            <div
+              class="border-t-2 md:border-t-4 max-w-xl mx-auto text-center border-white w-20"
+            ></div>
           </div>
         </div>
 
-        <div class="w-full px-4">
+        <div class="w-full px-4 pt-5 lg:pt-0">
           <div class="flex flex-wrap items-center justify-center">
             <div
-              class="mx-auto text-center"
+              class="mx-auto text-center mt-5"
               data-aos="fade-up"
               data-aos-offset="300"
               data-aos-duration="300"
@@ -863,7 +658,7 @@
               <a
                 href="https://unsera.ac.id/"
                 target="_blank"
-                class="py-4 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 lg:mx-6 xl:mx-auto items-center justify-center"
+                class="a-education"
               >
                 <img
                   src="dist/img/index/education/1.png"
@@ -879,7 +674,7 @@
               </a>
             </div>
             <div
-              class="mx-auto text-center"
+              class="mx-auto text-center mt-5"
               data-aos="fade-up"
               data-aos-offset="300"
               data-aos-duration="300"
@@ -888,23 +683,19 @@
               <a
                 href="https://sekolahloka.com/data/smks-pgri-3-kota-serang/"
                 target="_blank"
-                class="py-4 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 lg:mx-6 xl:mx-auto items-center justify-center"
+                class="a-education"
               >
                 <img
                   src="dist/img/index/education/2.png"
                   alt="ipm"
-                  class="max-w-[120px] mx-auto"
+                  class="img-education"
                 />
-                <h4 class="font-bold uppercase text-white text-lg">
-                  SMK PGRI 3 Kota Serang
-                </h4>
-                <h4 class="font-medium text-base text-white">
-                  Serang, Kota Serang, Banten
-                </h4>
-                <h4 class="font-medium text-base text-white">
+                <h4 class="univ-education">SMK PGRI 3 Kota Serang</h4>
+                <h4 class="text-education">Serang, Kota Serang, Banten</h4>
+                <h4 class="text-education">
                   Administrasi Perkantoran ~ Rata-rata Nilai UN 87
                 </h4>
-                <p class="font-medium text-base text-white mb-2">2015 ~ 2018</p>
+                <p class="text-education">2015 ~ 2018</p>
               </a>
             </div>
           </div>
@@ -1227,17 +1018,16 @@
     <script>
       AOS.init();
     </script>
+    <!-- Aos -->
 
-    <!-- Swiper JS -->
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-    <!-- Initialize Swiper -->
-    <script src="dist/swiper-bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="dist/js/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".slide-content", {
         slidesPerView: 1,
         spaceBetween: 0,
         loop: true,
-        // centerSlide: "true",
+        centerSlide: "true",
         fade: "true",
         grabCursor: "true",
         pagination: {
@@ -1262,5 +1052,6 @@
         },
       });
     </script>
+    <!-- Swiper -->
   </body>
 </html>
