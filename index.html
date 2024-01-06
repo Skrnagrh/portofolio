@@ -20,23 +20,34 @@
 
     <!-- Swiper -->
     <link rel="stylesheet" href="dist/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dist/css/portofolio/other/swiper1.css" />
     <style>
+      .slide-content1 {
+        margin: 20px;
+        margin-bottom: 30px;
+        overflow: hidden;
+        border-radius: 12px;
+      }
       .swiper-navBtn::before,
       .swiper-navBtn::after {
         font-size: 16px;
         color: #949494fb;
         font-weight: bold;
       }
-      .swiper-pagination-bullet {
+      .swiper-pagination-bullet,
+      .swiper-pagination1-bullet {
         background-color: #14b8a57a;
       }
-      .swiper-pagination-bullet-active {
+      .swiper-pagination-bullet-active,
+      .swiper-pagination1-bullet-active {
         background-color: #14b8a6;
       }
       @media screen and (max-width: 768px) {
-        .slide-content {
+        .slide-content,
+        .slide-content1 {
           margin-right: 0px;
           margin-left: 0px;
+          margin-top: 0px;
         }
         .swiper-navBtn {
           display: none;
@@ -356,7 +367,7 @@
             <div class="w-full pb-10" data-aos="fade-up" data-aos-delay="100">
               <a
                 href="dist/resume/cv_sukron.pdf"
-                class="text-base font-semibold text-white bg-primary py-3 px-6 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                class="text-sm font-bold text-white bg-primary py-3 px-6 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
                 download="cv_sukron"
                 onclick="return confirm('Apakah Anda yakin ingin mendownload CV Sukron?')"
                 >Download CV <i class="bi bi-download"></i
@@ -604,7 +615,7 @@
     <section id="portofolio" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
       <div class="container xl:mx-auto xl:w-10/12">
         <div class="w-full px-4">
-          <div class="mx-auto text-center mb-16">
+          <div class="mx-auto text-center">
             <h2
               class="h2-portofolio"
               data-aos="fade-up"
@@ -633,68 +644,113 @@
             ></div>
           </div>
         </div>
+      </div>
 
-        <div class="flex flex-wrap">
-          <div
-            class="w-full px-4 md:w-1/2 xl:w-1/3"
-            data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-duration="300"
-            data-aos-delay="150"
-          >
-            <a href="portofolio.html#web-section">
-              <div class="img-portofolio">
-                <img
-                  src="dist/img/index/portofolio/2.jpg"
-                  alt="programming"
-                  class="w-full"
-                />
-                <p class="icon-portofolio">
-                  <i class="bi bi-globe"></i> Website
-                </p>
-              </div>
-            </a>
+      <div class="slide-container swiper">
+        <div class="slide-content1 mb-10 p-6">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="swiper-slide p-1">
+              <a href="portofolio.html#vektor-section">
+                <div
+                  class="bg-white rounded-xl overflow-hidden shadow-md shadow-primary dark:bg-dark dark:shadow-slate-700 hover:border-dark hover:shadow-lg dark:hover:border-slate-600 hover:shadow-teal-600"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="300"
+                  data-aos-delay="100"
+                >
+                  <div
+                    class="flex items-center justify-center rounded-t-sm rounded-bl-full overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                  >
+                    <img
+                      src="dist/img/index/portofolio/1.jpg"
+                      alt="programming"
+                      class="w-full"
+                    />
+                  </div>
+                  <p class="text-base text-dark dark:text-white -mt-6 ml-1">
+                    <i class="bi bi-file-image"></i> Vektor
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide p-1">
+              <a href="portofolio.html#web-section">
+                <div
+                  class="bg-white rounded-xl overflow-hidden shadow-md shadow-primary dark:bg-dark dark:shadow-slate-700 hover:border-dark hover:shadow-lg dark:hover:border-slate-600 hover:shadow-teal-600"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="300"
+                  data-aos-delay="150"
+                >
+                  <div
+                    class="flex items-center justify-center rounded-t-sm rounded-bl-full overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                  >
+                    <img
+                      src="dist/img/index/portofolio/2.jpg"
+                      alt="programming"
+                      class="w-full"
+                    />
+                  </div>
+                  <p class="text-base text-dark dark:text-white -mt-6 ml-1">
+                    <i class="bi bi-globe"></i> Website
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide p-1">
+              <a href="portofolio.html#typography-section">
+                <div
+                  class="bg-white rounded-xl overflow-hidden shadow-md shadow-primary dark:bg-dark dark:shadow-slate-700 hover:border-dark hover:shadow-lg dark:hover:border-slate-600 hover:shadow-teal-600"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="300"
+                  data-aos-delay="200"
+                >
+                  <div
+                    class="flex items-center justify-center rounded-t-sm rounded-bl-full overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                  >
+                    <img
+                      src="dist/img/index/portofolio/3.jpg"
+                      alt="programming"
+                      class="w-full"
+                    />
+                  </div>
+                  <p class="text-base text-dark dark:text-white -mt-6 ml-1">
+                    <i class="bi bi-file-earmark-font"></i> Tipograpi
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide p-1">
+              <a href="portofolio.html#other-section">
+                <div
+                  class="bg-white rounded-xl overflow-hidden shadow-md shadow-primary dark:bg-dark dark:shadow-slate-700 hover:border-dark hover:shadow-lg dark:hover:border-slate-600 hover:shadow-teal-600"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="300"
+                  data-aos-delay="250"
+                >
+                  <div
+                    class="flex items-center justify-center rounded-t-sm rounded-bl-full overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100"
+                  >
+                    <img
+                      src="dist/img/index/portofolio/4.jpg"
+                      alt="programming"
+                      class="w-full"
+                    />
+                  </div>
+                  <p class="text-base text-dark dark:text-white -mt-6 ml-1">
+                    <i class="bi bi-file-earmark-text"></i> Lainnya
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
+          <div class="swiper-button-next1 swiper-navBtn"></div>
+          <div class="swiper-button-prev1 swiper-navBtn"></div>
           <div
-            class="w-full px-4 md:w-1/2 xl:w-1/3"
-            data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-duration="300"
-            data-aos-delay="200"
-          >
-            <a href="portofolio.html#vektor-section">
-              <div class="img-portofolio">
-                <img
-                  src="dist/img/index/portofolio/1.jpg"
-                  alt="programming"
-                  class="w-full"
-                />
-                <p class="icon-portofolio">
-                  <i class="bi bi-file-earmark-richtext"></i> Vektor
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="w-full px-4 md:w-1/2 xl:w-1/3"
-            data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-duration="300"
-            data-aos-delay="250"
-          >
-            <a href="portofolio.html#typography-section">
-              <div class="img-portofolio">
-                <img
-                  src="dist/img/index/portofolio/3.jpg"
-                  alt="programming"
-                  class="w-full"
-                />
-                <p class="icon-portofolio">
-                  <i class="bi bi-file-image"></i> Typographi
-                </p>
-              </div>
-            </a>
-          </div>
+            class="swiper-pagination1 pt-10 opacity-100 dark:opacity-100 dark:grayscale"
+          ></div>
         </div>
       </div>
     </section>
@@ -948,120 +1004,99 @@
         },
       });
     </script>
+
+    <script>
+      var swiper1 = new Swiper(".slide-content1", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centerSlide: true,
+        fade: true,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination1",
+          clickable: true,
+          dynamicsBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next1",
+          prevEl: ".swiper-button-prev1",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1.03,
+          },
+          520: {
+            slidesPerView: 2,
+          },
+          950: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
     <!-- Swiper -->
   </body>
 </html>
 
-<!-- <section id="experience" class="pt-24 pb-16 bg-slate-100 dark:bg-slate-800">
-  <div class="container">
-    <div class="w-full">
-      <div
-        class="max-w-xl mx-auto text-center mb-4"
-        data-aos="fade-up"
-        data-aos-offset="300"
-        data-aos-duration="300"
-        data-aos-delay="50"
-      >
-        <h2 class="experience-h2">Pengalaman Kerja</h2>
-        <div
-          class="border-t-2 md:border-t-4 max-w-xl mx-auto text-center border-teal-500 w-20 pt-4"
-        ></div>
+<!-- <div class="flex flex-wrap">
+  <div
+    class="w-full px-4 md:w-1/2 xl:w-1/3"
+    data-aos="fade-up"
+    data-aos-offset="300"
+    data-aos-duration="300"
+    data-aos-delay="150"
+  >
+    <a href="portofolio.html#web-section">
+      <div class="img-portofolio">
+        <img
+          src="dist/img/index/portofolio/2.jpg"
+          alt="programming"
+          class="w-full"
+        />
+        <p class="icon-portofolio">
+          <i class="bi bi-globe"></i> Website
+        </p>
       </div>
-    </div>
-
-    <div class="w-full flex flex-wrap justify-center xl:mx-auto xl:w-10/12">
-      <div
-        class="p-4 md:w-1/2 xl:w-1/3 text-center"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="300"
-        data-aos-delay="100"
-      >
-        <a href="experience.html#ipm">
-          <div class="card-experience">
-            <div class="img-experience">
-              <img
-                src="dist/img/index/experience/1.png"
-                alt="portofolio"
-                width="w-full"
-              />
-            </div>
-            <h3 class="pt-experience">PT. Imam Putra Mandiri</h3>
-            <h4 class="jabatan-experience">Staff Administrasi</h4>
-            <p class="masa-experience">Juni 2020 - April 2022</p>
-          </div>
-        </a>
-      </div>
-      <div
-        class="p-4 md:w-1/2 xl:w-1/3 text-center"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="300"
-        data-aos-delay="150"
-      >
-        <a href="experience.html#sakina">
-          <div class="card-experience">
-            <div class="img-experience">
-              <img
-                src="dist/img/index/experience/2.png"
-                alt="portofolio"
-                width="w-full"
-              />
-            </div>
-            <h3 class="pt-experience">Sakina Fried Chicken</h3>
-            <h4 class="jabatan-experience">Waiters & Cook</h4>
-            <p class="masa-experience">Juli 2019 - Oktober 2019</p>
-          </div>
-        </a>
-      </div>
-      <div
-        class="p-4 md:w-1/2 xl:w-1/3 text-center"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="300"
-        data-aos-delay="200"
-      >
-        <a href="experience.html#jhon">
-          <div class="card-experience">
-            <div class="img-experience">
-              <img
-                src="dist/img/index/experience/3.png"
-                alt="portofolio"
-                width="w-full"
-              />
-            </div>
-            <h3 class="pt-experience">Jhon Chicken & Burger</h3>
-            <h4 class="jabatan-experience">Waiters & Cook</h4>
-            <p class="masa-experience">Juni 2018 - Maret 2019</p>
-          </div>
-        </a>
-      </div>
-      <div
-        class="p-4 md:w-1/2 xl:w-1/3 text-center"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="300"
-        data-aos-delay="250"
-      >
-        <a href="experience.html#pkl">
-          <div class="card-experience">
-            <div class="img-experience">
-              <img
-                src="dist/img/index/experience/4.png"
-                alt="portofolio"
-                width="w-full"
-              />
-            </div>
-            <h3 class="pt-experience">
-              Dinas Kelautan dan Perikanan Prov. Banten
-            </h3>
-            <h4 class="jabatan-experience">
-              Praktek Kerja Industri (Prakerin)
-            </h4>
-            <p class="masa-experience">Desember 2016 - Februari 2017</p>
-          </div>
-        </a>
-      </div>
-    </div>
+    </a>
   </div>
-</section> -->
+  <div
+    class="w-full px-4 md:w-1/2 xl:w-1/3"
+    data-aos="fade-up"
+    data-aos-offset="300"
+    data-aos-duration="300"
+    data-aos-delay="200"
+  >
+    <a href="portofolio.html#vektor-section">
+      <div class="img-portofolio">
+        <img
+          src="dist/img/index/portofolio/1.jpg"
+          alt="programming"
+          class="w-full"
+        />
+        <p class="icon-portofolio">
+          <i class="bi bi-file-earmark-richtext"></i> Vektor
+        </p>
+      </div>
+    </a>
+  </div>
+  <div
+    class="w-full px-4 md:w-1/2 xl:w-1/3"
+    data-aos="fade-up"
+    data-aos-offset="300"
+    data-aos-duration="300"
+    data-aos-delay="250"
+  >
+    <a href="portofolio.html#typography-section">
+      <div class="img-portofolio">
+        <img
+          src="dist/img/index/portofolio/3.jpg"
+          alt="programming"
+          class="w-full"
+        />
+        <p class="icon-portofolio">
+          <i class="bi bi-file-image"></i> Typographi
+        </p>
+      </div>
+    </a>
+  </div>
+</div> -->
