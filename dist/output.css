@@ -1293,8 +1293,8 @@ body {
 
 @media (min-width: 768px) {
   .nav-link {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
