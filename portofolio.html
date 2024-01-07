@@ -115,7 +115,7 @@
               ></span>
             </button>
 
-            <nav
+            <!-- <nav
               id="nav-menu"
               class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-300 lg:dark:bg-transparent z-[9999]"
             >
@@ -161,6 +161,36 @@
                     class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
                     >Kemampuan</a
                   >
+                </li>
+              </ul>
+            </nav> -->
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-300 lg:dark:bg-transparent z-[9999]"
+            >
+              <ul class="block lg:flex">
+                <li id="homeLink" class="group nav-link">
+                  <a href="index.html#home" class="nav-item">Beranda</a>
+                </li>
+                <li id="aboutLink" class="group nav-link">
+                  <a href="index.html#about" class="nav-item">Tentang Saya</a>
+                </li>
+                <li id="experienceLink" class="group nav-link">
+                  <a href="index.html#experience" class="nav-item"
+                    >Pengalaman</a
+                  >
+                </li>
+                <li id="educationLink" class="group nav-link">
+                  <a href="index.html#education" class="nav-item">Pendidikan</a>
+                </li>
+                <li id="portofolioLink" class="group nav-link">
+                  <a href="#portofolio" class="nav-item">Portofolio</a>
+                </li>
+                <li id="skillLink" class="group nav-link">
+                  <a href="index.html#skill" class="nav-item">Kemampuan</a>
+                </li>
+                <li id="contactLink" class="group nav-link lg:-mr-28">
+                  <a href="#contact" class="nav-item">Kontak</a>
                 </li>
               </ul>
             </nav>
@@ -716,25 +746,25 @@
             </a>
             <div class="hidden md:block lg:block">
               <a
-              href="dist/img/portofolio/typography/8.jpg"
-              data-gallery="typoGallery"
-              class="portfolio-lightbox relative"
-            >
-              <div
-                class="rounded-xl overflow-hidden border-2 dark:border-dark dark:shadow-none relative group"
+                href="dist/img/portofolio/typography/8.jpg"
+                data-gallery="typoGallery"
+                class="portfolio-lightbox relative"
               >
-                <div class="rounded-t-md overflow-hidden">
-                  <img
-                    src="dist/img/portofolio/typography/8.jpg"
-                    alt="portofolio"
-                  />
+                <div
+                  class="rounded-xl overflow-hidden border-2 dark:border-dark dark:shadow-none relative group"
+                >
+                  <div class="rounded-t-md overflow-hidden">
+                    <img
+                      src="dist/img/portofolio/typography/8.jpg"
+                      alt="portofolio"
+                    />
+                  </div>
+                  <div class="typo-2">
+                    <div class="typo-3"></div>
+                    <p class="typo-4">Open</p>
+                  </div>
                 </div>
-                <div class="typo-2">
-                  <div class="typo-3"></div>
-                  <p class="typo-4">Open</p>
-                </div>
-              </div>
-            </a>
+              </a>
             </div>
             <div class="hidden md:block lg:block">
               <a
@@ -1241,71 +1271,11 @@
     </a>
     <!-- Back To Top End -->
 
+    <!-- <script src="dist/js/portofolio.js"></script> -->
     <!-- Tailwind Js -->
     <script src="dist/js/script.js"></script>
-
-    <!-- Icon Active -->
-    <script>
-      function showImages(category) {
-        const vektorSection = document.getElementById("vektor-section");
-        const webSection = document.getElementById("web-section");
-        const typographySection = document.getElementById("typography-section");
-        const otherSection = document.getElementById("other-section");
-
-        if (category === "vektor") {
-          vektorSection.classList.remove("d-none");
-          webSection.classList.add("d-none");
-          typographySection.classList.add("d-none");
-          otherSection.classList.add("d-none");
-        } else if (category === "web") {
-          vektorSection.classList.add("d-none");
-          webSection.classList.remove("d-none");
-          typographySection.classList.add("d-none");
-          otherSection.classList.add("d-none");
-        } else if (category === "typography") {
-          vektorSection.classList.add("d-none");
-          webSection.classList.add("d-none");
-          typographySection.classList.remove("d-none");
-          otherSection.classList.add("d-none");
-        } else if (category === "other") {
-          vektorSection.classList.add("d-none");
-          webSection.classList.add("d-none");
-          typographySection.classList.add("d-none");
-          otherSection.classList.remove("d-none");
-        }
-
-        const links = document.querySelectorAll(".icon-links .portofolio-link");
-        links.forEach((link) => {
-          link.classList.remove("active");
-        });
-
-        const activeLink = document.querySelector(`[data-page="${category}"]`);
-        activeLink.classList.add("active");
-        localStorage.setItem("selectedCategory", category);
-      }
-
-      // Check if there is a hash in the URL on page load
-      window.addEventListener("load", () => {
-        const hash = window.location.hash.substring(1);
-        let defaultCategory = "vektor"; // Kategori default jika tidak ada hash
-
-        if (hash === "web-section") {
-          defaultCategory = "web";
-        } else if (hash === "typography-section") {
-          defaultCategory = "typography";
-        } else if (hash === "other-section") {
-          defaultCategory = "other";
-        }
-
-        showImages(defaultCategory);
-      });
-    </script>
-    <!-- Icon Active End -->
-
-    <!-- <script src="dist/js/swiper-bundle.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
-    <script src="dist/js/scripts.js"></script>
-    <script src="dist/js/portofolio.js"></script>
+    <!-- Tailwind Js -->
+    <!-- Hide show Halaman Vektor, Web, tipo & other -->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="dist/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="dist/js/main.js"></script>
@@ -1411,219 +1381,60 @@
   </body>
 </html>
 
-<!-- android-->
-<!-- <div class="other-1">
-  <p class="other-2"><i class="bi bi-android2"></i> Projek Android</p>
-</div>
-<div class="font-sans grid grid-cols-3 md:grid-cols-6 gap-1 pt-4 pb-16">
-  <a
-    href="dist/img/portofolio/other/android/1.png"
-    data-gallery="androidGallery"
-    class="portfolio-lightbox relative"
-  >
-    <div class="android-1 group">
-      <div class="rounded-t-md overflow-hidden">
-        <img src="dist/img/portofolio/other/android/1.png" alt="portofolio" />
-      </div>
-      <div class="android-2">
-        <div class="android-3"></div>
-        <p class="android-4">Open</p>
-      </div>
-    </div>
-  </a>
-  <a
-    href="dist/img/portofolio/other/android/2.png"
-    data-gallery="androidGallery"
-    class="portfolio-lightbox relative"
-  >
-    <div class="android-1 group">
-      <div class="rounded-t-md overflow-hidden">
-        <img src="dist/img/portofolio/other/android/2.png" alt="portofolio" />
-      </div>
-      <div class="android-2">
-        <div class="android-3"></div>
-        <p class="android-4">Open</p>
-      </div>
-    </div>
-  </a>
-  <div class="hidden md:block lg:block">
-    <a
-      href="dist/img/portofolio/other/android/3.png"
-      data-gallery="androidGallery"
-      class="portfolio-lightbox relative"
-    >
-      <div class="android-1 group">
-        <div class="rounded-t-md overflow-hidden">
-          <img src="dist/img/portofolio/other/android/3.png" alt="portofolio" />
-        </div>
-        <div class="android-2">
-          <div class="android-3"></div>
-          <p class="android-4">Open</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="hidden md:block lg:block">
-    <a
-      href="dist/img/portofolio/other/android/4.png"
-      data-gallery="androidGallery"
-      class="portfolio-lightbox relative"
-    >
-      <div class="android-1 group">
-        <div class="rounded-t-md overflow-hidden">
-          <img src="dist/img/portofolio/other/android/4.png" alt="portofolio" />
-        </div>
-        <div class="android-2">
-          <div class="android-3"></div>
-          <p class="android-4">Open</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="hidden md:block lg:block">
-    <a
-      href="dist/img/portofolio/other/android/5.png"
-      data-gallery="androidGallery"
-      class="portfolio-lightbox relative"
-    >
-      <div class="android-1 group">
-        <div class="rounded-t-md overflow-hidden">
-          <img src="dist/img/portofolio/other/android/5.png" alt="portofolio" />
-        </div>
-        <div class="android-2">
-          <div class="android-3"></div>
-          <p class="android-4">Open</p>
-        </div>
-      </div>
-    </a>
-  </div>
+<!-- Icon Active -->
+<!-- <script>
+  function showImages(category) {
+    const vektorSection = document.getElementById("vektor-section");
+    const webSection = document.getElementById("web-section");
+    const typographySection = document.getElementById("typography-section");
+    const otherSection = document.getElementById("other-section");
 
-  <div class="typo-1 group">
-    <div class="rounded-t-md overflow-hidden">
-      <img src="dist/img/portofolio/typography/2.jpg" />
-    </div>
-    <div class="porto-1">
-      <div class="porto-2"></div>
-      <a
-        href="https://github.com/Skrnagrh/android_pencatat_barang"
-        target="_blank"
-        class="porto-3"
-        >Lihat Projek <i class="bi bi-arrow-right-circle"></i
-      ></a>
-    </div>
-  </div>
-</div> -->
+    if (category === "vektor") {
+      vektorSection.classList.remove("d-none");
+      webSection.classList.add("d-none");
+      typographySection.classList.add("d-none");
+      otherSection.classList.add("d-none");
+    } else if (category === "web") {
+      vektorSection.classList.add("d-none");
+      webSection.classList.remove("d-none");
+      typographySection.classList.add("d-none");
+      otherSection.classList.add("d-none");
+    } else if (category === "typography") {
+      vektorSection.classList.add("d-none");
+      webSection.classList.add("d-none");
+      typographySection.classList.remove("d-none");
+      otherSection.classList.add("d-none");
+    } else if (category === "other") {
+      vektorSection.classList.add("d-none");
+      webSection.classList.add("d-none");
+      typographySection.classList.add("d-none");
+      otherSection.classList.remove("d-none");
+    }
 
-<!-- Desktop java netbeans-->
-<!-- <div class="font-sans grid grid-cols-2 md:grid-cols-5 gap-1">
-  <a
-    href="dist/img/portofolio/other/desktop/kereta-api/1.png"
-    data-gallery="desktopGallery"
-    class="portfolio-lightbox relative"
-  >
-    <div class="dekstop-1 group">
-      <div class="rounded-t-md overflow-hidden">
-        <img
-          src="dist/img/portofolio/other/desktop/kereta-api/1.png"
-          alt="portofolio"
-        />
-      </div>
-      <div class="dekstop-2">
-        <div class="dekstop-3"></div>
-        <p class="dekstop-4">Open</p>
-      </div>
-    </div>
-  </a>
-  <div class="hidden md:block lg:block">
-    <a
-      href="dist/img/portofolio/other/desktop/kereta-api/2.png"
-      data-gallery="desktopGallery"
-      class="portfolio-lightbox relative"
-    >
-      <div class="dekstop-1 group">
-        <div class="rounded-t-md overflow-hidden">
-          <img
-            src="dist/img/portofolio/other/desktop/kereta-api/2.png"
-            alt="portofolio"
-          />
-        </div>
-        <div class="dekstop-2">
-          <div class="dekstop-3"></div>
-          <p class="dekstop-4">Open</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="typo-1 group">
-    <div class="rounded-t-md overflow-hidden">
-      <img src="dist/img/portofolio/other/desktop/kereta-api/4.png" />
-    </div>
-    <div class="porto-1">
-      <div class="porto-2"></div>
-      <a
-        href="https://github.com/Skrnagrh/java_transaksi_tiket"
-        target="_blank"
-        class="porto-3"
-        >Lihat Projek <i class="bi bi-arrow-right-circle"></i
-      ></a>
-    </div>
-  </div>
-</div> -->
+    const links = document.querySelectorAll(".icon-links .portofolio-link");
+    links.forEach((link) => {
+      link.classList.remove("active");
+    });
 
-<!-- Desktop delphi-->
-<!-- <p class="dekstop-p">Projek Desktop Perpustakaan</p>
-<div class="font-sans grid grid-cols-2 md:grid-cols-5 gap-1 pb-16">
-  <a
-    href="dist/img/portofolio/other/desktop/perpustakaan/1.png"
-    data-gallery="desktopGallery1"
-    class="portfolio-lightbox relative"
-  >
-    <div class="dekstop-1 group">
-      <div class="rounded-t-md overflow-hidden">
-        <img
-          src="dist/img/portofolio/other/desktop/perpustakaan/1.png"
-          alt="portofolio"
-        />
-      </div>
-      <div class="dekstop-2">
-        <div class="dekstop-3"></div>
-        <p class="dekstop-4">Open</p>
-      </div>
-    </div>
-  </a>
-  <div class="hidden md:block lg:block">
-    <a
-      href="dist/img/portofolio/other/desktop/perpustakaan/2.png"
-      data-gallery="desktopGallery1"
-      class="portfolio-lightbox relative"
-    >
-      <div class="dekstop-1 group">
-        <div class="rounded-t-md overflow-hidden">
-          <img
-            src="dist/img/portofolio/other/desktop/perpustakaan/2.png"
-            alt="portofolio"
-          />
-        </div>
-        <div class="dekstop-2">
-          <div class="dekstop-3"></div>
-          <p class="dekstop-4">Open</p>
-        </div>
-      </div>
-    </a>
-  </div>
+    const activeLink = document.querySelector(`[data-page="${category}"]`);
+    activeLink.classList.add("active");
+    localStorage.setItem("selectedCategory", category);
+  }
 
-  <div class="typo-1 group">
-    <div class="rounded-t-md overflow-hidden">
-      <img src="dist/img/portofolio/other/desktop/perpustakaan/4.png" />
-    </div>
-    <div class="porto-1">
-      <div class="porto-2"></div>
-      <a
-        href="https://github.com/Skrnagrh/delphi_aplikasi_perpustakaan"
-        target="_blank"
-        class="porto-3"
-        >Lihat Projek <i class="bi bi-arrow-right-circle"></i
-      ></a>
-    </div>
-  </div>
-</div> -->
+  // Check if there is a hash in the URL on page load
+  window.addEventListener("load", () => {
+    const hash = window.location.hash.substring(1);
+    let defaultCategory = "vektor"; // Kategori default jika tidak ada hash
+
+    if (hash === "web-section") {
+      defaultCategory = "web";
+    } else if (hash === "typography-section") {
+      defaultCategory = "typography";
+    } else if (hash === "other-section") {
+      defaultCategory = "other";
+    }
+
+    showImages(defaultCategory);
+  });
+</script> -->
+<!-- Icon Active End -->

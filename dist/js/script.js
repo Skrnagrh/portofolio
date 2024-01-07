@@ -59,31 +59,148 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 const currentYear = new Date().getFullYear();
 document.getElementById("current-year").textContent = currentYear;
 
-var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: 'true',
-    fade:'true',
-    grabCursor: 'true',
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicsBullets:true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints:{
-      0:{
-          slidesPerView: 1,
-      },
-      520:{
-          slidesPerView: 2,
-      },
-      950:{
-          slidesPerView: 3,
-      },
-    },
+
+//Hide Show  Icon Portofolio
+function showImages(category) {
+    const vektorSection = document.getElementById("vektor-section");
+    const webSection = document.getElementById("web-section");
+    const typographySection = document.getElementById("typography-section");
+    const otherSection = document.getElementById("other-section");
+
+    if (category === "vektor") {
+      vektorSection.classList.remove("d-none");
+      webSection.classList.add("d-none");
+      typographySection.classList.add("d-none");
+      otherSection.classList.add("d-none");
+    } else if (category === "web") {
+      vektorSection.classList.add("d-none");
+      webSection.classList.remove("d-none");
+      typographySection.classList.add("d-none");
+      otherSection.classList.add("d-none");
+    } else if (category === "typography") {
+      vektorSection.classList.add("d-none");
+      webSection.classList.add("d-none");
+      typographySection.classList.remove("d-none");
+      otherSection.classList.add("d-none");
+    } else if (category === "other") {
+      vektorSection.classList.add("d-none");
+      webSection.classList.add("d-none");
+      typographySection.classList.add("d-none");
+      otherSection.classList.remove("d-none");
+    }
+
+    const links = document.querySelectorAll(".icon-links .portofolio-link");
+    links.forEach((link) => {
+      link.classList.remove("active");
+    });
+
+    const activeLink = document.querySelector(`[data-page="${category}"]`);
+    activeLink.classList.add("active");
+    localStorage.setItem("selectedCategory", category);
+  }
+
+  // Check if there is a hash in the URL on page load
+  window.addEventListener("load", () => {
+    const hash = window.location.hash.substring(1);
+    let defaultCategory = "vektor"; // Kategori default jika tidak ada hash
+
+    if (hash === "web-section") {
+      defaultCategory = "web";
+    } else if (hash === "typography-section") {
+      defaultCategory = "typography";
+    } else if (hash === "other-section") {
+      defaultCategory = "other";
+    }
+
+    showImages(defaultCategory);
   });
+
+
+  // Active Nabbar
+  // Mendapatkan elemen #homeLink, #aboutLink, #experienceLink, #educationLink, #portofolioLink, #skillLink, dan #contactLink
+  var homeLink = document.getElementById("homeLink");
+  var aboutLink = document.getElementById("aboutLink");
+  var experienceLink = document.getElementById("experienceLink");
+  var educationLink = document.getElementById("educationLink");
+  var portofolioLink = document.getElementById("portofolioLink");
+  var skillLink = document.getElementById("skillLink");
+  var contactLink = document.getElementById("contactLink");
+
+  // Mendapatkan elemen #about, #experience, #education, #portofolio, #skill, dan #contact
+  var aboutSection = document.getElementById("about");
+  var experienceSection = document.getElementById("experience");
+  var educationSection = document.getElementById("education");
+  var portofolioSection = document.getElementById("portofolio");
+  var skillSection = document.getElementById("skill");
+  var contactSection = document.getElementById("contact");
+
+  // Mengecek status elemen aktif dari penyimpanan sesi
+  var activeElement = sessionStorage.getItem("activeElement");
+  if (activeElement) {
+    document.getElementById(activeElement).classList.add("active");
+  } else {
+    // Menandai elemen Home sebagai aktif secara default
+    homeLink.classList.add("active");
+  }
+
+  // Menambahkan event listener untuk menangkap saat pengguna men-scroll
+  window.addEventListener("scroll", function () {
+    // Mendapatkan posisi (offset) dari masing-masing elemen
+    var aboutSectionOffset = aboutSection.offsetTop;
+    var experienceSectionOffset = experienceSection.offsetTop;
+    var educationSectionOffset = educationSection.offsetTop;
+    var portofolioSectionOffset = portofolioSection.offsetTop;
+    var skillSectionOffset = skillSection.offsetTop;
+    var contactSectionOffset = contactSection.offsetTop;
+
+    // Mendapatkan posisi (offset) dari titik tengah layar
+    var screenHeight = window.innerHeight / 2;
+
+    // Menentukan apakah pengguna men-scroll ke bawah elemen masing-masing
+    if (window.scrollY < aboutSectionOffset - screenHeight) {
+      setActiveElement("homeLink");
+    } else if (
+      window.scrollY > aboutSectionOffset - screenHeight &&
+      window.scrollY < experienceSectionOffset - screenHeight
+    ) {
+      setActiveElement("aboutLink");
+    } else if (
+      window.scrollY > experienceSectionOffset - screenHeight &&
+      window.scrollY < educationSectionOffset - screenHeight
+    ) {
+      setActiveElement("experienceLink");
+    } else if (
+      window.scrollY > educationSectionOffset - screenHeight &&
+      window.scrollY < portofolioSectionOffset - screenHeight
+    ) {
+      setActiveElement("educationLink");
+    } else if (
+      window.scrollY > portofolioSectionOffset - screenHeight &&
+      window.scrollY < skillSectionOffset - screenHeight
+    ) {
+      setActiveElement("portofolioLink");
+    } else if (
+      window.scrollY > skillSectionOffset - screenHeight &&
+      window.scrollY < contactSectionOffset - screenHeight
+    ) {
+      setActiveElement("skillLink");
+    } else if (window.scrollY > contactSectionOffset - screenHeight) {
+      setActiveElement("contactLink");
+    } else {
+      setActiveElement("homeLink");
+    }
+  });
+
+  // Fungsi untuk menandai elemen sebagai aktif dan menyimpan ke penyimpanan sesi
+  function setActiveElement(elementId) {
+    // Menghapus kelas "active" dari semua elemen navigasi
+    [homeLink, aboutLink, experienceLink, educationLink, portofolioLink, skillLink, contactLink].forEach(function (el) {
+      el.classList.remove("active");
+    });
+
+    // Menambahkan kelas "active" pada elemen yang aktif
+    document.getElementById(elementId).classList.add("active");
+
+    // Menyimpan informasi elemen yang aktif ke penyimpanan sesi
+    sessionStorage.setItem("activeElement", elementId);
+  }
