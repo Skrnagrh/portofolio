@@ -186,16 +186,17 @@ body {
 
 /* Typography Start */
 .typo-1 {
-  @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative;
+  /* @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative; */
+  @apply rounded-xl overflow-hidden relative ;
 }
 .typo-2 {
   @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
 }
 .typo-3 {
-  @apply absolute inset-0 bg-slate-600 opacity-50;
+  @apply absolute inset-0 bg-dark opacity-50;
 }
 .typo-4 {
-  @apply text-white font-semibold text-sm lg:text-2xl z-10;
+  @apply text-white font-semibold text-xl lg:text-2xl z-10;
 }
 /* Typography End */
 

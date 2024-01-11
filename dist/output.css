@@ -630,10 +630,6 @@ video {
   margin: 1rem;
 }
 
-.m-5 {
-  margin: 1.25rem;
-}
-
 .mx-24 {
   margin-left: 6rem;
   margin-right: 6rem;
@@ -661,6 +657,10 @@ video {
 
 .-mt-6 {
   margin-top: -1.5rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .mb-10 {
@@ -759,6 +759,10 @@ video {
   height: 1.25rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-20 {
   width: 5rem;
 }
@@ -789,6 +793,10 @@ video {
 
 .max-w-\[80px\] {
   max-width: 80px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .max-w-md {
@@ -854,6 +862,10 @@ video {
 
 .gap-1 {
   gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-3 {
@@ -1000,6 +1012,11 @@ video {
      object-fit: cover;
 }
 
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1068,10 +1085,6 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
 }
 
 .pt-10 {
@@ -2160,20 +2173,10 @@ body {
 /* Typography Start */
 
 .typo-1 {
+  /* @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative; */
   position: relative;
   overflow: hidden;
   border-radius: 0.75rem;
-  border-width: 2px;
-}
-
-:is(.dark .typo-1) {
-  --tw-border-opacity: 1;
-  border-color: rgb(15 23 42 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .typo-2 {
@@ -2196,14 +2199,14 @@ body {
   position: absolute;
   inset: 0px;
   --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
   opacity: 0.5;
 }
 
 .typo-4 {
   z-index: 10;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2664,6 +2667,14 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
   .md\:border-t-4 {
     border-top-width: 4px;
   }
@@ -2698,10 +2709,6 @@ body {
 
   .lg\:right-4 {
     right: 1rem;
-  }
-
-  .lg\:col-start-2 {
-    grid-column-start: 2;
   }
 
   .lg\:mx-0 {
@@ -2806,6 +2813,11 @@ body {
     padding-right: 0px;
   }
 
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .lg\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -2840,10 +2852,6 @@ body {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:font-bold {
-    font-weight: 700;
   }
 
   .lg\:shadow-none {
