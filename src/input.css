@@ -49,6 +49,15 @@ body {
 
 /* index.html */
 
+/* About Start*/
+.p-about {
+  @apply font-medium text-base text-secondary max-w-xl lg:text-lg pb-4;
+}
+.span-about {
+  @apply font-bold text-dark text-sm lg:text-lg dark:text-white capitalize;
+}
+/* About End*/
+
 /* Experience Start */
 .experience-h2 {
   @apply font-bold text-primary text-3xl mb-4 md:text-4xl lg:text-5xl uppercase;
@@ -187,7 +196,7 @@ body {
 /* Typography Start */
 .typo-1 {
   /* @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative; */
-  @apply rounded-xl overflow-hidden relative ;
+  @apply rounded-xl overflow-hidden relative;
 }
 .typo-2 {
   @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
