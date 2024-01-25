@@ -1278,6 +1278,7 @@ body {
 .nav-link {
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-top: 0.25rem;
   border-radius: 1.5rem;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1288,8 +1289,9 @@ body {
 
 .nav-link:hover {
   border-bottom-width: 4px;
+  border-top-width: 1px;
   --tw-border-opacity: 1;
-  border-bottom-color: rgb(20 184 166 / var(--tw-border-opacity));
+  border-color: rgb(20 184 166 / var(--tw-border-opacity));
   background-image: none;
   opacity: 0.8;
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -1299,8 +1301,8 @@ body {
 
 @media (min-width: 1024px) {
   .nav-link {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
   }
 }
 
@@ -1325,7 +1327,7 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-:is(.dark .nav-item:active) {
+:is(.dark .group:active .nav-item) {
   --tw-text-opacity: 1;
   color: rgb(20 184 166 / var(--tw-text-opacity));
 }
@@ -1339,8 +1341,21 @@ body {
 #contactLink.active {
   /* @apply bg-primary rounded-3xl text-white; */
   border-bottom-width: 4px;
+  border-top-width: 1px;
   --tw-border-opacity: 1;
-  border-bottom-color: rgb(20 184 166 / var(--tw-border-opacity));
+  border-color: rgb(20 184 166 / var(--tw-border-opacity));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(20 184 166 / var(--tw-text-opacity));
+}
+
+:is(.dark #homeLink.active),:is(.dark 
+#aboutLink.active),:is(.dark 
+#experienceLink.active),:is(.dark 
+#educationLink.active),:is(.dark 
+#portofolioLink.active),:is(.dark 
+#skillLink.active),:is(.dark 
+#contactLink.active) {
   --tw-text-opacity: 1;
   color: rgb(20 184 166 / var(--tw-text-opacity));
 }
