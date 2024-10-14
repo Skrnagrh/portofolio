@@ -31,15 +31,6 @@
       }
     </script>
     <!-- Dark Mode Theme -->
-
-    <!-- Logo Experience -->
-    <style>
-      .logo-exp{
-        position: sticky;
-        top: 80px;
-        z-index: 9999;
-      }
-    </style>
   </head>
 
   <body>
@@ -217,7 +208,9 @@
     <!-- Hero Section End -->
 
     <!-- Logo Section Start -->
-    <section class="pt-2 pb-2 bg-slate-200 dark:bg-slate-700 logo-exp">
+    <section
+      class="pt-2 pb-2 bg-slate-200 dark:bg-slate-900 lg:dark:bg-slate-950 logo-exp"
+    >
       <div class="container">
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
@@ -228,7 +221,7 @@
               data-aos-duration="300"
               data-aos-delay="50"
             >
-              <img src="dist/img/experience/1.png" alt="ipm"/>
+              <img src="dist/img/experience/1.png" alt="ipm" />
             </a>
             <a
               href="#sakina"
@@ -264,11 +257,11 @@
     <!-- Logo Section End -->
 
     <!-- Experience Section -->
-    <section class="pb-16 lg:pb-0 lg:dark:bg-dark dark:bg-slate-800">
+    <section class="pb-16 lg:pb-0 lg:dark:bg-dark dark:bg-slate-700">
       <div class="mx-4 lg:mx-0">
-        <!-- IPM Start -->
+        <!-- IPM -->
         <div
-          class="pt-24 lg:pt-0"
+          class="pt-16 lg:pt-0"
           id="ipm"
           data-aos="fade-up"
           data-aos-offset="300"
@@ -278,86 +271,198 @@
           <div
             class="dark:bg-slate-800 lg:dark:bg-dark rounded-xl lg:rounded-none"
           >
-            <!-- <div
-              class="container lg:mb-10 px-6 font-serif max-w-md sm:mx-10 lg:mx-auto sm:max-w-xl md:max-w-5xl lg:pt-16 lg:flex lg:max-w-full lg:px-0 rounded-xl shadow-lg border-primary dark:border lg:border-none shadow-teal-400 dark:shadow-slate-700 lg:shadow-none"
-            > -->
             <div
-              class="container lg:mb-10 px-6 font-serif max-w-md lg:mx-auto sm:max-w-xl md:max-w-5xl lg:pt-16 lg:flex lg:max-w-full lg:px-0 rounded-xl shadow-lg border-primary dark:border md:border-none lg:border-none shadow-teal-400 dark:shadow-slate-700 lg:shadow-none"
+              class="lg:mb-10 font-serif max-w-md lg:mx-auto sm:max-w-xl md:max-w-5xl px-2 py-4 lg:pt-16 lg:container lg:flex lg:max-w-full lg:px-0 rounded-xl"
             >
               <div class="lg:p-12 lg:flex-1 pb-4">
                 <div class="flex items-center">
-                  <img
-                    src="dist/img/experience/1.png"
-                    alt="2"
-                    class="max-w-[80px] lg:hidden"
-                  />
-                  <h3
-                    class="ml-4 lg:ml-0 text-lg font-bold text-dark sm:text-3xl md:text-4xl dark:text-white"
-                  >
-                    PT. Imam Putra Mandiri
-                  </h3>
+                  <div>
+                    <img
+                      src="dist/img/experience/1.png"
+                      alt="2"
+                      class="max-w-[80px] lg:hidden"
+                    />
+                  </div>
+                  <div>
+                    <h3
+                      class="ml-4 lg:ml-0 text-lg font-bold text-dark sm:text-3xl md:text-4xl dark:text-white"
+                    >
+                      PT. Imam Putra Mandiri
+                    </h3>
+                    <p
+                      class="ml-4 lg:ml-0 text-slate-800 dark:text-gray-400 text-base font-medium"
+                    >
+                      Bojonegara, Banten, Indonesia
+                    </p>
+                    <p
+                      class="text-sm text-dark dark:text-gray-400 ml-4 lg:ml-0"
+                    >
+                      Jun 2020 - Apr 2022 · 1 thn 11 bln
+                    </p>
+                  </div>
                 </div>
                 <hr
-                  class="border-b border-primary dark:border-slate-700 w-full lg:hidden"
+                  class="border-b border-slate-300 dark:border-slate-700 w-full lg:mt-2"
                 />
-
-                <ul
-                  class="my-2 text-dark dark:text-white sm:mt-4 text-md text-md font-medium"
-                >
-                  <li>
-                    <span class="font-bold">Bagian</span> : Staff Administrasi
-                  </li>
-                  <li>
-                    <span class="font-semibold">Alamat</span> : Bojonegara, Kab.
-                    Serang Banten
-                  </li>
-                  <li>
-                    <span class="font-semibold">Mulai Kerja</span> : Juni 2020
-                  </li>
-                  <li>
-                    <span class="font-semibold">Sampai</span> : April 2022
-                  </li>
-                </ul>
-                <h2
-                  class="mt-6 text-2xl font-semibold text-dark dark:text-white sm:mt-8 sm:text-4xl"
-                >
-                  Job desk
-                </h2>
-                <ul class="list-disc ml-4 mb-4">
-                  <li
-                    class="text-dark dark:text-white sm:mt-4 text-md relative custom-list-item"
+                <div class="space-y-5 ml-10 mt-4">
+                  <div class="relative ml-2 mt-4 flex items-center">
+                    <div
+                      class="absolute w-2 h-2 bg-slate-300 dark:bg-slate-700 rounded-full -left-3 transform -translate-y-1/2"
+                      style="width: 0.5rem; height: 0.5rem; left: -0.75rem"
+                    ></div>
+                    <h2
+                      class="text-base font-extrabold text-dark dark:text-white ml-12"
+                    >
+                      Staff Administrasi
+                    </h2>
+                  </div>
+                  <div
+                    class="-mt-12 -ml-0 border-l-2 border-slate-300 dark:border-slate-700"
                   >
-                    Bertanggung jawab untuk melakukan entry data karyawan secara
-                    akurat dan efisien.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Memastikan kelancaran laporan absensi karyawan dan
-                    memverifikasinya untuk keakuratan.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Melakukan pengecekan jam kerja karyawan untuk mengoptimalkan
-                    produktivitas.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Mengelola dan memasukkan data ke dalam sistem payroll
-                    perusahaan.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Berperan dalam pembuatan internal memo untuk menyampaikan
-                    informasi penting.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Bertanggung jawab atas pengarsipan data yang rapi dan mudah
-                    diakses.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Menyusun dan merangkum data untuk memastikan informasi
-                    terkini dan teratur.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Menghasilkan berita acara yang akurat dan lengkap.
-                  </li>
-                </ul>
+                    <div class="ml-8 -mt-6">
+                      <p class="text-sm text-dark dark:text-gray-400 mt-1 ml-6">
+                        Jan 2021 - Apr 2022 · 1 thn 4 bln
+                      </p>
+                      <ul
+                        id="jobDescription1"
+                        class="text-sm text-dark dark:text-white list-disc list-inside mt-2 ml-6"
+                      >
+                        <li>
+                          Bertanggung jawab untuk melakukan entry data karyawan
+                          secara akurat dan efisien.
+                        </li>
+                        <li>
+                          Memastikan kelancaran laporan absensi karyawan dan
+                          memverifikasinya untuk keakuratan.
+                        </li>
+                        <li>
+                          Melakukan pengecekan jam kerja karyawan untuk
+                          mengoptimalkan produktivitas.
+                        </li>
+                        <li>
+                          Mengelola dan memasukkan data ke dalam sistem payroll
+                          perusahaan.
+                        </li>
+                        <li>
+                          Berperan dalam pembuatan internal memo untuk
+                          menyampaikan informasi penting.
+                        </li>
+                        <li>
+                          Bertanggung jawab atas pengarsipan data yang rapi dan
+                          mudah diakses.
+                        </li>
+                        <li>
+                          Menyusun dan merangkum data untuk memastikan informasi
+                          terkini dan teratur.
+                        </li>
+                        <li>
+                          Menghasilkan berita acara yang akurat dan lengkap.
+                        </li>
+                      </ul>
+                      <button
+                        id="toggleButton1"
+                        class="ml-6 text-gray-500 hover:text-blue-500 text-sm mt-2"
+                      >
+                        Lihat lebih banyak
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="space-y-5 ml-10 mt-4">
+                  <div class="relative ml-2 mt-4 flex items-center">
+                    <div
+                      class="absolute w-2 h-2 bg-slate-300 dark:bg-slate-700 rounded-full -left-3 transform -translate-y-1/2"
+                      style="width: 0.5rem; height: 0.5rem; left: -0.75rem"
+                    ></div>
+                    <h2
+                      class="text-base font-extrabold text-dark dark:text-white ml-12"
+                    >
+                      Checker
+                    </h2>
+                  </div>
+                  <div
+                    class="-mt-12 -ml-0 border-l-2 border-slate-300 dark:border-slate-700"
+                  >
+                    <div class="ml-8 -mt-6">
+                      <p class="text-sm text-dark dark:text-gray-400 mt-1 ml-6">
+                        Sep 2020 - Des 2020 · 4 bln
+                      </p>
+                      <ul
+                        id="jobDescription2"
+                        class="text-sm text-dark dark:text-white list-disc list-inside mt-2 ml-6"
+                      >
+                        <li>
+                          Memeriksa dan memastikan tonase bagian kapal sesuai
+                          dengan spesifikasi.
+                        </li>
+                        <li>
+                          Menghitung dan mencatat berat setiap bagian kapal yang
+                          dipotong untuk memastikan akurasi data.
+                        </li>
+                        <li>
+                          Berkoordinasi dengan tim lapangan dan operator alat
+                          berat untuk kelancaran proses pengecekan.
+                        </li>
+                        <li>
+                          Menyusun laporan tonase harian dan memberikan
+                          rekomendasi kepada atasan terkait hasil pengecekan.
+                        </li>
+                      </ul>
+                      <button
+                        id="toggleButton2"
+                        class="ml-6 text-gray-500 hover:text-blue-500 text-sm mt-2"
+                      >
+                        Lihat lebih banyak
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="space-y-5 ml-10 mt-4">
+                  <div class="relative ml-2 mt-4 flex items-center">
+                    <div
+                      class="absolute w-2 h-2 bg-slate-300 dark:bg-slate-700 rounded-full -left-3 transform -translate-y-1/2"
+                      style="width: 0.5rem; height: 0.5rem; left: -0.75rem"
+                    ></div>
+                    <h2
+                      class="text-base font-extrabold text-dark dark:text-white ml-12"
+                    >
+                      Helper
+                    </h2>
+                  </div>
+                  <div
+                    class="-mt-12 -ml-0 border-l-2 border-slate-300 dark:border-slate-700"
+                  >
+                    <div class="ml-8 -mt-6">
+                      <p class="text-sm text-dark dark:text-gray-400 mt-1 ml-6">
+                        Jun 2020 - Agu 2020 · 3 bln
+                      </p>
+                      <ul
+                        id="jobDescription3"
+                        class="text-sm text-dark dark:text-white list-disc list-inside mt-2 ml-6"
+                      >
+                        <li>
+                          Membersihkan sisa potongan material dan serpihan logam
+                          di area kerja untuk menjaga keamanan dan kelancaran
+                          operasional.
+                        </li>
+                        <li>
+                          Mendukung tim pemotongan dengan memastikan area tetap
+                          rapi dan bebas dari hambatan.
+                        </li>
+                        <li>
+                          Memindahkan dan mengelompokkan limbah atau material
+                          bekas sesuai instruksi dan prosedur.
+                        </li>
+                      </ul>
+                      <button
+                        id="toggleButton3"
+                        class="ml-6 text-gray-500 hover:text-blue-500 text-sm mt-2"
+                      >
+                        Lihat lebih banyak
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="hidden lg:flex lg:w-1/2 justify-center items-center">
                 <img
@@ -369,104 +474,137 @@
             </div>
           </div>
         </div>
-        <!-- IPM End -->
+        <!-- IPM -->
 
-        <!-- Sakina Start -->
-        <div class="pt-24 lg:pt-0" id="sakina">
+        <hr
+          class="border-b border-slate-300 dark:border-slate-700 hidden lg:block container mx-auto mt-2"
+        />
+        <hr
+          class="border-b border-slate-300 dark:border-slate-700 hidden lg:block w-[85%] mx-auto mt-2"
+        />
+
+        <!-- Sakina -->
+        <div
+          class="pt-8 lg:pt-0"
+          id="ipm"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="300"
+          data-aos-delay="100"
+        >
           <div
-            class="dark:bg-slate-800 lg:bg-slate-200 lg:dark:bg-slate-700 rounded-xl lg:rounded-none lg:pt-16"
+            class="dark:bg-slate-800 lg:dark:bg-dark rounded-xl lg:rounded-none lg:pb-10"
           >
-            <!-- <div
-              class="container lg:mb-10 px-6 font-serif max-w-md sm:mx-10 lg:mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:px-0 lg:pt-24 rounded-xl shadow-md border-2 border-red-600 lg:border-none shadow-red-400 lg:shadow-none"data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-duration="300"
-              data-aos-delay="100"
-            > -->
             <div
-              class="container lg:mb-10 px-6 font-serif max-w-md lg:mx-auto sm:max-w-xl md:max-w-5xl lg:pt-16 lg:flex lg:max-w-full lg:px-0 rounded-xl shadow-lg border-primary dark:border md:border-none lg:border-none shadow-teal-400 dark:shadow-slate-700 lg:shadow-none"
-              data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-duration="300"
-              data-aos-delay="100"
+              class="lg:mb-10 font-serif max-w-md lg:mx-auto sm:max-w-xl md:max-w-5xl px-2 py-4 lg:pt-16 lg:container lg:flex lg:max-w-full lg:px-0 rounded-xl"
             >
+              <div class="lg:p-12 lg:flex-1 pb-4">
+                <div class="flex items-center">
+                  <div>
+                    <img
+                      src="dist/img/experience/2.png"
+                      alt="2"
+                      class="max-w-[80px] lg:hidden"
+                    />
+                  </div>
+                  <div>
+                    <h3
+                      class="ml-4 lg:ml-0 text-lg font-bold text-dark sm:text-3xl md:text-4xl dark:text-white"
+                    >
+                      Sakina Fried Chicken
+                    </h3>
+                    <p
+                      class="ml-4 lg:ml-0 text-slate-800 dark:text-gray-400 text-base font-medium"
+                    >
+                      Serang, Kota Serang, Banten
+                    </p>
+                    <p
+                      class="text-sm text-dark dark:text-gray-400 ml-4 lg:ml-0"
+                    >
+                      Jul 2019 - Okt 2019 · 4 bln
+                    </p>
+                  </div>
+                </div>
+                <hr
+                  class="border-b border-slate-300 dark:border-slate-700 w-full lg:mt-2"
+                />
+                <div class="space-y-5 ml-10 mt-4">
+                  <div class="relative ml-2 mt-4 flex items-center">
+                    <div
+                      class="absolute w-2 h-2 bg-slate-300 dark:bg-slate-700 rounded-full -left-3 transform -translate-y-1/2"
+                      style="width: 0.5rem; height: 0.5rem; left: -0.75rem"
+                    ></div>
+                    <h2
+                      class="text-base font-extrabold text-dark dark:text-white ml-12"
+                    >
+                      Waiters & Cook
+                    </h2>
+                  </div>
+                  <div
+                    class="-mt-12 -ml-0 border-l-2 border-slate-300 dark:border-slate-700"
+                  >
+                    <div class="ml-8 -mt-6">
+                      <p class="text-sm text-dark dark:text-gray-400 mt-1 ml-6">
+                        Jul 2019 - Okt 2019 · 4 bln
+                      </p>
+                      <ul
+                        id="jobDescription4"
+                        class="text-sm text-dark dark:text-white list-disc list-inside mt-2 ml-6"
+                      >
+                        <li>
+                          Memberikan pelayanan pelanggan yang ramah dan
+                          mengakomodasi kebutuhan mereka dengan baik.
+                        </li>
+                        <li>
+                          Memberikan rekomendasi menu berdasarkan pengetahuan
+                          yang mendalam tentang produk makanan dan minuman.
+                        </li>
+                        <li>
+                          Mengambil pesanan dengan akurat dan memastikan bahwa
+                          pesanan diproses dengan tepat.
+                        </li>
+                        <li>
+                          Menjaga kebersihan area kerja dan memastikan
+                          lingkungan tetap bersih dan nyaman.
+                        </li>
+                        <li>
+                          Berkontribusi dalam memastikan pengalaman makan yang
+                          menyenangkan bagi setiap pelanggan.
+                        </li>
+                      </ul>
+                      <button
+                        id="toggleButton4"
+                        class="ml-6 text-gray-500 hover:text-blue-500 text-sm mt-2"
+                      >
+                        Lihat lebih banyak
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="hidden lg:flex lg:w-1/2 justify-center items-center">
                 <img
                   src="dist/img/index/experience/2.png"
                   alt="2"
-                  class="object-cover rounded-r-full"
+                  class="object-cover rounded-l-full"
                 />
-              </div>
-              <div class="lg:p-12 lg:flex-1 pb-4">
-                <div class="flex items-center">
-                  <img
-                    src="dist/img/experience/2.png"
-                    alt="2"
-                    class="max-w-[80px] lg:hidden"
-                  />
-                  <h3
-                    class="ml-4 lg:ml-0 text-lg font-bold text-dark dark:text-white sm:text-3xl md:text-4xl"
-                  >
-                    Sakina Fried Chicken
-                  </h3>
-                </div>
-                <hr
-                  class="border-b border-primary dark:border-slate-700 w-full lg:hidden"
-                />
-
-                <ul class="my-2 text-dark dark:text-white sm:mt-4 text-md">
-                  <li>
-                    <span class="font-semibold">Bagian</span> : Waiters & Cook
-                  </li>
-                  <li>
-                    <span class="font-semibold">Alamat</span> : Serang, Kota
-                    Serang Banten
-                  </li>
-                  <li>
-                    <span class="font-semibold">Mulai Kerja</span> : Juli 2019
-                  </li>
-                  <li>
-                    <span class="font-semibold">Sampai</span> : Oktober 2019
-                  </li>
-                </ul>
-                <h2
-                  class="mt-6 text-2xl font-semibold text-dark dark:text-white sm:mt-8 sm:text-4xl"
-                >
-                  Job desk
-                </h2>
-                <ul class="list-disc ml-4 mb-4 text-md">
-                  <li
-                    class="text-dark dark:text-white sm:mt-4 text-md relative custom-list-item"
-                  >
-                    Memberikan pelayanan pelanggan yang ramah dan mengakomodasi
-                    kebutuhan mereka dengan baik.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Memberikan rekomendasi menu berdasarkan pengetahuan yang
-                    mendalam tentang produk makanan dan minuman.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Mengambil pesanan dengan akurat dan memastikan bahwa pesanan
-                    diproses dengan tepat.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Menjaga kebersihan area kerja dan memastikan lingkungan
-                    tetap bersih dan nyaman.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Berkontribusi dalam memastikan pengalaman makan yang
-                    menyenangkan bagi setiap pelanggan.
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
         </div>
-        <!-- Sakina End -->
+        <!-- Sakina -->
 
-        <!-- Jhon Start -->
+        <hr
+          class="container border-b border-slate-300 dark:border-slate-700 hidden lg:block mt-2"
+        />
+        <hr
+          class="border-b border-slate-300 dark:border-slate-700 hidden lg:block w-[85%] mx-auto mt-2"
+        />
+
+        <!-- Jhon Chicken -->
         <div
-          class="pt-24 lg:pt-0"
-          id="jhon"
+          class="pt-8 lg:pt-0"
+          id="ipm"
           data-aos="fade-up"
           data-aos-offset="300"
           data-aos-duration="300"
@@ -476,158 +614,208 @@
             class="dark:bg-slate-800 lg:dark:bg-dark rounded-xl lg:rounded-none"
           >
             <div
-              class="container lg:mb-10 px-6 font-serif max-w-md lg:mx-auto sm:max-w-xl md:max-w-5xl lg:pt-16 lg:flex lg:max-w-full lg:px-0 rounded-xl shadow-lg border-primary dark:border md:border-none lg:border-none shadow-teal-400 dark:shadow-slate-700 lg:shadow-none"
+              class="lg:mb-10 font-serif max-w-md lg:mx-auto sm:max-w-xl md:max-w-5xl px-2 py-4 lg:pt-16 lg:container lg:flex lg:max-w-full lg:px-0 rounded-xl"
             >
               <div class="lg:p-12 lg:flex-1 pb-4">
                 <div class="flex items-center">
-                  <img
-                    src="dist/img/experience/3.png"
-                    alt="3"
-                    class="max-w-[80px] lg:hidden"
-                  />
-                  <h3
-                    class="ml-4 lg:ml-0 text-lg font-bold text-dark sm:text-3xl md:text-4xl dark:text-white"
-                  >
-                    Resto Jhon Chicken & Burger
-                  </h3>
+                  <div>
+                    <img
+                      src="dist/img/experience/3.png"
+                      alt="2"
+                      class="max-w-[80px] lg:hidden"
+                    />
+                  </div>
+                  <div>
+                    <h3
+                      class="ml-4 lg:ml-0 text-lg font-bold text-dark sm:text-3xl md:text-4xl dark:text-white"
+                    >
+                      Resto Jhon Chicken and Burger
+                    </h3>
+                    <p
+                      class="ml-4 lg:ml-0 text-slate-800 dark:text-gray-400 text-base font-medium"
+                    >
+                      Serang, Kota Serang, Banten
+                    </p>
+                    <p
+                      class="text-sm text-dark dark:text-gray-400 ml-4 lg:ml-0"
+                    >
+                      Jun 2018 - Mar 2019 · 10 bln
+                    </p>
+                  </div>
                 </div>
                 <hr
-                  class="border-b border-primary dark:border-slate-700 w-full lg:hidden"
+                  class="border-b border-slate-300 dark:border-slate-700 w-full lg:mt-2"
                 />
-
-                <ul
-                  class="my-2 text-dark dark:text-white sm:mt-4 text-md text-md font-medium"
-                >
-                  <li>
-                    <span class="font-bold">Bagian</span> : Staff Administrasi
-                  </li>
-                  <li>
-                    <span class="font-semibold">Alamat</span> : Bojonegara, Kab.
-                    Serang Banten
-                  </li>
-                  <li>
-                    <span class="font-semibold">Mulai Kerja</span> : Juni 2020
-                  </li>
-                  <li>
-                    <span class="font-semibold">Sampai</span> : April 2022
-                  </li>
-                </ul>
-                <h2
-                  class="mt-6 text-2xl font-semibold text-dark dark:text-white sm:mt-8 sm:text-4xl"
-                >
-                  Job desk
-                </h2>
-                <ul class="list-disc ml-4 mb-4">
-                  <li
-                    class="text-dark dark:text-white sm:mt-4 text-md relative custom-list-item"
+                <div class="space-y-5 ml-10 mt-4">
+                  <div class="relative ml-2 mt-4 flex items-center">
+                    <div
+                      class="absolute w-2 h-2 bg-slate-300 dark:bg-slate-700 rounded-full -left-3 transform -translate-y-1/2"
+                      style="width: 0.5rem; height: 0.5rem; left: -0.75rem"
+                    ></div>
+                    <h2
+                      class="text-base font-extrabold text-dark dark:text-white ml-12"
+                    >
+                      Waiters & Cook
+                    </h2>
+                  </div>
+                  <div
+                    class="-mt-12 -ml-0 border-l-2 border-slate-300 dark:border-slate-700"
                   >
-                    Memberikan pelayanan pelanggan yang ramah dan mengakomodasi
-                    kebutuhan mereka dengan baik.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Memberikan rekomendasi menu berdasarkan pengetahuan yang
-                    mendalam tentang produk makanan dan minuman.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Mengambil pesanan dengan akurat dan memastikan bahwa pesanan
-                    diproses dengan tepat.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Menjaga kebersihan area kerja dan memastikan lingkungan
-                    tetap bersih dan nyaman.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Berkontribusi dalam memastikan pengalaman makan yang
-                    menyenangkan bagi setiap pelanggan.
-                  </li>
-                </ul>
+                    <div class="ml-8 -mt-6">
+                      <p class="text-sm text-dark dark:text-gray-400 mt-1 ml-6">
+                        Jun 2018 - Mar 2019 · 10 bln
+                      </p>
+                      <ul
+                        id="jobDescription5"
+                        class="text-sm text-dark dark:text-white list-disc list-inside mt-2 ml-6"
+                      >
+                        <li>
+                          Memberikan pelayanan pelanggan yang ramah dan
+                          mengakomodasi kebutuhan mereka dengan baik.
+                        </li>
+                        <li>
+                          Memberikan rekomendasi menu berdasarkan pengetahuan
+                          yang mendalam tentang produk makanan dan minuman.
+                        </li>
+                        <li>
+                          Mengambil pesanan dengan akurat dan memastikan bahwa
+                          pesanan diproses dengan tepat.
+                        </li>
+                        <li>
+                          Menjaga kebersihan area kerja dan memastikan
+                          lingkungan tetap bersih dan nyaman.
+                        </li>
+                        <li>
+                          Berkontribusi dalam memastikan pengalaman makan yang
+                          menyenangkan bagi setiap pelanggan.
+                        </li>
+                      </ul>
+                      <button
+                        id="toggleButton5"
+                        class="ml-6 text-gray-500 hover:text-blue-500 text-sm mt-2"
+                      >
+                        Lihat lebih banyak
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="hidden lg:flex lg:w-1/2 justify-center items-center">
                 <img
                   src="dist/img/index/experience/3.png"
-                  alt="3"
+                  alt="2"
                   class="object-cover rounded-l-full"
                 />
               </div>
             </div>
           </div>
         </div>
-        <!-- Jhon End -->
+        <!-- Jhon Chicken -->
 
-        <!-- PKL Start -->
-        <div class="pt-24 lg:pt-0" id="pkl">
+        <hr
+          class="container border-b border-slate-300 dark:border-slate-700 hidden lg:block mt-2"
+        />
+        <hr
+          class="border-b border-slate-300 dark:border-slate-700 hidden lg:block w-[85%] mx-auto mt-2"
+        />
+
+        <!-- Magang -->
+        <div
+          class="pt-8 lg:pt-0"
+          id="ipm"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="300"
+          data-aos-delay="100"
+        >
           <div
-            class="dark:bg-slate-800 lg:bg-slate-200 lg:dark:bg-slate-700 rounded-xl lg:rounded-none lg:py-16"
+            class="dark:bg-slate-800 lg:dark:bg-dark rounded-xl lg:rounded-none lg:pb-10"
           >
             <div
-              class="container lg:mb-10 px-6 font-serif max-w-md lg:mx-auto sm:max-w-xl md:max-w-5xl lg:pt-16 lg:flex lg:max-w-full lg:px-0 rounded-xl shadow-lg border-primary dark:border md:border-none lg:border-none shadow-teal-400 dark:shadow-slate-700 lg:shadow-none"
-              data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-duration="300"
-              data-aos-delay="100"
+              class="lg:mb-10 font-serif max-w-md lg:mx-auto sm:max-w-xl md:max-w-5xl px-2 py-4 lg:pt-16 lg:container lg:flex lg:max-w-full lg:px-0 rounded-xl"
             >
+              <div class="lg:p-12 lg:flex-1 pb-4">
+                <div class="flex items-center">
+                  <div>
+                    <img
+                      src="dist/img/experience/4.png"
+                      alt="2"
+                      class="max-w-[80px] lg:hidden"
+                    />
+                  </div>
+                  <div>
+                    <h3
+                      class="ml-4 lg:ml-0 text-lg font-bold text-dark sm:text-3xl md:text-4xl dark:text-white"
+                    >
+                      Dinas Kelautan dan Perikanan Provinsi Banten
+                    </h3>
+                    <p
+                      class="ml-4 lg:ml-0 text-slate-800 dark:text-gray-400 text-base font-medium"
+                    >
+                      Serang, Kota Serang, Banten
+                    </p>
+                    <p
+                      class="text-sm text-dark dark:text-gray-400 ml-4 lg:ml-0"
+                    >
+                      Des 2016 - Feb 2017 · 3 bln
+                    </p>
+                  </div>
+                </div>
+                <hr
+                  class="border-b border-slate-300 dark:border-slate-700 w-full lg:mt-2"
+                />
+                <div class="space-y-5 ml-10 mt-4">
+                  <div class="relative ml-2 mt-4 flex items-center">
+                    <div
+                      class="absolute w-2 h-2 bg-slate-300 dark:bg-slate-700 rounded-full -left-3 transform -translate-y-1/2"
+                      style="width: 0.5rem; height: 0.5rem; left: -0.75rem"
+                    ></div>
+                    <h2
+                      class="text-base font-extrabold text-dark dark:text-white ml-12"
+                    >
+                      Praktek Kerja Industri
+                    </h2>
+                  </div>
+                  <div
+                    class="-mt-12 -ml-0 border-l-2 border-slate-300 dark:border-slate-700"
+                  >
+                    <div class="ml-8 -mt-6">
+                      <p class="text-sm text-dark dark:text-gray-400 mt-1 ml-6">
+                        Des 2016 - Feb 2017 · 3 bln
+                      </p>
+                      <ul
+                        id="jobDescription6"
+                        class="text-sm text-dark dark:text-white list-disc list-inside mt-2 ml-6"
+                      >
+                        <li>
+                          Melakukan salinan data untuk memudahkan administrasi.
+                        </li>
+                        <li>
+                          Sortir dokumen sesuai dengan prioritas, sehingga lebih
+                          mudah pengawasannya.
+                        </li>
+                      </ul>
+                      <button
+                        id="toggleButton6"
+                        class="ml-6 text-gray-500 hover:text-blue-500 text-sm mt-2"
+                      >
+                        Lihat lebih banyak
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="hidden lg:flex lg:w-1/2 justify-center items-center">
                 <img
                   src="dist/img/index/experience/4.png"
-                  alt="4"
-                  class="object-cover rounded-r-full"
+                  alt="2"
+                  class="object-cover rounded-l-full"
                 />
-              </div>
-              <div class="lg:p-12 lg:flex-1 pb-4">
-                <div class="flex items-center">
-                  <img
-                    src="dist/img/experience/4.png"
-                    alt="4"
-                    class="max-w-[80px] lg:hidden"
-                  />
-                  <h3
-                    class="ml-4 lg:ml-0 text-lg font-bold text-dark dark:text-white sm:text-3xl md:text-4xl"
-                  >
-                    Dinas Kelautan dan Perikanan Prov. Banten
-                  </h3>
-                </div>
-                <hr
-                  class="border-b border-primary dark:border-slate-700 w-full lg:hidden"
-                />
-
-                <ul class="my-2 text-dark dark:text-white sm:mt-4 text-md">
-                  <li>
-                    <span class="font-semibold">Bagian</span> : Praktek Kerja
-                    Industri (Prakerin)
-                  </li>
-                  <li>
-                    <span class="font-semibold">Alamat</span> : Curug, Kota
-                    Serang Banten
-                  </li>
-                  <li>
-                    <span class="font-semibold">Mulai Kerja</span> : Desember
-                    2016
-                  </li>
-                  <li>
-                    <span class="font-semibold">Sampai</span> : Februari 2017
-                  </li>
-                </ul>
-                <h2
-                  class="mt-6 text-2xl font-semibold text-dark dark:text-white sm:mt-8 sm:text-4xl"
-                >
-                  Job desk
-                </h2>
-                <ul class="list-disc ml-4 mb-4 text-md">
-                  <li
-                    class="text-dark dark:text-white sm:mt-4 text-md relative custom-list-item"
-                  >
-                    Melakukan salinan data untuk memudahkan administrasi.
-                  </li>
-                  <li class="text-dark dark:text-white sm:mt-4 text-md">
-                    Sortir dokumen sesuai dengan prioritas, sehingga lebih mudah
-                    pengawasannya.
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
         </div>
-        <!-- PKL End -->
+        <!-- Magang -->
       </div>
     </section>
     <!-- Experience End -->
@@ -733,6 +921,41 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      // Function to toggle job descriptions
+      function setupToggle(jobDescriptionId, buttonId) {
+        const jobDescription = document.getElementById(jobDescriptionId);
+        const toggleButton = document.getElementById(buttonId);
+        let expanded = false;
+
+        // Hide all list items initially except the first one
+        const listItems = jobDescription.querySelectorAll("li");
+        listItems.forEach((item, index) => {
+          if (index > 0) item.style.display = "none";
+        });
+
+        toggleButton.addEventListener("click", () => {
+          if (!expanded) {
+            listItems.forEach((item) => (item.style.display = "list-item"));
+            toggleButton.textContent = "Lihat lebih sedikit";
+          } else {
+            listItems.forEach((item, index) => {
+              if (index > 0) item.style.display = "none";
+            });
+            toggleButton.textContent = "Lihat lebih banyak";
+          }
+          expanded = !expanded;
+        });
+      }
+
+      // Set up toggles for each section
+      setupToggle("jobDescription1", "toggleButton1");
+      setupToggle("jobDescription2", "toggleButton2");
+      setupToggle("jobDescription3", "toggleButton3");
+      setupToggle("jobDescription4", "toggleButton4");
+      setupToggle("jobDescription5", "toggleButton5");
+      setupToggle("jobDescription6", "toggleButton6");
     </script>
   </body>
 </html>

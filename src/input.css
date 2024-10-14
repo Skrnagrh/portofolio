@@ -157,7 +157,7 @@ body {
 /* Portofolio.html Start */
 /* Vektor Start */
 .vektor-1 {
-  @apply aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden relative transition-all duration-500;
+  @apply aspect-[1/1] md:aspect-[1/1] xl:aspect-[1/1] overflow-hidden relative transition-all duration-500;
 }
 .vektor-2 {
   @apply w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500;
