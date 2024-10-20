@@ -24,49 +24,7 @@
     <link rel="stylesheet" href="dist/css/portofolio/other/swiper.css" />
     <link rel="stylesheet" href="dist/css/portofolio/other/swiper1.css" />
     <link rel="stylesheet" href="dist/css/portofolio/other/swiper2.css" />
-    <style>
-      .slide-content,
-      .slide-content1,
-      .slide-content2 {
-        margin: 20px;
-        margin-bottom: 30px;
-        overflow: hidden;
-        border-radius: 12px;
-      }
-      .swiper-navBtn::before,
-      .swiper-navBtn::after {
-        font-size: 16px;
-        color: #949494fb;
-        font-weight: bold;
-      }
-      .swiper-pagination-bullet,
-      .swiper-pagination1-bullet,
-      .swiper-pagination2-bullet {
-        background-color: #14b8a57a;
-      }
-      .swiper-pagination-bullet-active,
-      .swiper-pagination1-bullet-active,
-      .swiper-pagination2-bullet-active {
-        background-color: #14b8a6;
-      }
-      @media screen and (max-width: 768px) {
-        .slide-content,
-        .slide-content1,
-        .slide-content2 {
-          margin-right: 0px;
-          margin-left: 0px;
-        }
-        .swiper-navBtn {
-          display: none;
-        }
-      }
-      .navbar1 {
-        position: sticky;
-        top: 80px;
-        z-index: 9999;
-      }
-    </style>
-    <!-- Swiper -->
+    <link rel="stylesheet" href="dist/css/portofolio/swiper-slide.css" />
     <!-- Dark Mode Theme -->
     <script>
       if (
@@ -82,18 +40,12 @@
     <!-- Dark Mode Theme -->
   </head>
   <body>
-    <!-- Heeder Start -->
-    <header
-      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
-    >
+    <!-- Header Start -->
+    <header class="header">
       <div class="container">
-        <div class="flex items-center justify-between relative">
+        <div class="navbar-container">
           <div class="px-4">
-            <a
-              href="index.html"
-              class="font-bold text-2xl text-primary block py-6 uppercase"
-              >Sukron</a
-            >
+            <a href="#home" class="navbar-brand">Sukron</a>
           </div>
 
           <div class="flex items-center px-4">
@@ -103,51 +55,112 @@
               type="button"
               class="block absolute right-4 lg:hidden"
             >
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 origin-bottom-left ease-in-out"
-              ></span>
+              <span class="hamburger-line origin-top-left"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line origin-bottom-left"></span>
             </button>
-
-            <nav
-              id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-300 lg:dark:bg-transparent z-[9999]"
-            >
+            <nav id="nav-menu" class="nav-menu hidden fixed">
               <ul class="block lg:flex">
-                <li id="homeLink" class="group nav-link">
-                  <a href="index.html#home" class="nav-item">Beranda</a>
+                <li id="homeLink" class="nav-link group">
+                  <a
+                    href="index.html#home"
+                    class="translate nav-item"
+                    data-key="home"
+                    >Beranda</a
+                  >
                 </li>
-                <li id="aboutLink" class="group nav-link">
-                  <a href="index.html#about" class="nav-item">Tentang Saya</a>
+                <li id="aboutLink" class="nav-link group">
+                  <a
+                    href="index.html#about"
+                    class="translate nav-item"
+                    data-key="about"
+                    >Tentang Saya</a
+                  >
                 </li>
-                <li id="experienceLink" class="group nav-link">
-                  <a href="index.html#experience" class="nav-item"
+                <li id="experienceLink" class="group nav-link group">
+                  <a
+                    href="#experience"
+                    class="translate nav-item"
+                    data-key="experience"
                     >Pengalaman</a
                   >
                 </li>
-                <li id="educationLink" class="group nav-link">
-                  <a href="index.html#education" class="nav-item">Pendidikan</a>
+                <li id="educationLink" class="group nav-link group">
+                  <a
+                    href="index.html#education"
+                    class="translate nav-item"
+                    data-key="education"
+                    >Pendidikan</a
+                  >
                 </li>
-                <li id="portofolioLink" class="group nav-link">
-                  <a href="#portofolio" class="nav-item">Portofolio</a>
+                <li id="portofolioLink" class="group nav-link group">
+                  <a
+                    href="index.html#portofolio"
+                    class="translate nav-item"
+                    data-key="portofolio"
+                    >Portofolio</a
+                  >
                 </li>
-                <li id="skillLink" class="group nav-link">
-                  <a href="index.html#skill" class="nav-item">Kemampuan</a>
+                <li id="skillLink" class="group nav-link group">
+                  <a
+                    href="index.html#skill"
+                    class="translate nav-item"
+                    data-key="skill"
+                    >Kemampuan</a
+                  >
                 </li>
-                <li id="contactLink" class="group nav-link lg:mr-4 xl:-mr-28">
-                  <a href="#contact" class="nav-item">Kontak</a>
+                <li id="contactLink" class="group nav-link group">
+                  <a
+                    href="#contact"
+                    class="translate nav-item"
+                    data-key="contact"
+                    >Kontak</a
+                  >
+                </li>
+
+                <li class="language-switcher">
+                  <button id="btnID" class="language-button">ID</button>
+                  <span class="text-base py-2">/</span>
+                  <button id="btnEN" class="language-button">EN</button>
+                </li>
+
+                <li class="theme-toggle">
+                  <div class="flex justify-between items-center">
+                    <button id="darkModeToggle" class="theme-button">
+                      <span id="darkModeText" class="lg:hidden">Tema</span>
+                      <i id="themeIcon" class="bi bi-circle-half ml-2"></i>
+                      <span class="flex-grow"></span>
+                      <i id="chevronIcon" class="bi bi-chevron-down ml-2"></i>
+                    </button>
+                  </div>
+
+                  <div id="darkModeDropdown" class="theme-dropdown hidden">
+                    <div class="group theme-option" onclick="setTheme('light')">
+                      <span id="light" class="translate" data-key="light"
+                        >Terang</span
+                      >
+                      <i class="bi bi-sun-fill"></i>
+                    </div>
+
+                    <div class="group theme-option" onclick="setTheme('dark')">
+                      <span id="dark" class="translate" data-key="dark"
+                        >Gelap</span
+                      >
+                      <i class="bi bi-moon-stars-fill"></i>
+                    </div>
+                    <div class="group theme-option" onclick="setTheme('auto')">
+                      <span id="auto" class="translate" data-key="auto"
+                        >Auto</span
+                      >
+                      <i class="bi bi-circle-half"></i>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </nav>
           </div>
 
-          <!-- <div class="flex relative right-16"> -->
-          <div class="flex relative right-16 lg:right-4 xl:right-16">
+          <div class="hidden relative right-16 lg:right-4 xl:right-16">
             <div class="flex">
               <i class="bi bi-sun-fill mr-2 text-sm text-slate-500"></i>
               <input type="checkbox" class="hidden" id="dark-toggle" />
@@ -174,13 +187,14 @@
         <div class="flex flex-wrap justify-center">
           <div class="w-full self-center px-4 lg:w-1/2 text-center">
             <h1
-              class="text-base font-semibold text-primary md:text-xl mb-2"
+              class="translate text-base font-semibold text-primary md:text-xl mb-2"
               data-aos="fade-up"
               data-aos-offset="300"
               data-aos-duration="300"
               data-aos-delay="50"
             >
-              Portofolio
+              <span class="translate" data-key="portofolio">Portofolio</span>
+
               <span
                 class="block font-bold text-dark text-4xl mt-2 lg:text-5xl dark:text-white uppercase"
                 data-aos="fade-up"
@@ -192,13 +206,14 @@
               </span>
             </h1>
             <h2
-              class="font-medium text-secondary text-md lg:text-lg mb-5 mt-4"
+              class="translate font-medium text-secondary text-md lg:text-lg mb-5 mt-4"
               data-aos="fade-up"
               data-aos-offset="300"
               data-aos-duration="300"
               data-aos-delay="150"
+              data-key="description"
             >
-              Design Vektor - Project Web - Design Typographi - Other
+              Desain Vektor - Proyek Web - Desain Tipografi - Lainnya
             </h2>
           </div>
         </div>
@@ -207,7 +222,9 @@
     <!-- Hero Section End -->
 
     <!-- Icon Start -->
-    <section class="pt-2 pb-2 bg-slate-200 dark:bg-slate-700 navbar1">
+    <section
+      class="pt-2 pb-2 bg-slate-200 dark:bg-slate-700 sticky top-20 z-10"
+    >
       <div class="border-t border-teal-500 w-full pt-4"></div>
       <div class="icon-links justify-center text-center lg:mx-6 xl:mx-8">
         <a
@@ -217,7 +234,9 @@
           style="cursor: pointer"
         >
           <i class="bi bi-file-image icon text-3xl lg:text-lg"></i>
-          <span class="hidden md:inline"> Vektor</span>
+          <span class="translate hidden md:inline" data-key="Vektor">
+            Vektor</span
+          >
         </a>
         <a
           class="portofolio-link mx-6 lg:mx-4 text-lg dark:text-white"
@@ -226,7 +245,9 @@
           style="cursor: pointer"
         >
           <i class="bi bi-globe icon text-3xl lg:text-lg"></i>
-          <span class="hidden md:inline"> Website</span>
+          <span class="translate hidden md:inline" data-key="web">
+            Situs Web</span
+          >
         </a>
         <a
           class="portofolio-link mx-6 lg:mx-4 text-lg dark:text-white"
@@ -235,7 +256,9 @@
           style="cursor: pointer"
         >
           <i class="bi bi-file-earmark-font icon text-3xl lg:text-lg"></i>
-          <span class="hidden md:inline"> Tipograpi</span>
+          <span class="translate hidden md:inline" data-key="tipografi">
+            Tipografi</span
+          >
         </a>
         <a
           class="portofolio-link mx-6 lg:mx-4 text-lg dark:text-white"
@@ -244,7 +267,9 @@
           style="cursor: pointer"
         >
           <i class="bi bi-file-earmark-text icon text-3xl lg:text-lg"></i>
-          <span class="hidden md:inline"> Lainnya</span>
+          <span class="translate hidden md:inline" data-key="lainnya">
+            Lainnya</span
+          >
         </a>
       </div>
       <div class="border-b border-teal-500 w-full pt-4"></div>
@@ -252,7 +277,7 @@
     <!-- Icon End  -->
 
     <!-- Portofolio Start -->
-    <section id="experience" class="bg-slate-100 dark:bg-slate-800">
+    <section id="portofolio" class="bg-slate-100 dark:bg-slate-800">
       <div class="container justify-content-center">
         <!-- Vektor -->
         <div class="lg:px-0" id="vektor-section">
@@ -271,7 +296,8 @@
                 ></div>
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
-                  <p class="vektor-5">Open</p>
+                  <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
+                  <!-- <p class="vektor-5 translate" data-key="buka">Buka</p> -->
                 </div>
               </div>
             </a>
@@ -289,7 +315,7 @@
                 ></div>
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
-                  <p class="vektor-5">Open</p>
+                  <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
                 </div>
               </div>
             </a>
@@ -307,7 +333,7 @@
                 ></div>
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
-                  <p class="vektor-5">Open</p>
+                  <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
                 </div>
               </div>
             </a>
@@ -326,7 +352,7 @@
                 ></div>
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
-                  <p class="vektor-5">Open</p>
+                  <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
                 </div>
               </div>
             </a>
@@ -344,7 +370,7 @@
                 ></div>
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
-                  <p class="vektor-5">Open</p>
+                  <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
                 </div>
               </div>
             </a>
@@ -362,7 +388,7 @@
                 ></div>
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
-                  <p class="vektor-5">Open</p>
+                  <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
                 </div>
               </div>
             </a>
@@ -381,7 +407,7 @@
                 ></div>
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
-                  <p class="vektor-5">Open</p>
+                  <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
                 </div>
               </div>
             </a>
@@ -399,7 +425,7 @@
                 ></div>
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
-                  <p class="vektor-5">Open</p>
+                  <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
                 </div>
               </div>
             </a>
@@ -417,7 +443,7 @@
                 ></div>
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
-                  <p class="vektor-5">Open</p>
+                  <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
                 </div>
               </div>
             </a>
@@ -436,7 +462,7 @@
                 ></div>
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
-                  <p class="vektor-5">Open</p>
+                  <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
                 </div>
               </div>
             </a>
@@ -454,7 +480,7 @@
                 ></div>
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
-                  <p class="vektor-5">Open</p>
+                  <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
                 </div>
               </div>
             </a>
@@ -472,7 +498,7 @@
                 ></div>
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
-                  <p class="vektor-5">Open</p>
+                  <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
                 </div>
               </div>
             </a>
@@ -484,7 +510,8 @@
               target="_blank"
               class="text-dark hover:text-primary text-xl dark:text-white dark:hover:text-primary font-medium"
             >
-              Lanjut Lihat di Pinterest
+              <span class="translate" data-key="lihat">Lihat Lebih Banyak</span>
+
               <i class="bi bi-arrow-right-circle text-xl"></i>
             </a>
           </div>
@@ -500,7 +527,7 @@
               <div class="web-img">
                 <img src="dist/img/portofolio/web/1.png" alt="web" />
               </div>
-              <h3 class="web-text">
+              <h3 class="web-text translate" data-key="w1">
                 Sistem Pendukung Keputusan Pemilihan Objek Wisata
               </h3>
               <div class="w-full">
@@ -508,7 +535,9 @@
                   href="https://github.com/Skrnagrh/spk_smart_curug"
                   target="_blank"
                   class="web-button"
-                  >Detail <i class="bi bi-arrow-right"></i
+                >
+                  <span class="translate" data-key="detail">Detail</span>
+                  <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -516,13 +545,17 @@
               <div class="web-img">
                 <img src="dist/img/portofolio/web/2.png" alt="web" />
               </div>
-              <h3 class="web-text">Sistem surat arsip</h3>
+              <h3 class="web-text translate" data-key="w2">
+                Sistem surat arsip
+              </h3>
               <div class="w-full">
                 <a
                   href="https://github.com/Skrnagrh/sistem_surat_arsip"
                   target="_blank"
                   class="web-button"
-                  >Detail <i class="bi bi-arrow-right"></i
+                >
+                  <span class="translate" data-key="detail">Detail</span>
+                  <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -530,7 +563,7 @@
               <div class="web-img">
                 <img src="dist/img/portofolio/web/3.png" alt="web" />
               </div>
-              <h3 class="web-text">
+              <h3 class="web-text translate" data-key="w3">
                 Sistem Pendukung Keputusan Pemilihan Karyawan tetap
               </h3>
               <div class="w-full">
@@ -538,7 +571,9 @@
                   href="https://github.com/Skrnagrh/spk_ahp_karyawan_tetap"
                   target="_blank"
                   class="web-button"
-                  >Detail <i class="bi bi-arrow-right"></i
+                >
+                  <span class="translate" data-key="detail">Detail</span>
+                  <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -546,7 +581,7 @@
               <div class="web-img">
                 <img src="dist/img/portofolio/web/4.png" alt="web" />
               </div>
-              <h3 class="web-text">
+              <h3 class="web-text translate" data-key="w4">
                 Sistem Pendukung Keputusan Pemilihan rekomendasi kosan
               </h3>
               <div class="w-full">
@@ -554,7 +589,9 @@
                   href="https://github.com/Skrnagrh/spk_rekomendasi_kosan"
                   target="_blank"
                   class="web-button"
-                  >Detail <i class="bi bi-arrow-right"></i
+                >
+                  <span class="translate" data-key="detail">Detail</span>
+                  <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -562,7 +599,7 @@
               <div class="web-img">
                 <img src="dist/img/portofolio/web/5.png" alt="web" />
               </div>
-              <h3 class="web-text">
+              <h3 class="web-text translate" data-key="w5">
                 Sistem Pendukung Keputusan Pemilihan Karyawan PHK
               </h3>
               <div class="w-full">
@@ -570,7 +607,9 @@
                   href="https://github.com/Skrnagrh/spk_ahp_karyawan_phk"
                   target="_blank"
                   class="web-button"
-                  >Detail <i class="bi bi-arrow-right"></i
+                >
+                  <span class="translate" data-key="detail">Detail</span>
+                  <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -578,7 +617,7 @@
               <div class="web-img">
                 <img src="dist/img/portofolio/web/6.png" alt="web" />
               </div>
-              <h3 class="web-text">
+              <h3 class="web-text translate" data-key="w6">
                 Sistem Pendukung Keputusan Pemilihan Siswa terbaik
               </h3>
               <div class="w-full">
@@ -586,7 +625,9 @@
                   href="https://github.com/Skrnagrh/spk_smart_siswa_terbaik"
                   target="_blank"
                   class="web-button"
-                  >Detail <i class="bi bi-arrow-right"></i
+                >
+                  <span class="translate" data-key="detail">Detail</span>
+                  <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -594,13 +635,17 @@
               <div class="web-img">
                 <img src="dist/img/portofolio/web/7.png" alt="web" />
               </div>
-              <h3 class="web-text">Sistem Data Absensi Karyawan (Sidak)</h3>
+              <h3 class="web-text translate" data-key="w7">
+                Sistem Data Absensi Karyawan (Sidak)
+              </h3>
               <div class="w-full">
                 <a
                   href="https://github.com/Skrnagrh/sistem_absensi_karyawan"
                   target="_blank"
                   class="web-button"
-                  >Detail <i class="bi bi-arrow-right"></i
+                >
+                  <span class="translate" data-key="detail">Detail</span>
+                  <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -608,15 +653,17 @@
               <div class="web-img">
                 <img src="dist/img/portofolio/web/8.png" alt="web" />
               </div>
-              <h3 class="web-text">
-                Landing Page Profil Perusahaan (Company Profile)
+              <h3 class="web-text translate" data-key="w8">
+                Landing Page Profil Perusahaan
               </h3>
               <div class="w-full">
                 <a
                   href="https://github.com/Skrnagrh/laravel_companyprofile"
                   target="_blank"
                   class="web-button"
-                  >Detail <i class="bi bi-arrow-right"></i
+                >
+                  <span class="translate" data-key="detail">Detail</span>
+                  <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -643,7 +690,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -663,7 +710,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -683,7 +730,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -703,7 +750,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -725,7 +772,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -745,7 +792,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -765,7 +812,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -785,7 +832,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -807,7 +854,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -827,7 +874,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -847,7 +894,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -867,7 +914,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -889,7 +936,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -909,7 +956,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -929,7 +976,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4">Open</p>
+                      <p class="typo-4 translate" data-key="buka">Buka</p>
                     </div>
                   </div>
                 </a>
@@ -945,7 +992,9 @@
                       href="https://pin.it/7mBHHY8"
                       target="_blank"
                       class="porto-3 lg:px-4"
-                      >Lanjut Lihat di Pinterest
+                      ><span class="translate" data-key="lihat"
+                        >Lihat Lebih Banyak</span
+                      >
                       <i class="bi bi-arrow-right-circle"></i
                     ></a>
                   </div>
@@ -961,9 +1010,7 @@
           <!-- Project Android -->
           <div class="slide-container swiper">
             <div class="other-1">
-              <p class="other-2">
-                <i class="bi bi-android2"></i> Projek Android
-              </p>
+              <p class="other-2"><i class="bi bi-android2"></i> Android</p>
             </div>
             <div class="slide-content mb-10">
               <div class="card-wrapper swiper-wrapper">
@@ -982,7 +1029,7 @@
                       </div>
                       <div class="android-2">
                         <div class="android-3"></div>
-                        <p class="android-4">Open</p>
+                        <p class="android-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1002,7 +1049,7 @@
                       </div>
                       <div class="android-2">
                         <div class="android-3"></div>
-                        <p class="android-4">Open</p>
+                        <p class="android-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1022,7 +1069,7 @@
                       </div>
                       <div class="android-2">
                         <div class="android-3"></div>
-                        <p class="android-4">Open</p>
+                        <p class="android-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1042,7 +1089,7 @@
                       </div>
                       <div class="android-2">
                         <div class="android-3"></div>
-                        <p class="android-4">Open</p>
+                        <p class="android-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1062,7 +1109,7 @@
                       </div>
                       <div class="android-2">
                         <div class="android-3"></div>
-                        <p class="android-4">Open</p>
+                        <p class="android-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1078,7 +1125,8 @@
                         href="https://github.com/Skrnagrh/android_pencatat_barang"
                         target="_blank"
                         class="porto-3"
-                        >Lihat Projek <i class="bi bi-arrow-right-circle"></i
+                        ><span class="translate" data-key="detail">Detail</span>
+                        <i class="bi bi-arrow-right-circle"></i
                       ></a>
                     </div>
                   </div>
@@ -1095,12 +1143,14 @@
 
           <!-- Project Desktop -->
           <div class="other-1">
-            <p class="other-2"><i class="bi bi-laptop"></i> Projek Desktop</p>
+            <p class="other-2"><i class="bi bi-laptop"></i> Desktop</p>
           </div>
           <!-- Kereta Api -->
           <div class="slide-container swiper">
             <div class="slide-content1 mb-10">
-              <p class="dekstop-p">Projek Transaksi Tiket Kereta</p>
+              <p class="dekstop-p translate" data-key="kereta">
+                Transaksi Tiket Kereta Api
+              </p>
               <div class="card-wrapper swiper-wrapper">
                 <div class="swiper-slide p-1 text-center">
                   <a
@@ -1117,7 +1167,7 @@
                       </div>
                       <div class="dekstop-2">
                         <div class="dekstop-3"></div>
-                        <p class="dekstop-4">Open</p>
+                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1137,7 +1187,7 @@
                       </div>
                       <div class="dekstop-2">
                         <div class="dekstop-3"></div>
-                        <p class="dekstop-4">Open</p>
+                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1157,7 +1207,7 @@
                       </div>
                       <div class="dekstop-2">
                         <div class="dekstop-3"></div>
-                        <p class="dekstop-4">Open</p>
+                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1177,7 +1227,7 @@
                       </div>
                       <div class="dekstop-2">
                         <div class="dekstop-3"></div>
-                        <p class="dekstop-4">Open</p>
+                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1195,7 +1245,8 @@
                         href="https://github.com/Skrnagrh/java_transaksi_tiket"
                         target="_blank"
                         class="porto-3"
-                        >Lihat Projek <i class="bi bi-arrow-right-circle"></i
+                        ><span class="translate" data-key="detail">Detail</span>
+                        <i class="bi bi-arrow-right-circle"></i
                       ></a>
                     </div>
                   </div>
@@ -1211,7 +1262,9 @@
           <!-- Delpho Perpustakaan -->
           <div class="slide-container swiper">
             <div class="slide-content2 mb-10">
-              <p class="dekstop-p">Projek Desktop Perpustakaan</p>
+              <p class="dekstop-p translate" data-key="perpus">
+                Aplikasi Perpustakaan
+              </p>
               <div class="card-wrapper swiper-wrapper">
                 <div class="swiper-slide p-1 text-center">
                   <a
@@ -1228,7 +1281,7 @@
                       </div>
                       <div class="dekstop-2">
                         <div class="dekstop-3"></div>
-                        <p class="dekstop-4">Open</p>
+                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1248,7 +1301,7 @@
                       </div>
                       <div class="dekstop-2">
                         <div class="dekstop-3"></div>
-                        <p class="dekstop-4">Open</p>
+                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1268,7 +1321,7 @@
                       </div>
                       <div class="dekstop-2">
                         <div class="dekstop-3"></div>
-                        <p class="dekstop-4">Open</p>
+                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1288,7 +1341,7 @@
                       </div>
                       <div class="dekstop-2">
                         <div class="dekstop-3"></div>
-                        <p class="dekstop-4">Open</p>
+                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
                       </div>
                     </div>
                   </a>
@@ -1306,7 +1359,8 @@
                         href="https://github.com/Skrnagrh/delphi_aplikasi_perpustakaan"
                         target="_blank"
                         class="porto-3"
-                        >Lihat Projek <i class="bi bi-arrow-right-circle"></i
+                        ><span class="translate" data-key="detail">Detail</span>
+                        <i class="bi bi-arrow-right-circle"></i
                       ></a>
                     </div>
                   </div>
@@ -1425,6 +1479,8 @@
 
     <!-- Tailwind Js -->
     <script src="dist/js/script.js"></script>
+    <script src="dist/js/darkmode.js"></script>
+    <script src="dist/js/portofolio/language.js"></script>
     <!-- Tailwind Js -->
 
     <!-- Hide show Halaman Vektor, Web, tipo & other -->
@@ -1439,96 +1495,7 @@
 
     <!-- Swiper -->
     <script src="dist/js/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".slide-content", {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        // loop: true,
-        centerSlide: "true",
-        fade: "true",
-        grabCursor: "true",
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicsBullets: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 2.1,
-          },
-          520: {
-            slidesPerView: 3,
-          },
-          950: {
-            slidesPerView: 5,
-          },
-        },
-      });
-    </script>
-    <!-- asli -->
-    <script>
-      var swiper1 = new Swiper(".slide-content1", {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        // loop: true,
-        centerSlide: true,
-        fade: true,
-        grabCursor: true,
-        pagination: {
-          el: ".swiper-pagination1",
-          clickable: true,
-          dynamicsBullets: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next1",
-          prevEl: ".swiper-button-prev1",
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 1.1,
-          },
-          520: {
-            slidesPerView: 2,
-          },
-          950: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
-    <script>
-      var swiper1 = new Swiper(".slide-content2", {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        centerSlide: true,
-        fade: true,
-        grabCursor: true,
-        pagination: {
-          el: ".swiper-pagination2",
-          clickable: true,
-          dynamicsBullets: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next2",
-          prevEl: ".swiper-button-prev2",
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 1.1,
-          },
-          520: {
-            slidesPerView: 2,
-          },
-          950: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
+    <script src="dist/js/portofolio/swiper.js"></script>
     <!-- Swiper -->
   </body>
 </html>

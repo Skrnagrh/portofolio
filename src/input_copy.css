@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white dark:bg-dark;
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  @apply hover:opacity-80 transition duration-300 ease-in-out rounded-3xl mx-4 lg:mx-1 mt-1 text-secondary dark:text-white;
+}
+.nav-item {
+  @apply text-base py-2 mx-4 flex group-hover:text-white dark:text-white dark:group-active:text-primary;
+}
+#nav-menu {
+  transition: max-height 0.3s ease-in-out;
+  /* overflow: hidden; */
+}
+
+#homeLink.active,
+#aboutLink.active,
+#experienceLink.active,
+#educationLink.active,
+#portofolioLink.active,
+#skillLink.active,
+#contactLink.active {
+  /* @apply border-b-4 border-t border-primary text-primary font-bold dark:text-primary; */
+  /* @apply bg-primary text-white font-bold; */
+
+  /* @apply text-primary font-bold !important; */
+  @apply text-primary font-bold;
+}
+
+.hamburger-line {
+  /* @apply w-[30px] h-[2px] my-2 block bg-dark dark:bg-white; */
+  @apply w-[30px] h-[2px] my-2 block bg-secondary dark:bg-white font-extrabold;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
+}
+/* index.html */
+
+/* About Start*/
+.p-about {
+  @apply font-medium text-base text-secondary max-w-xl lg:text-lg pb-4;
+}
+.span-about {
+  @apply font-medium text-dark text-sm lg:text-lg dark:text-slate-400 capitalize;
+}
+/* About End*/
+
+/* Experience Start */
+.experience-h2 {
+  @apply font-bold text-primary text-3xl mb-4 md:text-4xl lg:text-5xl uppercase;
+}
+
+.card-experience {
+  @apply bg-white rounded-xl overflow-hidden shadow-md shadow-primary dark:bg-dark dark:shadow-slate-700 hover:border-dark hover:shadow-lg  dark:hover:border-slate-600 hover:shadow-teal-600 py-5;
+}
+
+.img-experience {
+  @apply flex items-center justify-center rounded-t-sm rounded-bl-3xl overflow-hidden dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100;
+}
+.pt-experience {
+  @apply font-semibold text-lg lg:text-sm text-dark mt-5 dark:text-white capitalize;
+}
+.jabatan-experience {
+  @apply font-medium text-sm lg:text-xs text-dark dark:text-white;
+}
+.masa-experience {
+  @apply text-xs text-secondary mb-2;
+}
+/* Experience End */
+
+/* Education Start */
+.h2-education {
+  @apply font-bold text-white text-3xl mb-4 md:text-4xl lg:text-5xl dark:grayscale uppercase;
+}
+.a-education {
+  @apply py-4 dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 lg:mx-6 xl:mx-auto items-center justify-center;
+}
+.img-education {
+  @apply max-w-[120px] mx-auto;
+}
+.univ-education {
+  @apply font-bold uppercase text-white text-lg;
+}
+.text-education {
+  @apply font-medium text-base text-white;
+}
+/* Education End */
+
+/* Portofolio Start */
+.h2-portofolio {
+  @apply font-bold text-dark text-3xl mb-4 md:text-4xl lg:text-5xl dark:text-white uppercase;
+}
+.text-portofolio {
+  @apply font-medium text-secondary text-sm md:text-lg mb-4;
+}
+.img-portofolio {
+  @apply rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-800 relative dark:grayscale dark:opacity-60 dark:transition dark:hover:grayscale-0 dark:hover:opacity-100 border-2 border-teal-500;
+}
+.icon-portofolio {
+  @apply text-base text-white text-center bg-primary;
+}
+/* Portofolio End */
+
+/* Skill Start */
+.card-skill {
+  @apply bg-white shadow-lg dark:bg-dark py-4 rounded-lg xl:mx-auto xl:w-10/12;
+}
+.h2-skill {
+  @apply font-bold text-primary uppercase text-3xl mb-4 md:text-4xl lg:text-5xl;
+}
+.p-skill {
+  @apply font-medium text-xs text-secondary md:text-base dark:text-slate-300 mb-2;
+}
+.text-skill {
+  @apply font-bold text-2xl text-dark dark:text-white mb-3;
+}
+.ul-skill {
+  @apply text-secondary font-medium;
+}
+/* Skill End */
+
+/* index.html End */
+.hero-contact {
+  @apply w-9 h-9 lg:w-12 lg:h-12 mr-3 lg:mr-4 rounded-full flex justify-center items-center border-2 border-slate-500 text-slate-500 hover:bg-primary hover:text-white dark:text-primary hover:border-2 hover:border-white  dark:shadow-primary dark:border-2 dark:border-primary dark:hover:border-white dark:hover:text-white lg:text-2xl;
+}
+
+.a-footer {
+  @apply w-9 h-9 lg:w-12 lg:h-12 mr-3 lg:mr-4 rounded-full flex justify-center items-center border-2 border-slate-500 text-slate-500 hover:bg-primary hover:text-white hover:border-2 hover:border-white;
+}
+.back-to-top {
+  @apply h-12 w-12 lg:h-14 lg:w-14 bg-primary justify-around items-center fixed z-[9999] bottom-4 right-4 rounded-full p-2 hover:animate-pulse;
+}
+
+.h3-a {
+  @apply font-semibold text-xl text-dark mt-5 dark:text-white pt-3.5 pb-3.5 lg:pt-40 lg:pb-32;
+}
+
+/* Portofolio.html Start */
+/* Vektor Start */
+.vektor-1 {
+  @apply aspect-[1/1] md:aspect-[1/1] xl:aspect-[1/1] overflow-hidden relative transition-all duration-500;
+}
+.vektor-2 {
+  @apply w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500;
+}
+.vektor-3 {
+  @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
+}
+.vektor-4 {
+  @apply absolute inset-0 bg-slate-600 opacity-50;
+}
+.vektor-5 {
+  @apply text-white font-semibold text-sm lg:text-2xl z-10;
+}
+/* Vektor End */
+
+/* Web Start */
+.web-card {
+  /* @apply rounded-xl overflow-hidden mt-4 lg:mt-0  dark:bg-dark border-2 dark:border-dark dark:shadow-none relative; */
+  @apply bg-white rounded-xl overflow-hidden shadow-md shadow-primary dark:bg-dark dark:shadow-slate-700 hover:border-dark hover:shadow-lg dark:hover:border-slate-600 hover:shadow-teal-600 pb-5 text-center mt-4;
+}
+.web-img {
+  /* @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100; */
+  @apply flex items-center justify-center rounded-t-sm overflow-hidden;
+}
+.web-text {
+  @apply font-semibold text-sm  text-dark m-5 dark:text-white capitalize lg:font-bold;
+}
+.web-button {
+  @apply text-xs font-semibold text-white bg-primary py-2 px-6 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out dark:bg-slate-700;
+}
+/* .web-3 {
+  @apply absolute inset-0 bg-slate-600 opacity-70;
+}
+.web-4 {
+  @apply text-white font-semibold text-sm lg:text-2xl z-10 relative text-center hover:text-primary px-4;
+} */
+/* Web End */
+
+/* Typography Start */
+.typo-1 {
+  /* @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative; */
+  @apply rounded-xl overflow-hidden relative;
+}
+.typo-2 {
+  @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
+}
+.typo-3 {
+  @apply absolute inset-0 bg-dark opacity-50;
+}
+.typo-4 {
+  @apply text-white font-semibold text-xl lg:text-2xl z-10;
+}
+/* Typography End */
+
+/* Other Start*/
+.other-1 {
+  @apply mt-4;
+}
+.other-2 {
+  @apply text-primary text-xl md:text-lg lg:text-2xl -mb-5 font-semibold;
+}
+/* Android */
+.android-1 {
+  @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative;
+}
+.android-2 {
+  @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
+}
+.android-3 {
+  @apply absolute inset-0 bg-slate-600 opacity-50;
+}
+.android-4 {
+  @apply text-white font-semibold text-sm lg:text-2xl z-10;
+}
+/* Android End*/
+
+/* Desktop Start*/
+.dekstop-p {
+  @apply text-primary text-sm md:text-lg pt-4 pb-2 font-semibold;
+}
+.dekstop-1 {
+  @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative;
+}
+.dekstop-2 {
+  @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
+}
+.dekstop-3 {
+  @apply absolute inset-0 bg-slate-600 opacity-50;
+}
+.dekstop-4 {
+  @apply text-white font-semibold text-sm lg:text-2xl z-10;
+}
+/* Desktop End*/
+
+/* Other End */
+.porto-1 {
+  @apply absolute inset-0 flex items-center justify-center;
+}
+.porto-2 {
+  @apply absolute inset-0 bg-white dark:bg-slate-700 opacity-100;
+}
+.porto-3 {
+  @apply text-dark hover:text-primary dark:text-white dark:hover:text-primary font-semibold text-sm lg:text-2xl z-10 text-center;
+}
+/* Portofolio.html End */
+
+/* swiper */
+.swiper-navBtn {
+  @apply hover:text-slate-500 hover:bg-teal-50 transition-all bg-white w-10 h-10 rounded-full p-5 shadow-lg dark:bg-slate-500 dark:text-slate-300 dark:hover:bg-slate-300 dark:hover:text-slate-500;
+}
+/* swiper */

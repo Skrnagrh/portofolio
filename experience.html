@@ -34,18 +34,12 @@
   </head>
 
   <body>
-    <!-- Header start -->
-    <header
-      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
-    >
+    <!-- Header Start -->
+    <header class="header">
       <div class="container">
-        <div class="flex items-center justify-between relative">
+        <div class="navbar-container">
           <div class="px-4">
-            <a
-              href="index.html"
-              class="font-bold text-2xl text-primary block py-6 uppercase"
-              >Sukron</a
-            >
+            <a href="#home" class="navbar-brand">Sukron</a>
           </div>
 
           <div class="flex items-center px-4">
@@ -55,99 +49,112 @@
               type="button"
               class="block absolute right-4 lg:hidden"
             >
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 origin-bottom-left ease-in-out"
-              ></span>
+              <span class="hamburger-line origin-top-left"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line origin-bottom-left"></span>
             </button>
-
-            <!-- <nav
-              id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-300 lg:dark:bg-transparent z-[9999]"
-            >
+            <nav id="nav-menu" class="nav-menu hidden fixed">
               <ul class="block lg:flex">
-                <li class="group">
+                <li id="homeLink" class="nav-link group">
                   <a
                     href="index.html#home"
-                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
+                    class="translate nav-item"
+                    data-key="home"
                     >Beranda</a
                   >
                 </li>
-                <li class="group">
+                <li id="aboutLink" class="nav-link group">
                   <a
                     href="index.html#about"
-                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white active:text-dark"
+                    class="translate nav-item"
+                    data-key="about"
                     >Tentang Saya</a
                   >
                 </li>
-                <li class="group">
+                <li id="experienceLink" class="group nav-link group">
                   <a
-                    href="experience.html"
-                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
+                    href="#experience"
+                    class="translate nav-item"
+                    data-key="experience"
                     >Pengalaman</a
                   >
                 </li>
-                <li class="group">
+                <li id="educationLink" class="group nav-link group">
                   <a
                     href="index.html#education"
-                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
+                    class="translate nav-item"
+                    data-key="education"
                     >Pendidikan</a
                   >
                 </li>
-                <li class="group">
+                <li id="portofolioLink" class="group nav-link group">
                   <a
                     href="index.html#portofolio"
-                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
+                    class="translate nav-item"
+                    data-key="portofolio"
                     >Portofolio</a
                   >
                 </li>
-                <li class="group lg:-mr-36">
+                <li id="skillLink" class="group nav-link group">
                   <a
                     href="index.html#skill"
-                    class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white"
+                    class="translate nav-item"
+                    data-key="skill"
                     >Kemampuan</a
                   >
                 </li>
-              </ul>
-            </nav> -->
-            <nav
-              id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-300 lg:dark:bg-transparent z-[9999]"
-            >
-              <ul class="block lg:flex">
-                <li id="homeLink" class="group nav-link">
-                  <a href="index.html#home" class="nav-item">Beranda</a>
-                </li>
-                <li id="aboutLink" class="group nav-link">
-                  <a href="index.html#about" class="nav-item">Tentang Saya</a>
-                </li>
-                <li id="experienceLink" class="group nav-link">
-                  <a href="#experience" class="nav-item">Pengalaman</a>
-                </li>
-                <li id="educationLink" class="group nav-link">
-                  <a href="index.html#education" class="nav-item">Pendidikan</a>
-                </li>
-                <li id="portofolioLink" class="group nav-link">
-                  <a href="index.html#portofolio" class="nav-item"
-                    >Portofolio</a
+                <li id="contactLink" class="group nav-link group">
+                  <a
+                    href="#contact"
+                    class="translate nav-item"
+                    data-key="contact"
+                    >Kontak</a
                   >
                 </li>
-                <li id="skillLink" class="group nav-link">
-                  <a href="index.html#skill" class="nav-item">Kemampuan</a>
+
+                <li class="language-switcher">
+                  <button id="btnID" class="language-button">ID</button>
+                  <span class="text-base py-2">/</span>
+                  <button id="btnEN" class="language-button">EN</button>
                 </li>
-                <li id="contactLink" class="group nav-link lg:mr-4 xl:-mr-28">
-                  <a href="#contact" class="nav-item">Kontak</a>
+
+                <li class="theme-toggle">
+                  <div class="flex justify-between items-center">
+                    <button id="darkModeToggle" class="theme-button">
+                      <span id="darkModeText" class="lg:hidden">Tema</span>
+                      <i id="themeIcon" class="bi bi-circle-half ml-2"></i>
+                      <span class="flex-grow"></span>
+                      <i id="chevronIcon" class="bi bi-chevron-down ml-2"></i>
+                    </button>
+                  </div>
+
+                  <div id="darkModeDropdown" class="theme-dropdown hidden">
+                    <div class="group theme-option" onclick="setTheme('light')">
+                      <span id="light" class="translate" data-key="light"
+                        >Terang</span
+                      >
+                      <i class="bi bi-sun-fill"></i>
+                    </div>
+
+                    <div class="group theme-option" onclick="setTheme('dark')">
+                      <span id="dark" class="translate" data-key="dark"
+                        >Gelap</span
+                      >
+                      <i class="bi bi-moon-stars-fill"></i>
+                    </div>
+                    <div class="group theme-option" onclick="setTheme('auto')">
+                      <span id="auto" class="translate" data-key="auto"
+                        >Auto</span
+                      >
+                      <i class="bi bi-circle-half"></i>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </nav>
           </div>
 
-          <div class="flex relative right-16 lg:right-4 xl:right-16">
+          <div class="hidden relative right-16 lg:right-4 xl:right-16">
             <div class="flex">
               <i class="bi bi-sun-fill mr-2 text-sm text-slate-500"></i>
               <input type="checkbox" class="hidden" id="dark-toggle" />
@@ -169,34 +176,36 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
+    <section id="home" class="hero-content">
       <div class="container">
         <div class="flex flex-wrap justify-center">
           <div class="w-full self-center px-4 lg:w-1/2 text-center">
             <h1
-              class="text-base font-semibold text-primary md:text-xl mb-2"
+              class="h1-hero translate"
               data-aos="fade-up"
               data-aos-offset="300"
               data-aos-duration="300"
               data-aos-delay="50"
+              data-key="exp1"
             >
               Pengalaman Kerja
-              <span
-                class="block font-bold text-dark text-4xl mt-2 lg:text-5xl dark:text-white uppercase"
-                data-aos="fade-up"
-                data-aos-offset="300"
-                data-aos-duration="300"
-                data-aos-delay="100"
-              >
-                Sukron
-              </span>
             </h1>
+            <span
+              class="name-hero translate"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-duration="300"
+              data-aos-delay="100"
+            >
+              Sukron
+            </span>
             <h2
-              class="font-medium text-secondary text-sm lg:text-lg mb-5 mt-4"
+              class="h2-hero translate"
               data-aos="fade-up"
               data-aos-offset="300"
               data-aos-duration="300"
               data-aos-delay="150"
+              data-key="pt"
             >
               PT. Imam Putra Mandiri - Sakina Fried Chicken - Jhon Chicken and
               Burger - Dinas Kelautan dan Perikanan Prov. Banten
@@ -208,15 +217,13 @@
     <!-- Hero Section End -->
 
     <!-- Logo Section Start -->
-    <section
-      class="pt-2 pb-2 bg-slate-200 dark:bg-slate-900 lg:dark:bg-slate-950 logo-exp"
-    >
+    <section class="logo-content logo-exp">
       <div class="container">
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
             <a
               href="#ipm"
-              class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8 dark:grayscale dark:hover:grayscale-0"
+              class="logo-img"
               data-aos="fade-up"
               data-aos-duration="300"
               data-aos-delay="50"
@@ -225,7 +232,7 @@
             </a>
             <a
               href="#sakina"
-              class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8 dark:grayscale dark:hover:grayscale-0"
+              class="logo-img"
               data-aos="fade-up"
               data-aos-duration="300"
               data-aos-delay="100"
@@ -234,7 +241,7 @@
             </a>
             <a
               href="#jhon"
-              class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8 dark:grayscale dark:hover:grayscale-0"
+              class="logo-img"
               data-aos="fade-up"
               data-aos-duration="300"
               data-aos-delay="150"
@@ -243,7 +250,7 @@
             </a>
             <a
               href="#pkl"
-              class="max-w-[75px] mx-auto lg:mx-6 xl:mx-8 dark:grayscale dark:hover:grayscale-0"
+              class="logo-img"
               data-aos="fade-up"
               data-aos-duration="300"
               data-aos-delay="200"
@@ -257,7 +264,7 @@
     <!-- Logo Section End -->
 
     <!-- Experience Section -->
-    <section class="pb-16 lg:pb-0 lg:dark:bg-dark dark:bg-slate-700">
+    <section class="section-exp">
       <div class="mx-4 lg:mx-0">
         <!-- IPM -->
         <div
@@ -268,207 +275,166 @@
           data-aos-duration="300"
           data-aos-delay="100"
         >
-          <div
-            class="dark:bg-slate-800 lg:dark:bg-dark rounded-xl lg:rounded-none"
-          >
-            <div
-              class="lg:mb-10 font-serif max-w-md lg:mx-auto sm:max-w-xl md:max-w-5xl px-2 py-4 lg:pt-16 lg:container lg:flex lg:max-w-full lg:px-0 rounded-xl"
-            >
-              <div class="lg:p-12 lg:flex-1 pb-4">
-                <div class="flex items-center">
+          <div class="background-exp">
+            <div class="content-exp">
+              <div class="detail-exp">
+                <div class="header-exp">
                   <div>
                     <img
                       src="dist/img/experience/1.png"
                       alt="2"
-                      class="max-w-[80px] lg:hidden"
+                      class="logo-mobile"
                     />
                   </div>
                   <div>
-                    <h3
-                      class="ml-4 lg:ml-0 text-lg font-bold text-dark sm:text-3xl md:text-4xl dark:text-white"
-                    >
-                      PT. Imam Putra Mandiri
-                    </h3>
-                    <p
-                      class="ml-4 lg:ml-0 text-slate-800 dark:text-gray-400 text-base font-medium"
-                    >
-                      Bojonegara, Banten, Indonesia
+                    <h3 class="company-name">PT. Imam Putra Mandiri</h3>
+                    <p class="company-address translate" data-key="alamat">
+                      Bojonegara, Kab. Serang, Banten,
                     </p>
-                    <p
-                      class="text-sm text-dark dark:text-gray-400 ml-4 lg:ml-0"
-                    >
+                    <p class="job-duration translate" data-key="duration1">
                       Jun 2020 - Apr 2022 · 1 thn 11 bln
                     </p>
                   </div>
                 </div>
-                <hr
-                  class="border-b border-slate-300 dark:border-slate-700 w-full lg:mt-2"
-                />
-                <div class="space-y-5 ml-10 mt-4">
-                  <div class="relative ml-2 mt-4 flex items-center">
-                    <div
-                      class="absolute w-2 h-2 bg-slate-300 dark:bg-slate-700 rounded-full -left-3 transform -translate-y-1/2"
-                      style="width: 0.5rem; height: 0.5rem; left: -0.75rem"
-                    ></div>
-                    <h2
-                      class="text-base font-extrabold text-dark dark:text-white ml-12"
-                    >
+                <hr class="divider" />
+                <!-- Admin -->
+                <div class="job-role">
+                  <div class="job-header">
+                    <div class="job-icon"></div>
+                    <h2 class="job-title translate" data-key="position1">
                       Staff Administrasi
                     </h2>
                   </div>
-                  <div
-                    class="-mt-12 -ml-0 border-l-2 border-slate-300 dark:border-slate-700"
-                  >
+                  <div class="job-details">
                     <div class="ml-8 -mt-6">
-                      <p class="text-sm text-dark dark:text-gray-400 mt-1 ml-6">
+                      <p class="role-duration translate" data-key="duration1">
                         Jan 2021 - Apr 2022 · 1 thn 4 bln
                       </p>
-                      <ul
-                        id="jobDescription1"
-                        class="text-sm text-dark dark:text-white list-disc list-inside mt-2 ml-6"
-                      >
-                        <li>
+                      <ul id="jobDescription1" class="job-description">
+                        <li class="job-point translate" data-key="jp1">
                           Bertanggung jawab untuk melakukan entry data karyawan
                           secara akurat dan efisien.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp2">
                           Memastikan kelancaran laporan absensi karyawan dan
                           memverifikasinya untuk keakuratan.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp3">
                           Melakukan pengecekan jam kerja karyawan untuk
                           mengoptimalkan produktivitas.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp4">
                           Mengelola dan memasukkan data ke dalam sistem payroll
                           perusahaan.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp5">
                           Berperan dalam pembuatan internal memo untuk
                           menyampaikan informasi penting.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp6">
                           Bertanggung jawab atas pengarsipan data yang rapi dan
                           mudah diakses.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp7">
                           Menyusun dan merangkum data untuk memastikan informasi
                           terkini dan teratur.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp8">
                           Menghasilkan berita acara yang akurat dan lengkap.
                         </li>
+                        <button
+                          id="toggleButton1"
+                          class="translate ml-4 text-gray-500 hover:text-blue-500 text-sm"
+                          data-key="lihat"
+                        >
+                          Lihat lebih banyak
+                        </button>
                       </ul>
-                      <button
-                        id="toggleButton1"
-                        class="ml-6 text-gray-500 hover:text-blue-500 text-sm mt-2"
-                      >
-                        Lihat lebih banyak
-                      </button>
                     </div>
                   </div>
                 </div>
-                <div class="space-y-5 ml-10 mt-4">
-                  <div class="relative ml-2 mt-4 flex items-center">
-                    <div
-                      class="absolute w-2 h-2 bg-slate-300 dark:bg-slate-700 rounded-full -left-3 transform -translate-y-1/2"
-                      style="width: 0.5rem; height: 0.5rem; left: -0.75rem"
-                    ></div>
-                    <h2
-                      class="text-base font-extrabold text-dark dark:text-white ml-12"
-                    >
-                      Checker
-                    </h2>
+                <!-- Checker -->
+                <div class="job-role">
+                  <div class="job-header">
+                    <div class="job-icon"></div>
+                    <h2 class="job-title translate">Checker</h2>
                   </div>
-                  <div
-                    class="-mt-12 -ml-0 border-l-2 border-slate-300 dark:border-slate-700"
-                  >
+                  <div class="job-details">
                     <div class="ml-8 -mt-6">
-                      <p class="text-sm text-dark dark:text-gray-400 mt-1 ml-6">
+                      <p class="role-duration translate" data-key="duration2">
                         Sep 2020 - Des 2020 · 4 bln
                       </p>
-                      <ul
-                        id="jobDescription2"
-                        class="text-sm text-dark dark:text-white list-disc list-inside mt-2 ml-6"
-                      >
-                        <li>
+                      <ul id="jobDescription2" class="job-description">
+                        <li class="job-point translate" data-key="jp9">
                           Memeriksa dan memastikan tonase bagian kapal sesuai
                           dengan spesifikasi.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp10">
                           Menghitung dan mencatat berat setiap bagian kapal yang
                           dipotong untuk memastikan akurasi data.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp11">
                           Berkoordinasi dengan tim lapangan dan operator alat
                           berat untuk kelancaran proses pengecekan.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp12">
                           Menyusun laporan tonase harian dan memberikan
                           rekomendasi kepada atasan terkait hasil pengecekan.
                         </li>
+                        <button
+                          id="toggleButton2"
+                          class="translate ml-4 text-gray-500 hover:text-blue-500 text-sm"
+                          data-key="lihat"
+                        >
+                          Lihat lebih banyak
+                        </button>
                       </ul>
-                      <button
-                        id="toggleButton2"
-                        class="ml-6 text-gray-500 hover:text-blue-500 text-sm mt-2"
-                      >
-                        Lihat lebih banyak
-                      </button>
                     </div>
                   </div>
                 </div>
-                <div class="space-y-5 ml-10 mt-4">
-                  <div class="relative ml-2 mt-4 flex items-center">
-                    <div
-                      class="absolute w-2 h-2 bg-slate-300 dark:bg-slate-700 rounded-full -left-3 transform -translate-y-1/2"
-                      style="width: 0.5rem; height: 0.5rem; left: -0.75rem"
-                    ></div>
-                    <h2
-                      class="text-base font-extrabold text-dark dark:text-white ml-12"
-                    >
-                      Helper
-                    </h2>
+                <!-- Helper -->
+                <div class="job-role">
+                  <div class="job-header">
+                    <div class="job-icon"></div>
+                    <h2 class="job-title translate">Helper</h2>
                   </div>
-                  <div
-                    class="-mt-12 -ml-0 border-l-2 border-slate-300 dark:border-slate-700"
-                  >
+                  <div class="job-details">
                     <div class="ml-8 -mt-6">
-                      <p class="text-sm text-dark dark:text-gray-400 mt-1 ml-6">
+                      <p class="role-duration translate" data-key="duration3">
                         Jun 2020 - Agu 2020 · 3 bln
                       </p>
-                      <ul
-                        id="jobDescription3"
-                        class="text-sm text-dark dark:text-white list-disc list-inside mt-2 ml-6"
-                      >
-                        <li>
+                      <ul id="jobDescription3" class="job-description">
+                        <li class="job-point translate" data-key="jp13">
                           Membersihkan sisa potongan material dan serpihan logam
                           di area kerja untuk menjaga keamanan dan kelancaran
                           operasional.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp14">
                           Mendukung tim pemotongan dengan memastikan area tetap
                           rapi dan bebas dari hambatan.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp15">
                           Memindahkan dan mengelompokkan limbah atau material
                           bekas sesuai instruksi dan prosedur.
                         </li>
+                        <button
+                          id="toggleButton3"
+                          class="translate ml-4 text-gray-500 hover:text-blue-500 text-sm"
+                          data-key="lihat"
+                        >
+                          Lihat lebih banyak
+                        </button>
                       </ul>
-                      <button
-                        id="toggleButton3"
-                        class="ml-6 text-gray-500 hover:text-blue-500 text-sm mt-2"
-                      >
-                        Lihat lebih banyak
-                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="hidden lg:flex lg:w-1/2 justify-center items-center">
+
+              <div class="logo-laptop">
                 <img
                   src="dist/img/index/experience/1.png"
                   alt="2"
-                  class="object-cover rounded-l-full"
+                  class="logo-style"
                 />
               </div>
             </div>
@@ -476,12 +442,8 @@
         </div>
         <!-- IPM -->
 
-        <hr
-          class="border-b border-slate-300 dark:border-slate-700 hidden lg:block container mx-auto mt-2"
-        />
-        <hr
-          class="border-b border-slate-300 dark:border-slate-700 hidden lg:block w-[85%] mx-auto mt-2"
-        />
+        <hr class="section-divider" />
+        <hr class="subsection-divider" />
 
         <!-- Sakina -->
         <div
@@ -492,101 +454,78 @@
           data-aos-duration="300"
           data-aos-delay="100"
         >
-          <div
-            class="dark:bg-slate-800 lg:dark:bg-dark rounded-xl lg:rounded-none lg:pb-10"
-          >
-            <div
-              class="lg:mb-10 font-serif max-w-md lg:mx-auto sm:max-w-xl md:max-w-5xl px-2 py-4 lg:pt-16 lg:container lg:flex lg:max-w-full lg:px-0 rounded-xl"
-            >
-              <div class="lg:p-12 lg:flex-1 pb-4">
-                <div class="flex items-center">
+          <div class="background-exp">
+            <div class="content-exp">
+              <div class="detail-exp">
+                <div class="header-exp">
                   <div>
                     <img
                       src="dist/img/experience/2.png"
                       alt="2"
-                      class="max-w-[80px] lg:hidden"
+                      class="logo-mobile"
                     />
                   </div>
                   <div>
-                    <h3
-                      class="ml-4 lg:ml-0 text-lg font-bold text-dark sm:text-3xl md:text-4xl dark:text-white"
-                    >
-                      Sakina Fried Chicken
-                    </h3>
-                    <p
-                      class="ml-4 lg:ml-0 text-slate-800 dark:text-gray-400 text-base font-medium"
-                    >
+                    <h3 class="company-name">Sakina Fried Chicken</h3>
+                    <p class="company-address translate" data-key="alamat1">
                       Serang, Kota Serang, Banten
                     </p>
-                    <p
-                      class="text-sm text-dark dark:text-gray-400 ml-4 lg:ml-0"
-                    >
+                    <p class="job-duration translate" data-key="duration4">
                       Jul 2019 - Okt 2019 · 4 bln
                     </p>
                   </div>
                 </div>
-                <hr
-                  class="border-b border-slate-300 dark:border-slate-700 w-full lg:mt-2"
-                />
-                <div class="space-y-5 ml-10 mt-4">
-                  <div class="relative ml-2 mt-4 flex items-center">
-                    <div
-                      class="absolute w-2 h-2 bg-slate-300 dark:bg-slate-700 rounded-full -left-3 transform -translate-y-1/2"
-                      style="width: 0.5rem; height: 0.5rem; left: -0.75rem"
-                    ></div>
-                    <h2
-                      class="text-base font-extrabold text-dark dark:text-white ml-12"
-                    >
-                      Waiters & Cook
+                <hr class="divider" />
+                <div class="job-role">
+                  <div class="job-header">
+                    <div class="job-icon"></div>
+                    <h2 class="job-title translate" data-key="position2">
+                      Pelayan & Juru Masak
                     </h2>
                   </div>
-                  <div
-                    class="-mt-12 -ml-0 border-l-2 border-slate-300 dark:border-slate-700"
-                  >
+                  <div class="job-details">
                     <div class="ml-8 -mt-6">
-                      <p class="text-sm text-dark dark:text-gray-400 mt-1 ml-6">
+                      <p class="role-duration translate" data-key="duration4">
                         Jul 2019 - Okt 2019 · 4 bln
                       </p>
-                      <ul
-                        id="jobDescription4"
-                        class="text-sm text-dark dark:text-white list-disc list-inside mt-2 ml-6"
-                      >
-                        <li>
+                      <ul id="jobDescription4" class="job-description">
+                        <li class="job-point translate" data-key="jp16">
                           Memberikan pelayanan pelanggan yang ramah dan
                           mengakomodasi kebutuhan mereka dengan baik.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp17">
                           Memberikan rekomendasi menu berdasarkan pengetahuan
                           yang mendalam tentang produk makanan dan minuman.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp18">
                           Mengambil pesanan dengan akurat dan memastikan bahwa
                           pesanan diproses dengan tepat.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp19">
                           Menjaga kebersihan area kerja dan memastikan
                           lingkungan tetap bersih dan nyaman.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp20">
                           Berkontribusi dalam memastikan pengalaman makan yang
                           menyenangkan bagi setiap pelanggan.
                         </li>
+                        <button
+                          id="toggleButton4"
+                          class="translate ml-4 text-gray-500 hover:text-blue-500 text-sm"
+                          data-key="lihat"
+                        >
+                          Lihat lebih banyak
+                        </button>
                       </ul>
-                      <button
-                        id="toggleButton4"
-                        class="ml-6 text-gray-500 hover:text-blue-500 text-sm mt-2"
-                      >
-                        Lihat lebih banyak
-                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="hidden lg:flex lg:w-1/2 justify-center items-center">
+              <div class="logo-laptop">
                 <img
                   src="dist/img/index/experience/2.png"
                   alt="2"
-                  class="object-cover rounded-l-full"
+                  class="logo-style"
                 />
               </div>
             </div>
@@ -594,12 +533,8 @@
         </div>
         <!-- Sakina -->
 
-        <hr
-          class="container border-b border-slate-300 dark:border-slate-700 hidden lg:block mt-2"
-        />
-        <hr
-          class="border-b border-slate-300 dark:border-slate-700 hidden lg:block w-[85%] mx-auto mt-2"
-        />
+        <hr class="section-divider" />
+        <hr class="subsection-divider" />
 
         <!-- Jhon Chicken -->
         <div
@@ -610,101 +545,78 @@
           data-aos-duration="300"
           data-aos-delay="100"
         >
-          <div
-            class="dark:bg-slate-800 lg:dark:bg-dark rounded-xl lg:rounded-none"
-          >
-            <div
-              class="lg:mb-10 font-serif max-w-md lg:mx-auto sm:max-w-xl md:max-w-5xl px-2 py-4 lg:pt-16 lg:container lg:flex lg:max-w-full lg:px-0 rounded-xl"
-            >
-              <div class="lg:p-12 lg:flex-1 pb-4">
-                <div class="flex items-center">
+          <div class="background-exp">
+            <div class="content-exp">
+              <div class="detail-exp">
+                <div class="header-exp">
                   <div>
                     <img
                       src="dist/img/experience/3.png"
                       alt="2"
-                      class="max-w-[80px] lg:hidden"
+                      class="logo-mobile"
                     />
                   </div>
                   <div>
-                    <h3
-                      class="ml-4 lg:ml-0 text-lg font-bold text-dark sm:text-3xl md:text-4xl dark:text-white"
-                    >
-                      Resto Jhon Chicken and Burger
-                    </h3>
-                    <p
-                      class="ml-4 lg:ml-0 text-slate-800 dark:text-gray-400 text-base font-medium"
-                    >
+                    <h3 class="company-name">Jhon Chicken and Burger</h3>
+                    <p class="company-address translate" data-key="alamat1">
                       Serang, Kota Serang, Banten
                     </p>
-                    <p
-                      class="text-sm text-dark dark:text-gray-400 ml-4 lg:ml-0"
-                    >
+                    <p class="job-duration translate" data-key="duration5">
                       Jun 2018 - Mar 2019 · 10 bln
                     </p>
                   </div>
                 </div>
-                <hr
-                  class="border-b border-slate-300 dark:border-slate-700 w-full lg:mt-2"
-                />
-                <div class="space-y-5 ml-10 mt-4">
-                  <div class="relative ml-2 mt-4 flex items-center">
-                    <div
-                      class="absolute w-2 h-2 bg-slate-300 dark:bg-slate-700 rounded-full -left-3 transform -translate-y-1/2"
-                      style="width: 0.5rem; height: 0.5rem; left: -0.75rem"
-                    ></div>
-                    <h2
-                      class="text-base font-extrabold text-dark dark:text-white ml-12"
-                    >
-                      Waiters & Cook
+                <hr class="divider" />
+                <div class="job-role">
+                  <div class="job-header">
+                    <div class="job-icon"></div>
+                    <h2 class="job-title translate" data-key="position2">
+                      Pelayan & Juru Masak
                     </h2>
                   </div>
-                  <div
-                    class="-mt-12 -ml-0 border-l-2 border-slate-300 dark:border-slate-700"
-                  >
+                  <div class="job-details">
                     <div class="ml-8 -mt-6">
-                      <p class="text-sm text-dark dark:text-gray-400 mt-1 ml-6">
+                      <p class="role-duration translate" data-key="duration5">
                         Jun 2018 - Mar 2019 · 10 bln
                       </p>
-                      <ul
-                        id="jobDescription5"
-                        class="text-sm text-dark dark:text-white list-disc list-inside mt-2 ml-6"
-                      >
-                        <li>
+                      <ul id="jobDescription5" class="job-description">
+                        <li class="job-point translate" data-key="jp16">
                           Memberikan pelayanan pelanggan yang ramah dan
                           mengakomodasi kebutuhan mereka dengan baik.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp17">
                           Memberikan rekomendasi menu berdasarkan pengetahuan
                           yang mendalam tentang produk makanan dan minuman.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp18">
                           Mengambil pesanan dengan akurat dan memastikan bahwa
                           pesanan diproses dengan tepat.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp19">
                           Menjaga kebersihan area kerja dan memastikan
                           lingkungan tetap bersih dan nyaman.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp20">
                           Berkontribusi dalam memastikan pengalaman makan yang
                           menyenangkan bagi setiap pelanggan.
                         </li>
+                        <button
+                          id="toggleButton5"
+                          class="translate ml-4 text-gray-500 hover:text-blue-500 text-sm"
+                          data-key="lihat"
+                        >
+                          Lihat lebih banyak
+                        </button>
                       </ul>
-                      <button
-                        id="toggleButton5"
-                        class="ml-6 text-gray-500 hover:text-blue-500 text-sm mt-2"
-                      >
-                        Lihat lebih banyak
-                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="hidden lg:flex lg:w-1/2 justify-center items-center">
+              <div class="logo-laptop">
                 <img
                   src="dist/img/index/experience/3.png"
                   alt="2"
-                  class="object-cover rounded-l-full"
+                  class="logo-style"
                 />
               </div>
             </div>
@@ -712,12 +624,8 @@
         </div>
         <!-- Jhon Chicken -->
 
-        <hr
-          class="container border-b border-slate-300 dark:border-slate-700 hidden lg:block mt-2"
-        />
-        <hr
-          class="border-b border-slate-300 dark:border-slate-700 hidden lg:block w-[85%] mx-auto mt-2"
-        />
+        <hr class="section-divider" />
+        <hr class="subsection-divider" />
 
         <!-- Magang -->
         <div
@@ -728,88 +636,70 @@
           data-aos-duration="300"
           data-aos-delay="100"
         >
-          <div
-            class="dark:bg-slate-800 lg:dark:bg-dark rounded-xl lg:rounded-none lg:pb-10"
-          >
-            <div
-              class="lg:mb-10 font-serif max-w-md lg:mx-auto sm:max-w-xl md:max-w-5xl px-2 py-4 lg:pt-16 lg:container lg:flex lg:max-w-full lg:px-0 rounded-xl"
-            >
-              <div class="lg:p-12 lg:flex-1 pb-4">
-                <div class="flex items-center">
+          <div class="background-exp">
+            <div class="content-exp">
+              <div class="detail-exp">
+                <div class="header-exp">
                   <div>
                     <img
                       src="dist/img/experience/4.png"
                       alt="2"
-                      class="max-w-[80px] lg:hidden"
+                      class="logo-mobile"
                     />
                   </div>
                   <div>
-                    <h3
-                      class="ml-4 lg:ml-0 text-lg font-bold text-dark sm:text-3xl md:text-4xl dark:text-white"
-                    >
+                    <h3 class="company-name translate" data-key="dinas">
                       Dinas Kelautan dan Perikanan Provinsi Banten
                     </h3>
-                    <p
-                      class="ml-4 lg:ml-0 text-slate-800 dark:text-gray-400 text-base font-medium"
-                    >
+                    <p class="company-address translate" data-key="alamat1">
                       Serang, Kota Serang, Banten
                     </p>
-                    <p
-                      class="text-sm text-dark dark:text-gray-400 ml-4 lg:ml-0"
-                    >
+                    <p class="job-duration translate" data-key="duration6">
                       Des 2016 - Feb 2017 · 3 bln
                     </p>
                   </div>
                 </div>
-                <hr
-                  class="border-b border-slate-300 dark:border-slate-700 w-full lg:mt-2"
-                />
-                <div class="space-y-5 ml-10 mt-4">
-                  <div class="relative ml-2 mt-4 flex items-center">
-                    <div
-                      class="absolute w-2 h-2 bg-slate-300 dark:bg-slate-700 rounded-full -left-3 transform -translate-y-1/2"
-                      style="width: 0.5rem; height: 0.5rem; left: -0.75rem"
-                    ></div>
+                <hr class="divider" />
+                <div class="job-role">
+                  <div class="job-header">
+                    <div class="job-icon"></div>
                     <h2
-                      class="text-base font-extrabold text-dark dark:text-white ml-12"
+                      class="translate calss text-base font-extrabold text-dark dark:text-white ml-8 lg:ml-4"
+                      data-key="position3"
                     >
                       Praktek Kerja Industri
                     </h2>
                   </div>
-                  <div
-                    class="-mt-12 -ml-0 border-l-2 border-slate-300 dark:border-slate-700"
-                  >
+                  <div class="job-details">
                     <div class="ml-8 -mt-6">
-                      <p class="text-sm text-dark dark:text-gray-400 mt-1 ml-6">
+                      <p class="role-duration translate" data-key="duration6">
                         Des 2016 - Feb 2017 · 3 bln
                       </p>
-                      <ul
-                        id="jobDescription6"
-                        class="text-sm text-dark dark:text-white list-disc list-inside mt-2 ml-6"
-                      >
-                        <li>
+                      <ul id="jobDescription6" class="job-description">
+                        <li class="job-point translate" data-key="jp21">
                           Melakukan salinan data untuk memudahkan administrasi.
                         </li>
-                        <li>
+                        <li class="job-point translate" data-key="jp22">
                           Sortir dokumen sesuai dengan prioritas, sehingga lebih
                           mudah pengawasannya.
                         </li>
+                        <button
+                          id="toggleButton6"
+                          class="translate ml-4 text-gray-500 hover:text-blue-500 text-sm"
+                          data-key="lihat"
+                        >
+                          Lihat lebih banyak
+                        </button>
                       </ul>
-                      <button
-                        id="toggleButton6"
-                        class="ml-6 text-gray-500 hover:text-blue-500 text-sm mt-2"
-                      >
-                        Lihat lebih banyak
-                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="hidden lg:flex lg:w-1/2 justify-center items-center">
+              <div class="logo-laptop">
                 <img
                   src="dist/img/index/experience/4.png"
                   alt="2"
-                  class="object-cover rounded-l-full"
+                  class="logo-style"
                 />
               </div>
             </div>
@@ -826,9 +716,10 @@
         <div class="flex flex-wrap justify-center text-center">
           <div class="w-full px-4 mb-12 text-slate-300 font-medium lg:w-1/2">
             <h2
-              class="font-bold text-white text-2xl uppercase mb-2"
+              class="translate font-bold text-white text-2xl uppercase mb-2"
               data-aos="fade-up"
               data-aos-delay="100"
+              data-key="lokasi"
             >
               Lokasi
             </h2>
@@ -839,15 +730,21 @@
             >
               Taktakan
             </h2>
-            <p class="text-base" data-aos="fade-up" data-aos-delay="300">
+            <p
+              class="translate text-base"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-key="kota"
+            >
               Kota Serang Banten
             </p>
           </div>
           <div class="w-full mb-12 text-slate-300 font-medium lg:w-1/2">
             <h2
-              class="font-bold text-2xl text-white uppercase mb-2"
+              class="translate font-bold text-2xl text-white uppercase mb-2"
               data-aos="fade-up"
               data-aos-delay="400"
+              data-key="contact"
             >
               Kontak
             </h2>
@@ -917,6 +814,8 @@
     </a>
     <!-- Back To Top End -->
     <script src="dist/js/script.js"></script>
+    <script src="dist/js/darkmode.js"></script>
+    <script src="dist/js/experience/language.js"></script>
     <!-- Aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

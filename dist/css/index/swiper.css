@@ -39,3 +39,37 @@
     display: none;
   }
 } */
+
+/* Swiper Content = Work Experience */
+/* Swiper Content1 = Portofolio */
+.slide-content1 {
+  margin: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 16px;
+  color: #949494fb;
+  font-weight: bold;
+}
+.swiper-pagination-bullet,
+.swiper-pagination1-bullet {
+  background-color: #14b8a57a;
+}
+.swiper-pagination-bullet-active,
+.swiper-pagination1-bullet-active {
+  background-color: #14b8a6;
+}
+@media screen and (max-width: 768px) {
+  .slide-content,
+  .slide-content1 {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}

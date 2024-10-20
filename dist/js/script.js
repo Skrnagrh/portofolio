@@ -1,19 +1,62 @@
 // Navbar Fixed & Back To Top
-window.onscroll = function(){
-    const header = document.querySelector('header');
-    const fixedNav = header.offsetTop;
-    const toTop = document.querySelector('#to-top');
+// window.onscroll = function(){
+//     const header = document.querySelector('header');
+//     const fixedNav = header.offsetTop;
+//     const toTop = document.querySelector('#to-top');
 
-    if(window.pageYOffset > fixedNav){
+//     if(window.pageYOffset > fixedNav){
+//         header.classList.add('navbar-fixed');
+//         toTop.classList.remove('hidden');
+//         toTop.classList.add('flex');
+//     }else{
+//         header.classList.remove('navbar-fixed');
+//         toTop.classList.remove('flex');
+//         toTop.classList.add('hidden');
+//     }
+// };
+// window.onscroll = checkHeaderPosition;
+
+//   // Panggil fungsi saat halaman dimuat dan saat di-scroll
+//   checkHeaderPosition();
+//   window.onscroll = checkHeaderPosition;
+// });
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector('header');
+  const toTop = document.querySelector('#to-top');
+
+  function checkHeaderPosition() {
+    const fixedNav = header.offsetTop;
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 768) {
+      // Mobile: header selalu fixed, dan tampilkan toTop jika scroll > 100px
+      header.classList.add('navbar-fixed');
+      if (window.pageYOffset > 100) {
+        toTop.classList.remove('hidden');
+        toTop.classList.add('flex');
+      } else {
+        toTop.classList.remove('flex');
+        toTop.classList.add('hidden');
+      }
+    } else {
+      // Desktop: header dan toTop berubah berdasarkan posisi scroll
+      if (window.pageYOffset > fixedNav) {
         header.classList.add('navbar-fixed');
         toTop.classList.remove('hidden');
         toTop.classList.add('flex');
-    }else{
+      } else {
         header.classList.remove('navbar-fixed');
         toTop.classList.remove('flex');
         toTop.classList.add('hidden');
+      }
     }
-};
+  }
+
+  // Panggil fungsi saat halaman dimuat dan saat di-scroll
+  checkHeaderPosition();
+  window.onscroll = checkHeaderPosition;
+});
+
 
 
 // Hamburger
@@ -38,6 +81,7 @@ hamburger.addEventListener('click', function(){
     navMenu.classList.toggle('hidden');
 });
 
+
 // Event listener for the scroll event on the window
 window.addEventListener('scroll', function() {
     // Close the navigation menu when the user scrolls
@@ -46,12 +90,12 @@ window.addEventListener('scroll', function() {
 
 
 // Klik di luar Humberger
-window.addEventListener('click', function(e){
-    if(e.target != hamburger && e.target != navMenu){
-        hamburger.classList.remove('hamburger-active');
-        navMenu.classList.add('hidden');
-    }
-});
+// window.addEventListener('click', function(e){
+//     if(e.target != hamburger && e.target != navMenu){
+//         hamburger.classList.remove('hamburger-active');
+//         navMenu.classList.add('hidden');
+//     }
+// });
 
 // Dark Mode Toggle
 const darkToggle = document.querySelector('#dark-toggle');
@@ -224,3 +268,6 @@ function showImages(category) {
     // Menyimpan informasi elemen yang aktif ke penyimpanan sesi
     sessionStorage.setItem("activeElement", elementId);
   }
+
+
+  
