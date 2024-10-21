@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
             jp6: "Responsible for maintaining organized and easily accessible data archives.",
             jp7: "Compiled and summarized data to ensure current and orderly information.",
             jp8: "Produced accurate and complete meeting minutes.",
-            lihat:"See more",
+            // lihat:"See more",
 
             duration2: "Sep 2020 - Dec 2020 · 4 months",
             jp9: "Checked and ensured the tonnage of the ship's parts met specifications.",

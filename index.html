@@ -23,20 +23,6 @@
     <link rel="stylesheet" href="dist/css/portofolio/other/swiper1.css" />
     <link rel="stylesheet" href="dist/css/index/swiper.css" />
     <!-- Swiper -->
-
-    <!-- Dark Mode Theme -->
-    <script>
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
-    <!-- Dark Mode Theme -->
   </head>
   <body>
     <!-- Header Start -->
@@ -363,11 +349,11 @@
             <div class="w-full pb-10" data-aos="fade-up" data-aos-delay="100">
               <a
                 href="dist/resume/cv_sukron.pdf"
-                class="translate text-sm font-bold text-white bg-primary py-3 px-6 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                class="text-sm font-bold text-white bg-primary py-3 px-6 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
                 download="cv_sukron"
                 onclick="return confirm('Apakah Anda yakin ingin mendownload CV Sukron?')"
-                data-key="cv"
-                >Unduh CV <i class="bi bi-download"></i
+                ><span class="translate" data-key="cv">Unduh CV</span>
+                <i class="bi bi-download"></i
               ></a>
             </div>
           </div>
@@ -909,23 +895,19 @@
     <!-- Skill Section End -->
 
     <!-- Footer Section Start -->
-    <footer class="bg-dark pt-36 pb-12" id="contact">
+    <footer class="footer-section" id="contact">
       <div class="container">
-        <div class="flex flex-wrap justify-center text-center">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium lg:w-1/2">
+        <div class="footer-content">
+          <div class="footer-location">
             <h2
-              class="translate font-bold text-white text-2xl uppercase mb-2"
+              class="footer-title translate"
               data-aos="fade-up"
               data-aos-delay="100"
               data-key="lokasi"
             >
               Lokasi
             </h2>
-            <h2
-              class="font-bold text-xl"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
+            <h2 class="footer-subtitle" data-aos="fade-up" data-aos-delay="200">
               Taktakan
             </h2>
             <p
@@ -937,16 +919,16 @@
               Kota Serang, Banten
             </p>
           </div>
-          <div class="w-full mb-12 text-slate-300 font-medium lg:w-1/2">
+          <div class="footer-contact">
             <h2
-              class="translate font-bold text-2xl text-white uppercase mb-2"
+              class="footer-title translate"
               data-aos="fade-up"
               data-aos-delay="400"
               data-key="contact"
             >
               Kontak
             </h2>
-            <div class="flex mb-5 justify-center">
+            <div class="footer-icon">
               <a
                 href="mailto:suk12on512@gmail.com"
                 target="_blank"
@@ -995,10 +977,10 @@
             </div>
           </div>
         </div>
-        <div class="w-full pt-10 border-t border-slate-700">
-          <p class="font-medium text-md text-slate-500 text-center">
+        <div class="footer-bottom">
+          <p class="footer-cr">
             Copyright &copy; Portofolio -
-            <a class="font-bold text-primary">Sukron</a>
+            <a class="footer-author">Sukron</a>
             <span id="current-year" class="font-medium text-white"></span>
           </p>
         </div>
@@ -1010,18 +992,30 @@
     <a href="#home" class="back-to-top hidden" id="to-top">
       <i class="bi bi-arrow-up font-extrabold text-white text-lg"></i>
     </a>
+    <!-- Footer Section End -->
 
-    <script src="dist/js/script.js"></script>
-    <script src="dist/js/darkmode.js"></script>
+    <!-- General Js -->
+    <script src="dist/js/general/header-active.js"></script>
+    <script src="dist/js/general/header-fixed.js"></script>
+    <script src="dist/js/general/hamburger.js"></script>
+    <script src="dist/js/general/darkmode.js"></script>
+    <script src="dist/js/general/year.js"></script>
+    <!-- General Js -->
+
+    <!-- Language Js -->
     <script src="dist/js/index/languange.js"></script>
+    <!-- Language Js -->
+
+    <!-- Swiper -->
+    <script src="dist/js/general/swiper-bundle.min.js"></script>
+    <script src="dist/js/index/swiper.js"></script>
+    <!-- Swiper -->
+
     <!-- Aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
-    <!-- Swiper -->
-    <script src="dist/js/swiper-bundle.min.js"></script>
-    <script src="dist/js/index/swiper.js"></script>
+    <!-- Aos -->
   </body>
 </html>

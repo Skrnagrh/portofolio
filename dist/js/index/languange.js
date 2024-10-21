@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             profession: "Web Developer & ",
             aboutMeContent: "I am a graduate of Informatics Engineering with a GPA of 3.73 from University Of Serang Greater, with work experience in administration and customer service. I have experience as an Administration Staff at PT. Imam Putra Mandiri. I am proficient in various programming languages and web development tools such as HTML, CSS, Java, PHP, Laravel, and JavaScript, and I have experience using Git and GitHub for version control. I possess strong interpersonal skills, including communication, teamwork, problem-solving, and time management abilities. My organizational experience in Paskibra demonstrates leadership, responsibility, and good social involvement.",
             cv:"Download CV",
-            jabatan1: "administration Staff",
+            jabatan1: "Administration Staff",
             masa1: "June 2020 - April 2022",
             jabatan2: "Waiters & Cook",
             masa2: "July 2019 - October 2019",

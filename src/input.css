@@ -107,18 +107,47 @@ body {
 /* Swiper Button */
 
 /* Fotter Start */
+.footer-section {
+  @apply bg-dark pt-36 pb-12;
+}
+
+.footer-content {
+  @apply flex flex-wrap justify-center text-center;
+}
+.footer-location {
+  @apply w-full px-4 mb-12 text-slate-300 font-medium lg:w-1/2;
+}
+.footer-title {
+  @apply font-bold text-white text-2xl uppercase mb-2;
+}
+.footer-subtitle {
+  @apply font-bold text-xl;
+}
+.footer-contact {
+  @apply w-full mb-12 text-slate-300 font-medium lg:w-1/2;
+}
+.footer-icon {
+  @apply flex mb-5 justify-center;
+}
 .a-footer {
   @apply w-9 h-9 lg:w-12 lg:h-12 mr-3 lg:mr-4 rounded-full flex justify-center items-center border-2 border-slate-500 text-slate-500 hover:bg-primary hover:text-white hover:border-2 hover:border-white;
 }
+.footer-bottom {
+  @apply w-full pt-10 border-t border-slate-700;
+}
 
+.footer-cr {
+  @apply font-medium text-base text-slate-500 text-center;
+}
+.footer-author {
+  @apply font-bold text-primary;
+}
+/* Footer End */
+/* Back To Top Start*/
 .back-to-top {
   @apply h-12 w-12 lg:h-14 lg:w-14 bg-primary justify-around items-center fixed z-[9999] bottom-4 right-4 rounded-full p-2 hover:animate-pulse;
 }
-
-.h3-a {
-  @apply font-semibold text-xl text-dark mt-5 dark:text-white pt-3.5 pb-3.5 lg:pt-40 lg:pb-32;
-}
-/* Fotter End */
+/* Back To Top End*/
 /* Genaral */
 
 /* index.html Start */
@@ -205,7 +234,7 @@ body {
   @apply font-medium text-base text-white;
 }
 /* Education End */
-/* Portofolio Start */
+/* Portofolio index.html Start */
 .portofolio-content {
   @apply pt-36 pb-32 bg-slate-100 dark:bg-dark;
 }
@@ -232,7 +261,7 @@ body {
 .icon-portofolio {
   @apply text-base text-dark dark:text-white -mt-6 ml-1;
 }
-/* Portofolio End */
+/* Portofolio index.html End */
 /* Skill Start */
 .card-skill {
   @apply bg-white shadow-lg dark:bg-dark py-4 rounded-lg xl:mx-auto xl:w-10/12;
@@ -334,6 +363,9 @@ body {
 .job-point {
   @apply pl-4 mb-2 -indent-4;
 }
+.job-button {
+  @apply ml-4 text-gray-500 hover:text-blue-500 text-sm;
+}
 .logo-laptop {
   @apply hidden lg:flex lg:w-1/2 justify-center items-center;
 }
@@ -350,94 +382,157 @@ body {
 /* experience.html End*/
 
 /* Portofolio.html Start */
+/* Hero Section Start */
+.hero-prt {
+  @apply pt-36 pb-16 bg-slate-100 dark:bg-dark;
+}
+
+.content-prt {
+  @apply flex flex-wrap justify-center;
+}
+
+.text-prt {
+  @apply w-full self-center px-4 lg:w-1/2 text-center;
+}
+
+.h1-prt {
+  @apply text-base font-semibold text-primary  md:text-xl mb-2;
+}
+
+.span-prt {
+  @apply block font-bold text-dark text-4xl mt-2 lg:text-5xl dark:text-white uppercase;
+}
+
+.desc-prt {
+  @apply font-medium text-secondary text-base lg:text-lg mb-5 mt-4;
+}
+/* Hero Section End */
+/* Icon Start */
+.icon-prt {
+  @apply pt-2 pb-2 bg-slate-200 dark:bg-slate-700 sticky top-20 z-10;
+}
+
+.border-icon {
+  @apply border-teal-500 w-full;
+}
+
+.icon-links {
+  @apply justify-center text-center lg:mx-6 xl:mx-8;
+}
+
+.portofolio-link {
+  @apply mx-6 lg:mx-4 text-lg dark:text-white cursor-pointer;
+}
+
+.portofolio-link.active {
+  @apply font-bold text-primary;
+}
+
+.icon {
+  @apply text-3xl lg:text-lg;
+}
+/* Icon End*/
+/* Portofolio Start */
+.background-porto {
+  @apply bg-slate-100 dark:bg-slate-800;
+}
+
+.container-porto {
+  @apply justify-center;
+}
 /* Vektor Start */
+.vektor {
+  @apply font-sans grid grid-cols-3 gap-1 pt-4;
+}
+
 .vektor-1 {
   @apply aspect-[1/1] md:aspect-[1/1] xl:aspect-[1/1] overflow-hidden relative transition-all duration-500;
 }
+
 .vektor-2 {
   @apply w-full h-full bg-cover bg-center absolute group-hover:scale-150 transition-all duration-500;
 }
+
 .vektor-3 {
   @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
 }
+
 .vektor-4 {
   @apply absolute inset-0 bg-slate-600 opacity-50 hidden lg:block;
 }
+
 .vektor-5 {
   @apply text-white font-semibold text-sm lg:text-4xl z-0 hidden lg:block;
 }
 /* Vektor End */
-
 /* Web Start */
+.web {
+  @apply font-sans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-5 pb-16;
+}
+
 .web-card {
   @apply bg-white rounded-xl overflow-hidden shadow-md shadow-primary dark:bg-dark dark:shadow-slate-700 hover:border-dark hover:shadow-lg dark:hover:border-slate-600 hover:shadow-teal-600 pb-5 text-center mt-4;
 }
+
 .web-img {
   @apply flex items-center justify-center rounded-t-sm overflow-hidden;
 }
+
 .web-text {
   @apply font-semibold text-sm  text-dark m-5 dark:text-white capitalize lg:font-bold;
 }
+
 .web-button {
   @apply text-xs font-semibold text-white bg-primary py-2 px-6 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out dark:bg-slate-700;
 }
 /* Web End */
-
 /* Typography Start */
+.typo {
+  @apply grid grid-cols-2 gap-3 md:grid-cols-4 pt-4 pb-16 mb-0;
+}
+
+.grid-typo {
+  @apply grid gap-2 md:gap-4;
+}
+
 .typo-1 {
   @apply rounded-xl overflow-hidden relative;
 }
+
 .typo-2 {
   @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
 }
+
 .typo-3 {
   @apply absolute inset-0 bg-dark opacity-70 hidden lg:block;
 }
+
 .typo-4 {
   @apply text-white font-semibold text-xl lg:text-2xl z-0 hidden lg:block;
 }
 /* Typography End */
-
 /* Other Start*/
-.other-1 {
-  @apply mt-4;
-}
-.other-2 {
+.other-text {
   @apply text-primary text-xl md:text-lg lg:text-2xl -mb-5 font-semibold;
 }
-/* Android */
-.android-1 {
+/* Other Start */
+.other-1 {
   @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative;
 }
-.android-2 {
+.other-2 {
   @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
 }
-.android-3 {
+.other-3 {
   @apply absolute inset-0 bg-slate-600 opacity-50 hidden lg:block;
 }
-.android-4 {
+.other-4 {
   @apply text-white font-semibold text-sm lg:text-2xl z-10 hidden lg:block;
 }
-/* Android End*/
-
-/* Desktop Start*/
-.dekstop-p {
+.p-other {
   @apply text-primary text-sm md:text-lg pt-4 pb-2 font-semibold;
 }
-.dekstop-1 {
-  @apply rounded-xl overflow-hidden dark:bg-dark border-2 dark:border-dark dark:shadow-none relative;
-}
-.dekstop-2 {
-  @apply absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100;
-}
-.dekstop-3 {
-  @apply absolute inset-0 bg-slate-600 opacity-50 hidden lg:block;
-}
-.dekstop-4 {
-  @apply text-white font-semibold text-sm lg:text-2xl z-10 hidden lg:block;
-}
-/* Desktop End*/
-/* Other End */
+/* Other End*/
+
 .porto-1 {
   @apply absolute inset-0 flex items-center justify-center;
 }
@@ -445,8 +540,6 @@ body {
   @apply absolute inset-0 bg-white dark:bg-slate-700 opacity-100;
 }
 .porto-3 {
-  @apply text-dark hover:text-primary dark:text-white dark:hover:text-primary font-semibold text-sm lg:text-2xl z-10 text-center;
+  @apply text-dark hover:text-primary dark:text-white dark:hover:text-primary font-semibold text-sm lg:text-2xl z-0 text-center;
 }
 /* Portofolio.html End */
-
-

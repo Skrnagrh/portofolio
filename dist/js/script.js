@@ -1,25 +1,4 @@
 // Navbar Fixed & Back To Top
-// window.onscroll = function(){
-//     const header = document.querySelector('header');
-//     const fixedNav = header.offsetTop;
-//     const toTop = document.querySelector('#to-top');
-
-//     if(window.pageYOffset > fixedNav){
-//         header.classList.add('navbar-fixed');
-//         toTop.classList.remove('hidden');
-//         toTop.classList.add('flex');
-//     }else{
-//         header.classList.remove('navbar-fixed');
-//         toTop.classList.remove('flex');
-//         toTop.classList.add('hidden');
-//     }
-// };
-// window.onscroll = checkHeaderPosition;
-
-//   // Panggil fungsi saat halaman dimuat dan saat di-scroll
-//   checkHeaderPosition();
-//   window.onscroll = checkHeaderPosition;
-// });
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector('header');
   const toTop = document.querySelector('#to-top');
@@ -57,16 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.onscroll = checkHeaderPosition;
 });
 
-
-
 // Hamburger
-// const hamburger = document.querySelector('#hamburger');
-// const navMenu = document.querySelector('#nav-menu');
-
-// hamburger.addEventListener('click', function(){
-//     hamburger.classList.toggle('hamburger-active');
-//     navMenu.classList.toggle('hidden');
-// });
 const hamburger = document.querySelector('#hamburger');
 const navMenu = document.querySelector('#nav-menu');
 

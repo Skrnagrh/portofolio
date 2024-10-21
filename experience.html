@@ -39,7 +39,7 @@
       <div class="container">
         <div class="navbar-container">
           <div class="px-4">
-            <a href="#home" class="navbar-brand">Sukron</a>
+            <a href="index.html#home" class="navbar-brand">Sukron</a>
           </div>
 
           <div class="flex items-center px-4">
@@ -344,7 +344,7 @@
                         </li>
                         <button
                           id="toggleButton1"
-                          class="translate ml-4 text-gray-500 hover:text-blue-500 text-sm"
+                          class="translate job-button"
                           data-key="lihat"
                         >
                           Lihat lebih banyak
@@ -383,7 +383,7 @@
                         </li>
                         <button
                           id="toggleButton2"
-                          class="translate ml-4 text-gray-500 hover:text-blue-500 text-sm"
+                          class="translate job-button"
                           data-key="lihat"
                         >
                           Lihat lebih banyak
@@ -419,7 +419,7 @@
                         </li>
                         <button
                           id="toggleButton3"
-                          class="translate ml-4 text-gray-500 hover:text-blue-500 text-sm"
+                          class="translate job-button"
                           data-key="lihat"
                         >
                           Lihat lebih banyak
@@ -511,7 +511,7 @@
                         </li>
                         <button
                           id="toggleButton4"
-                          class="translate ml-4 text-gray-500 hover:text-blue-500 text-sm"
+                          class="translate job-button"
                           data-key="lihat"
                         >
                           Lihat lebih banyak
@@ -602,7 +602,7 @@
                         </li>
                         <button
                           id="toggleButton5"
-                          class="translate ml-4 text-gray-500 hover:text-blue-500 text-sm"
+                          class="translate job-button"
                           data-key="lihat"
                         >
                           Lihat lebih banyak
@@ -685,7 +685,7 @@
                         </li>
                         <button
                           id="toggleButton6"
-                          class="translate ml-4 text-gray-500 hover:text-blue-500 text-sm"
+                          class="translate job-button"
                           data-key="lihat"
                         >
                           Lihat lebih banyak
@@ -711,23 +711,19 @@
     <!-- Experience End -->
 
     <!-- Footer Section Start -->
-    <footer class="bg-dark pt-36 pb-12" id="contact">
+    <footer class="footer-section" id="contact">
       <div class="container">
-        <div class="flex flex-wrap justify-center text-center">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium lg:w-1/2">
+        <div class="footer-content">
+          <div class="footer-location">
             <h2
-              class="translate font-bold text-white text-2xl uppercase mb-2"
+              class="footer-title translate"
               data-aos="fade-up"
               data-aos-delay="100"
               data-key="lokasi"
             >
               Lokasi
             </h2>
-            <h2
-              class="font-bold text-xl"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
+            <h2 class="footer-subtitle" data-aos="fade-up" data-aos-delay="200">
               Taktakan
             </h2>
             <p
@@ -736,19 +732,19 @@
               data-aos-delay="300"
               data-key="kota"
             >
-              Kota Serang Banten
+              Kota Serang, Banten
             </p>
           </div>
-          <div class="w-full mb-12 text-slate-300 font-medium lg:w-1/2">
+          <div class="footer-contact">
             <h2
-              class="translate font-bold text-2xl text-white uppercase mb-2"
+              class="footer-title translate"
               data-aos="fade-up"
               data-aos-delay="400"
               data-key="contact"
             >
               Kontak
             </h2>
-            <div class="flex mb-5 justify-center">
+            <div class="footer-icon">
               <a
                 href="mailto:suk12on512@gmail.com"
                 target="_blank"
@@ -797,10 +793,10 @@
             </div>
           </div>
         </div>
-        <div class="w-full pt-10 border-t border-slate-700">
-          <p class="font-medium text-md text-slate-500 text-center">
+        <div class="footer-bottom">
+          <p class="footer-cr">
             Copyright &copy; Portofolio -
-            <a class="font-bold text-primary">Sukron</a>
+            <a class="footer-author">Sukron</a>
             <span id="current-year" class="font-medium text-white"></span>
           </p>
         </div>
@@ -813,48 +809,25 @@
       <i class="bi bi-arrow-up font-bold text-white text-lg"></i>
     </a>
     <!-- Back To Top End -->
-    <script src="dist/js/script.js"></script>
-    <script src="dist/js/darkmode.js"></script>
+
+    <!-- General Js -->
+    <script src="dist/js/general/header-active.js"></script>
+    <script src="dist/js/general/header-fixed.js"></script>
+    <script src="dist/js/general/hamburger.js"></script>
+    <script src="dist/js/general/darkmode.js"></script>
+    <script src="dist/js/general/year.js"></script>
+    <!-- General Js -->
+
+    <!-- Language Js -->
     <script src="dist/js/experience/language.js"></script>
+    <script src="dist/js/experience/seemore.js"></script>
+    <!-- Language Js -->
+
     <!-- Aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script>
-      // Function to toggle job descriptions
-      function setupToggle(jobDescriptionId, buttonId) {
-        const jobDescription = document.getElementById(jobDescriptionId);
-        const toggleButton = document.getElementById(buttonId);
-        let expanded = false;
-
-        // Hide all list items initially except the first one
-        const listItems = jobDescription.querySelectorAll("li");
-        listItems.forEach((item, index) => {
-          if (index > 0) item.style.display = "none";
-        });
-
-        toggleButton.addEventListener("click", () => {
-          if (!expanded) {
-            listItems.forEach((item) => (item.style.display = "list-item"));
-            toggleButton.textContent = "Lihat lebih sedikit";
-          } else {
-            listItems.forEach((item, index) => {
-              if (index > 0) item.style.display = "none";
-            });
-            toggleButton.textContent = "Lihat lebih banyak";
-          }
-          expanded = !expanded;
-        });
-      }
-
-      // Set up toggles for each section
-      setupToggle("jobDescription1", "toggleButton1");
-      setupToggle("jobDescription2", "toggleButton2");
-      setupToggle("jobDescription3", "toggleButton3");
-      setupToggle("jobDescription4", "toggleButton4");
-      setupToggle("jobDescription5", "toggleButton5");
-      setupToggle("jobDescription6", "toggleButton6");
-    </script>
+    <!-- Aos -->
   </body>
 </html>

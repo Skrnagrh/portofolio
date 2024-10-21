@@ -18,26 +18,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Aos -->
 
-    <link rel="stylesheet" href="dist/css/img.css" />
     <link href="dist/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+
     <!-- Swiper -->
     <link rel="stylesheet" href="dist/css/portofolio/other/swiper.css" />
     <link rel="stylesheet" href="dist/css/portofolio/other/swiper1.css" />
     <link rel="stylesheet" href="dist/css/portofolio/other/swiper2.css" />
     <link rel="stylesheet" href="dist/css/portofolio/swiper-slide.css" />
-    <!-- Dark Mode Theme -->
-    <script>
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
-    <!-- Dark Mode Theme -->
+    <!-- Swiper -->
   </head>
   <body>
     <!-- Header Start -->
@@ -45,7 +33,7 @@
       <div class="container">
         <div class="navbar-container">
           <div class="px-4">
-            <a href="#home" class="navbar-brand">Sukron</a>
+            <a href="index.html#home" class="navbar-brand">Sukron</a>
           </div>
 
           <div class="flex items-center px-4">
@@ -79,7 +67,7 @@
                 </li>
                 <li id="experienceLink" class="group nav-link group">
                   <a
-                    href="#experience"
+                    href="index.html#experience"
                     class="translate nav-item"
                     data-key="experience"
                     >Pengalaman</a
@@ -95,7 +83,7 @@
                 </li>
                 <li id="portofolioLink" class="group nav-link group">
                   <a
-                    href="index.html#portofolio"
+                    href="#portofolio"
                     class="translate nav-item"
                     data-key="portofolio"
                     >Portofolio</a
@@ -182,12 +170,12 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
+    <section id="home" class="hero-prt">
       <div class="container">
-        <div class="flex flex-wrap justify-center">
-          <div class="w-full self-center px-4 lg:w-1/2 text-center">
+        <div class="content-prt">
+          <div class="text-prt">
             <h1
-              class="translate text-base font-semibold text-primary md:text-xl mb-2"
+              class="h1-prt"
               data-aos="fade-up"
               data-aos-offset="300"
               data-aos-duration="300"
@@ -196,7 +184,7 @@
               <span class="translate" data-key="portofolio">Portofolio</span>
 
               <span
-                class="block font-bold text-dark text-4xl mt-2 lg:text-5xl dark:text-white uppercase"
+                class="span-prt"
                 data-aos="fade-up"
                 data-aos-offset="300"
                 data-aos-duration="300"
@@ -206,7 +194,7 @@
               </span>
             </h1>
             <h2
-              class="translate font-medium text-secondary text-md lg:text-lg mb-5 mt-4"
+              class="desc-prt translate"
               data-aos="fade-up"
               data-aos-offset="300"
               data-aos-duration="300"
@@ -222,66 +210,64 @@
     <!-- Hero Section End -->
 
     <!-- Icon Start -->
-    <section
-      class="pt-2 pb-2 bg-slate-200 dark:bg-slate-700 sticky top-20 z-10"
-    >
-      <div class="border-t border-teal-500 w-full pt-4"></div>
-      <div class="icon-links justify-center text-center lg:mx-6 xl:mx-8">
+    <section class="icon-prt">
+      <div class="border-icon border-t pt-2"></div>
+      <div class="icon-links">
         <a
-          class="portofolio-link mx-6 lg:mx-4 text-lg dark:text-white"
+          class="portofolio-link"
           data-page="vektor"
           onclick="showImages('vektor')"
           style="cursor: pointer"
         >
-          <i class="bi bi-file-image icon text-3xl lg:text-lg"></i>
+          <i class="bi bi-file-image icon"></i>
           <span class="translate hidden md:inline" data-key="Vektor">
             Vektor</span
           >
         </a>
         <a
-          class="portofolio-link mx-6 lg:mx-4 text-lg dark:text-white"
+          class="portofolio-link"
           data-page="web"
           onclick="showImages('web')"
           style="cursor: pointer"
         >
-          <i class="bi bi-globe icon text-3xl lg:text-lg"></i>
+          <i class="bi bi-globe icon"></i>
           <span class="translate hidden md:inline" data-key="web">
             Situs Web</span
           >
         </a>
         <a
-          class="portofolio-link mx-6 lg:mx-4 text-lg dark:text-white"
+          class="portofolio-link"
           data-page="typography"
           onclick="showImages('typography')"
           style="cursor: pointer"
         >
-          <i class="bi bi-file-earmark-font icon text-3xl lg:text-lg"></i>
+          <i class="bi bi-file-earmark-font icon"></i>
           <span class="translate hidden md:inline" data-key="tipografi">
             Tipografi</span
           >
         </a>
         <a
-          class="portofolio-link mx-6 lg:mx-4 text-lg dark:text-white"
+          class="portofolio-link"
           data-page="other"
           onclick="showImages('other')"
           style="cursor: pointer"
         >
-          <i class="bi bi-file-earmark-text icon text-3xl lg:text-lg"></i>
+          <i class="bi bi-file-earmark-text icon"></i>
           <span class="translate hidden md:inline" data-key="lainnya">
             Lainnya</span
           >
         </a>
       </div>
-      <div class="border-b border-teal-500 w-full pt-4"></div>
+      <div class="border-icon border-b pt-2"></div>
     </section>
     <!-- Icon End  -->
 
     <!-- Portofolio Start -->
-    <section id="portofolio" class="bg-slate-100 dark:bg-slate-800">
-      <div class="container justify-content-center">
+    <section id="portofolio" class="background-porto">
+      <div class="container-porto container">
         <!-- Vektor -->
         <div class="lg:px-0" id="vektor-section">
-          <div class="font-sans grid grid-cols-3 gap-1 pt-4">
+          <div class="vektor">
             <a
               href="dist/img/portofolio/vektor/a.jpg"
               data-gallery="portfolioGallery"
@@ -297,7 +283,6 @@
                 <div class="vektor-3">
                   <div class="vektor-4"></div>
                   <p class="vektor-5"><i class="bi bi-eye-fill"></i></p>
-                  <!-- <p class="vektor-5 translate" data-key="buka">Buka</p> -->
                 </div>
               </div>
             </a>
@@ -505,14 +490,10 @@
           </div>
 
           <div class="text-center mt-4 pb-10">
-            <a
-              href="https://pin.it/3V4400Q"
-              target="_blank"
-              class="text-dark hover:text-primary text-xl dark:text-white dark:hover:text-primary font-medium"
-            >
+            <a href="https://pin.it/3V4400Q" target="_blank" class="porto-3">
               <span class="translate" data-key="lihat">Lihat Lebih Banyak</span>
 
-              <i class="bi bi-arrow-right-circle text-xl"></i>
+              <i class="bi bi-arrow-right-circle text-sm lg:text-xl"></i>
             </a>
           </div>
         </div>
@@ -520,9 +501,7 @@
 
         <!-- Web -->
         <div id="web-section" class="d-none">
-          <div
-            class="font-sans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-4 pb-16"
-          >
+          <div class="web">
             <div class="web-card">
               <div class="web-img">
                 <img src="dist/img/portofolio/web/1.png" alt="web" />
@@ -673,8 +652,8 @@
 
         <!-- Typography -->
         <div id="typography-section" class="d-none">
-          <div class="grid grid-cols-2 gap-3 md:grid-cols-4 pt-4 pb-16 mb-0">
-            <div class="grid gap-2 md:gap-4">
+          <div class="typo">
+            <div class="grid-typo">
               <div>
                 <a
                   href="dist/img/portofolio/typography/1.jpg"
@@ -690,7 +669,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
@@ -710,7 +689,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
@@ -730,7 +709,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
@@ -750,13 +729,13 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
-            <div class="grid gap-2 md:gap-4">
+            <div class="grid-typo">
               <div>
                 <a
                   href="dist/img/portofolio/typography/5.jpg"
@@ -772,7 +751,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
@@ -792,7 +771,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
@@ -812,7 +791,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
@@ -832,13 +811,13 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
-            <div class="grid gap-2 md:gap-4">
+            <div class="grid-typo">
               <div>
                 <a
                   href="dist/img/portofolio/typography/9.jpg"
@@ -854,7 +833,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
@@ -874,7 +853,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
@@ -894,7 +873,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
@@ -914,13 +893,13 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
-            <div class="grid gap-2 md:gap-4">
+            <div class="grid-typo">
               <div>
                 <a
                   href="dist/img/portofolio/typography/13.jpg"
@@ -936,7 +915,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
@@ -956,7 +935,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
@@ -976,7 +955,7 @@
                     </div>
                     <div class="typo-2">
                       <div class="typo-3"></div>
-                      <p class="typo-4 translate" data-key="buka">Buka</p>
+                      <p class="typo-4"><i class="bi bi-eye-fill"></i></p>
                     </div>
                   </div>
                 </a>
@@ -1009,8 +988,8 @@
         <div id="other-section" class="d-none pt-4">
           <!-- Project Android -->
           <div class="slide-container swiper">
-            <div class="other-1">
-              <p class="other-2"><i class="bi bi-android2"></i> Android</p>
+            <div class="mt-4">
+              <p class="other-text"><i class="bi bi-android2"></i> Android</p>
             </div>
             <div class="slide-content mb-10">
               <div class="card-wrapper swiper-wrapper">
@@ -1020,16 +999,16 @@
                     data-gallery="androidGallery"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="android-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/android/1.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="android-2">
-                        <div class="android-3"></div>
-                        <p class="android-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1040,16 +1019,16 @@
                     data-gallery="androidGallery"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="android-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/android/2.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="android-2">
-                        <div class="android-3"></div>
-                        <p class="android-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1060,16 +1039,16 @@
                     data-gallery="androidGallery"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="android-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/android/3.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="android-2">
-                        <div class="android-3"></div>
-                        <p class="android-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1080,16 +1059,16 @@
                     data-gallery="androidGallery"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="android-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/android/4.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="android-2">
-                        <div class="android-3"></div>
-                        <p class="android-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1100,16 +1079,16 @@
                     data-gallery="androidGallery"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="android-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/android/5.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="android-2">
-                        <div class="android-3"></div>
-                        <p class="android-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1142,13 +1121,13 @@
           <!-- Project Anrdroid end -->
 
           <!-- Project Desktop -->
-          <div class="other-1">
-            <p class="other-2"><i class="bi bi-laptop"></i> Desktop</p>
+          <div class="mt-4">
+            <p class="other-text"><i class="bi bi-laptop"></i> Desktop</p>
           </div>
           <!-- Kereta Api -->
           <div class="slide-container swiper">
             <div class="slide-content1 mb-10">
-              <p class="dekstop-p translate" data-key="kereta">
+              <p class="p-other translate" data-key="kereta">
                 Transaksi Tiket Kereta Api
               </p>
               <div class="card-wrapper swiper-wrapper">
@@ -1158,16 +1137,16 @@
                     data-gallery="desktopGallery"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="dekstop-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/desktop/kereta-api/1.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="dekstop-2">
-                        <div class="dekstop-3"></div>
-                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1178,16 +1157,16 @@
                     data-gallery="desktopGallery"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="dekstop-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/desktop/kereta-api/2.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="dekstop-2">
-                        <div class="dekstop-3"></div>
-                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1198,16 +1177,16 @@
                     data-gallery="desktopGallery"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="dekstop-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/desktop/kereta-api/3.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="dekstop-2">
-                        <div class="dekstop-3"></div>
-                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1218,16 +1197,16 @@
                     data-gallery="desktopGallery"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="dekstop-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/desktop/kereta-api/4.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="dekstop-2">
-                        <div class="dekstop-3"></div>
-                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1262,7 +1241,7 @@
           <!-- Delpho Perpustakaan -->
           <div class="slide-container swiper">
             <div class="slide-content2 mb-10">
-              <p class="dekstop-p translate" data-key="perpus">
+              <p class="p-other translate" data-key="perpus">
                 Aplikasi Perpustakaan
               </p>
               <div class="card-wrapper swiper-wrapper">
@@ -1272,16 +1251,16 @@
                     data-gallery="desktopGallery1"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="dekstop-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/desktop/perpustakaan/1.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="dekstop-2">
-                        <div class="dekstop-3"></div>
-                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1292,16 +1271,16 @@
                     data-gallery="desktopGallery1"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="dekstop-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/desktop/perpustakaan/2.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="dekstop-2">
-                        <div class="dekstop-3"></div>
-                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1312,16 +1291,16 @@
                     data-gallery="desktopGallery1"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="dekstop-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/desktop/perpustakaan/3.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="dekstop-2">
-                        <div class="dekstop-3"></div>
-                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1332,16 +1311,16 @@
                     data-gallery="desktopGallery1"
                     class="portfolio-lightbox relative"
                   >
-                    <div class="dekstop-1 group">
+                    <div class="other-1 group">
                       <div class="rounded-t-md overflow-hidden">
                         <img
                           src="dist/img/portofolio/other/desktop/perpustakaan/4.png"
                           alt="portofolio"
                         />
                       </div>
-                      <div class="dekstop-2">
-                        <div class="dekstop-3"></div>
-                        <p class="dekstop-4 translate" data-key="buka">Buka</p>
+                      <div class="other-2">
+                        <div class="other-3"></div>
+                        <p class="other-4"><i class="bi bi-eye-fill"></i></p>
                       </div>
                     </div>
                   </a>
@@ -1381,37 +1360,40 @@
     <!-- Portofolio End -->
 
     <!-- Footer Start -->
-    <footer class="bg-dark pt-36 pb-12" id="contact">
+    <footer class="footer-section" id="contact">
       <div class="container">
-        <div class="flex flex-wrap justify-center text-center">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium lg:w-1/2">
+        <div class="footer-content">
+          <div class="footer-location">
             <h2
-              class="font-bold text-white text-2xl uppercase mb-2"
+              class="footer-title translate"
               data-aos="fade-up"
               data-aos-delay="100"
+              data-key="lokasi"
             >
               Lokasi
             </h2>
-            <h2
-              class="font-bold text-xl"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
+            <h2 class="footer-subtitle" data-aos="fade-up" data-aos-delay="200">
               Taktakan
             </h2>
-            <p class="text-base" data-aos="fade-up" data-aos-delay="300">
-              Kota Serang Banten
+            <p
+              class="translate text-base"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-key="kota"
+            >
+              Kota Serang, Banten
             </p>
           </div>
-          <div class="w-full mb-12 text-slate-300 font-medium lg:w-1/2">
+          <div class="footer-contact">
             <h2
-              class="font-bold text-2xl text-white uppercase mb-2"
+              class="footer-title translate"
               data-aos="fade-up"
               data-aos-delay="400"
+              data-key="contact"
             >
               Kontak
             </h2>
-            <div class="flex mb-5 justify-center">
+            <div class="footer-icon">
               <a
                 href="mailto:suk12on512@gmail.com"
                 target="_blank"
@@ -1460,10 +1442,10 @@
             </div>
           </div>
         </div>
-        <div class="w-full pt-10 border-t border-slate-700">
-          <p class="font-medium text-md text-slate-500 text-center">
+        <div class="footer-bottom">
+          <p class="footer-cr">
             Copyright &copy; Portofolio -
-            <a class="font-bold text-primary">Sukron</a>
+            <a class="footer-author">Sukron</a>
             <span id="current-year" class="font-medium text-white"></span>
           </p>
         </div>
@@ -1477,25 +1459,35 @@
     </a>
     <!-- Back To Top End -->
 
-    <!-- Tailwind Js -->
-    <script src="dist/js/script.js"></script>
-    <script src="dist/js/darkmode.js"></script>
+    <!-- General Js -->
+    <script src="dist/js/general/header-active.js"></script>
+    <script src="dist/js/general/header-fixed.js"></script>
+    <script src="dist/js/general/hamburger.js"></script>
+    <script src="dist/js/general/darkmode.js"></script>
+    <script src="dist/js/general/year.js"></script>
+    <!-- General Js -->
+
+    <!-- Language Js -->
+    <script src="dist/js/portofolio/icon.js"></script>
     <script src="dist/js/portofolio/language.js"></script>
-    <!-- Tailwind Js -->
+    <!-- Language Js -->
+
+    <!-- Swiper -->
+    <script src="dist/js/general/swiper-bundle.min.js"></script>
+    <script src="dist/js/portofolio/swiper.js"></script>
+    <!-- Swiper -->
 
     <!-- Hide show Halaman Vektor, Web, tipo & other -->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="dist/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="dist/js/portofolio/main.js"></script>
+    <!-- Hide show Halaman Vektor, Web, tipo & other -->
+
     <!-- Aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
-    <!-- Swiper -->
-    <script src="dist/js/swiper-bundle.min.js"></script>
-    <script src="dist/js/portofolio/swiper.js"></script>
-    <!-- Swiper -->
+    <!-- Aos -->
   </body>
 </html>
